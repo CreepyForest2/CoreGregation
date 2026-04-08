@@ -1,7 +1,10 @@
 package net.creepyforest.coregregation;
 
+//gtceu imports
+
+
 import com.mojang.logging.LogUtils;
-import net.creepyforest.coregregation.item.Items;
+import net.creepyforest.coregregation.api.item.Items;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
