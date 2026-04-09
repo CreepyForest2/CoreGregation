@@ -1,8 +1,9 @@
 package net.creepyforest.coregregation;
 
-//gtceu imports
+/*gtceu imports*/
 
 
+import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 import com.mojang.logging.LogUtils;
 import net.creepyforest.coregregation.api.item.Items;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -23,10 +24,12 @@ import org.slf4j.Logger;
 public class CoreGregation {
     public static final String MOD_ID = "coregregation";
     public static final Logger LOGGER = LogUtils.getLogger();
+    public static final GTRegistrate REGISTRATE = GTRegistrate.create(MOD_ID);
 
     public CoreGregation() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        REGISTRATE.registerEventListeners(modEventBus);
 
         Items.register(modEventBus);
 
