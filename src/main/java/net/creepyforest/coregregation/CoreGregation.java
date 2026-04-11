@@ -20,6 +20,7 @@ import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 import com.mojang.logging.LogUtils;
 import jdk.javadoc.doclet.Doclet;
 import net.creepyforest.coregregation.api.item.Items;
+import net.creepyforest.coregregation.common.machine.singleblock.SingleBlockMachines;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -72,7 +73,9 @@ public class CoreGregation {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
-
+    private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
+        SingleBlockMachines.init();
+    }
     
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
