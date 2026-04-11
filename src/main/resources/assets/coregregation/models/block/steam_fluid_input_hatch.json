@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/block",
   "loader": "gtceu:machine",
-  "machine": "cosmiccore:steam_fluid_input_hatch",
+  "machine": "coregregation:steam_fluid_input_hatch",
   "replaceable_textures": [
     "bottom",
     "top",
