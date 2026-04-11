@@ -1,6 +1,6 @@
 package net.creepyforest.coregregation;
 
-/*gtceu imports*/
+
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialEvent;
