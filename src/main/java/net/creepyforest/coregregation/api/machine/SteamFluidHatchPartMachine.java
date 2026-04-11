@@ -1,6 +1,6 @@
 package net.creepyforest.coregregation.api.machine;
 
-
+import net.creepyforest.coregregation.common.machine.singleblock.SingleBlockMachines;
 
 import com.gregtechceu.gtceu.api.capability.recipe.IO;
 import com.gregtechceu.gtceu.api.machine.IMachineBlockEntity;
@@ -12,8 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class SteamFluidHatchPartMachine extends FluidHatchPartMachine {
 
-    public SteamFluidHatchPartMachine(IMachineBlockEntity holder, IO io, long initialCapacity, int slots,
-                                      Object... args) {
+    public SteamFluidHatchPartMachine(IMachineBlockEntity holder, IO io, long initialCapacity, int slots, Object... args) {
         super(holder, 1, io, 2000, 1, args);
     }
 
@@ -21,6 +20,12 @@ public class SteamFluidHatchPartMachine extends FluidHatchPartMachine {
     public boolean swapIO() {
         BlockPos blockPos = getHolder().pos();
         MachineDefinition newDefinition = null;
+
+        if (io == IO.IN) {
+        } else if (io == IO.OUT) {
+            newDefinition = SingleBlockMachines.STEAM_IMPORT_HATCH;
+        }
+        if (newDefinition == null) return false;
 
 
 
