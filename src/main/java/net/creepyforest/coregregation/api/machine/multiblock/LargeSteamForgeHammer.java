@@ -26,8 +26,8 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 public class LargeSteamForgeHammer {
 
     public static final MultiblockMachineDefinition LargeSteamForgeHammer = REGISTRATE
-            .multiblock("large_steam_forge_hammer", SteamParallelMultiblockMachine::new)
-            .rotationState(RotationState.ALL)
+            .multiblock("large_steam_forge_hammer", (holder) -> new SteamParallelMultiblockMachine(holder, 8))
+            .rotationState(RotationState.NON_Y_AXIS)
             .appearanceBlock(BRONZE_BRICKS_HULL)
             .recipeType(GTRecipeTypes.FORGE_HAMMER_RECIPES)
             .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
@@ -41,7 +41,7 @@ public class LargeSteamForgeHammer {
                     .where('C', Predicates.controller(blocks(definition.getBlock())))
                     .where('#', Predicates.air())
                     .where(' ', Predicates.any())
-                    .where('A', blocks(GTBlocks.CASING_BRONZE_BRICKS.get())
+                    .where('A', blocks(GTBlocks.CASING_BRONZE_BRICKS.get()).setMinGlobalLimited(48)
                             .or(Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setPreviewCount(1))
                             .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setPreviewCount(1))
                             .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1)))
