@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.api.machine;
+package net.creepyforest.coregregation.api.machine.singleblock;
 
 import net.creepyforest.coregregation.common.data.singleblock.SingleBlockMachines;
 

@@ -7,6 +7,8 @@ import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
 import com.mojang.logging.LogUtils;
 import net.creepyforest.coregregation.api.item.Items;
+import net.creepyforest.coregregation.api.machine.multiblock.LargeSteamForgeHammer;
+import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
 import net.creepyforest.coregregation.common.data.singleblock.SingleBlockMachines;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -48,6 +50,10 @@ public class CoreGregation {
     private static void init() {
     }
 
+    public static ResourceLocation id(String path) {
+        return new ResourceLocation(MOD_ID, path);
+    }
+
 
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
@@ -66,6 +72,7 @@ public class CoreGregation {
     }
     private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
         SingleBlockMachines.init();
+        MultiBlockMachines.init();
     }
     
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

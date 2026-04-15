@@ -1,3 +1,5 @@
 {
-  "item.coregregation.testitem": "Test Item"
+  "item.coregregation.testitem": "Test Item",
+  "block.coregregation.steam_fluid_input_hatch": "Steam Input Fluid Hatch",
+  "block.coregregation.large_steam_forge_hammer": "Large Steam Forge Hammer"
 }
