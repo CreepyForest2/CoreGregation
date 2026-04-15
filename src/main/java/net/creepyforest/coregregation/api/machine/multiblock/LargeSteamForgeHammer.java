@@ -3,8 +3,8 @@ package net.creepyforest.coregregation.api.machine.multiblock;
 import com.gregtechceu.gtceu.api.data.chemical.ChemicalHelper;
 import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
+import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
 import net.creepyforest.coregregation.CoreGregation;
-import net.creepyforest.coregregation.api.machine.multiblock.StrongSteamParallelMultiBlockMachine;
 
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 
@@ -16,7 +16,6 @@ import com.gregtechceu.gtceu.api.machine.multiblock.PartAbility;
 import com.gregtechceu.gtceu.api.pattern.FactoryBlockPattern;
 import com.gregtechceu.gtceu.api.pattern.Predicates;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
-import org.apache.logging.log4j.core.Core;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
 import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
@@ -27,11 +26,11 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 public class LargeSteamForgeHammer {
 
     public static final MultiblockMachineDefinition LargeSteamForgeHammer = REGISTRATE
-            .multiblock("large_steam_forge_hammer", StrongSteamParallelMultiBlockMachine::new)
+            .multiblock("large_steam_forge_hammer", SteamParallelMultiblockMachine::new)
             .rotationState(RotationState.ALL)
             .appearanceBlock(BRONZE_BRICKS_HULL)
             .recipeType(GTRecipeTypes.FORGE_HAMMER_RECIPES)
-            .recipeModifier(StrongSteamParallelMultiBlockMachine::recipeModifier, true)
+            .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
             .addOutputLimit(ItemRecipeCapability.CAP, 1)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle(" AAA ", "     ", "     ", "     ", "     ", " AAA ", "     ")
