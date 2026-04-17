@@ -1,7 +1,27 @@
 {
   "parent": "minecraft:block/block",
+  "dynamic_renders": [
+    {
+      "type": "gtceu:boiler_multi_parts",
+      "casing_block": {
+        "Name": "gtceu:steam_machine_casing"
+      },
+      "firebox_active": {
+        "Name": "gtceu:bronze_firebox_casing",
+        "Properties": {
+          "active": "true"
+        }
+      },
+      "firebox_idle": {
+        "Name": "gtceu:bronze_firebox_casing",
+        "Properties": {
+          "active": "false"
+        }
+      }
+    }
+  ],
   "loader": "gtceu:machine",
-  "machine": "coregregation:large_steam_forge_hammer",
+  "machine": "coregregation:steam_foundry",
   "texture_overrides": {
     "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks"
   },
@@ -11,8 +31,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_emissive"
         }
       }
     },
@@ -21,8 +41,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_emissive"
         }
       }
     },
@@ -31,8 +51,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_active_emissive"
         }
       }
     },
@@ -41,8 +61,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_active_emissive"
         }
       }
     },
@@ -51,8 +71,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_emissive"
         }
       }
     },
@@ -61,8 +81,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_emissive"
         }
       }
     },
@@ -71,8 +91,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_active_emissive"
         }
       }
     },
@@ -81,8 +101,8 @@
         "parent": "gtceu:block/machine/template/cube_all/sided",
         "textures": {
           "all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-          "overlay_front": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active",
-          "overlay_front_emissive": "gtceu:block/multiblock/generator/large_bronze_boiler/overlay_front_active_emissive"
+          "overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_active_emissive"
         }
       }
     }

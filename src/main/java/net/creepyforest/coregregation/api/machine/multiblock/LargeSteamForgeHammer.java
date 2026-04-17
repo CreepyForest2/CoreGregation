@@ -3,6 +3,7 @@ package net.creepyforest.coregregation.api.machine.multiblock;
 import com.gregtechceu.gtceu.api.data.chemical.ChemicalHelper;
 import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
+import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
 import net.creepyforest.coregregation.CoreGregation;
 
@@ -27,7 +28,7 @@ public class LargeSteamForgeHammer {
 
     public static final MultiblockMachineDefinition LargeSteamForgeHammer = REGISTRATE
             .multiblock("large_steam_forge_hammer", (holder) -> new SteamParallelMultiblockMachine(holder, 8))
-            .rotationState(RotationState.NON_Y_AXIS)
+            .rotationState(RotationState.ALL)
             .appearanceBlock(BRONZE_BRICKS_HULL)
             .recipeType(GTRecipeTypes.FORGE_HAMMER_RECIPES)
             .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
@@ -49,8 +50,9 @@ public class LargeSteamForgeHammer {
                     .where('S', blocks(ChemicalHelper.getBlock(TagPrefix.block, GTMaterials.Steel)))
                     .where('D', blocks(CASING_STEEL_GEARBOX.get()))
                     .build())
-            .model(createWorkableCasingMachineModel(GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
-                    CoreGregation.id("block/multiblock/large_steam_forge_hammer")))
+            .model(GTMachineModels.createWorkableCasingMachineModel(
+                    GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
+                    GTCEu.id("block/multiblock/generator/large_bronze_boiler")))
             .register();
 
     public static void init() {}

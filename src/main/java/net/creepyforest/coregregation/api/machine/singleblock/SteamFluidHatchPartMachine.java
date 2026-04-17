@@ -1,11 +1,11 @@
 package net.creepyforest.coregregation.api.machine.singleblock;
 
+import com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine;
 import net.creepyforest.coregregation.common.data.singleblock.SingleBlockMachines;
 
 import com.gregtechceu.gtceu.api.capability.recipe.IO;
 import com.gregtechceu.gtceu.api.machine.IMachineBlockEntity;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
-import com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;

@@ -1,4 +1,4 @@
 
 {
-  "parent": "cosmiccore:block/machine/steam_fluid_input_hatch"
+  "parent": "coregregation:block/machine/steam_fluid_input_hatch"
 }
