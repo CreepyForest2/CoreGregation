@@ -8,6 +8,7 @@ import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 import com.mojang.logging.LogUtils;
 import net.creepyforest.coregregation.api.item.Items;
 import net.creepyforest.coregregation.api.machine.multiblock.LargeSteamForgeHammer;
+import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
 import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
 import net.creepyforest.coregregation.common.data.singleblock.SingleBlockMachines;
 import net.minecraft.resources.ResourceLocation;
@@ -71,6 +72,7 @@ public class CoreGregation {
 
     }
     private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
+        CoreGregationPartAbility.init();
         SingleBlockMachines.init();
         MultiBlockMachines.init();
     }

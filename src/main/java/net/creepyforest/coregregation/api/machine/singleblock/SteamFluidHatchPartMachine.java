@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public class SteamFluidHatchPartMachine extends FluidHatchPartMachine {
 
     public SteamFluidHatchPartMachine(IMachineBlockEntity holder, IO io, long initialCapacity, int slots, Object... args) {
-        super(holder, 0, io, 4000, 1, args);
+        super(holder, 0, io, 8000, 1, args);
     }
 
     @Override
@@ -26,6 +26,7 @@ public class SteamFluidHatchPartMachine extends FluidHatchPartMachine {
             newDefinition = SingleBlockMachines.STEAM_IMPORT_HATCH;
         }
         if (newDefinition == null) return false;
+
 
 
 
