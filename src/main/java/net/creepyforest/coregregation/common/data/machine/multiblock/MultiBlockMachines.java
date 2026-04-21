@@ -9,5 +9,6 @@ public class MultiBlockMachines {
         SteamCrusher.init();
         SteamSucker.init();
         SteamOreWashingPlant.init();
+        SteamMixingVessel.init();
     }
 }

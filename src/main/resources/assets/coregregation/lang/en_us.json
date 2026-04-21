@@ -1,9 +1,11 @@
 {
   "item.coregregation.testitem": "Test Item",
   "block.coregregation.steam_fluid_input_hatch": "Steam Input Fluid Hatch",
+  "block.coregregation.steam_fluid_output_hatch": "Steam Output Fluid Hatch",
   "block.coregregation.large_steam_forge_hammer": "Large Steam Forge Hammer",
   "block.coregregation.steam_foundry": "Steam Foundry",
   "block.coregregation.steam_crusher": "Steam Crusher",
   "block.coregregation.steam_sucker": "Steam Sucker",
-  "block.coregregation.steam_ore_washing_plant": "Steam Ore Washing Plant"
+  "block.coregregation.steam_ore_washing_plant": "Steam Ore Washing Plant",
+  "block.coregregation.steam_mixing_vessel": "Steam Mixing Vessel"
 }

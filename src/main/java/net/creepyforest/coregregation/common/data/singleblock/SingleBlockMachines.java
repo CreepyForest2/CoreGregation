@@ -24,13 +24,24 @@ public class SingleBlockMachines {
             .machine("steam_fluid_input_hatch", holder -> new SteamFluidHatchPartMachine(holder, IO.IN, 8000, 1))
             .rotationState(RotationState.ALL)
             .abilities(PartAbility.IMPORT_FLUIDS)
-            .abilities(CoreGregationPartAbility.STEAM_IMPORT_HATCH)
+            .abilities(CoreGregationPartAbility.STEAM_IMPORT_FLUIDS)
             .colorOverlaySteamHullModel(
                     new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_pipe"),
                     new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_fluid_hatch"),
                     new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_fluid_hatch"))
             .modelProperty(GTMachineModelProperties.IS_FORMED, false)
             .langValue("Steam Fluid Input Hatch")
+            .register();
+    public static final MachineDefinition STEAM_EXPORT_HATCH = REGISTRATE
+            .machine("steam_fluid_output_hatch", holder -> new SteamFluidHatchPartMachine(holder, IO.OUT, 8000, 1))
+            .rotationState(RotationState.ALL)
+            .abilities(PartAbility.EXPORT_FLUIDS)
+            .abilities(CoreGregationPartAbility.STEAM_EXPORT_FLUIDS)
+            .colorOverlaySteamHullModel(new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_pipe"),
+                    new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_fluid_hatch"),
+                    new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_fluid_hatch"))
+            .modelProperty(GTMachineModelProperties.IS_FORMED, false)
+            .langValue("Fluid Output Hatch (Steam)")
             .register();
     public static void init() {
     }

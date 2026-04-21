@@ -44,7 +44,7 @@ public class SteamOreWashingPlant {
                                 .or(Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setPreviewCount(1))
                                 .or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setPreviewCount(1))
                                 .or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1))
-                                .or(Predicates.abilities(CoreGregationPartAbility.STEAM_IMPORT_HATCH).setExactLimit(1)))
+                                .or(Predicates.abilities(CoreGregationPartAbility.STEAM_IMPORT_FLUIDS).setExactLimit(1)))
                         .where('G', blocks(Blocks.GLASS))
                         .where('F', frames(GTMaterials.Steel))
                         .where('#', Predicates.air())

@@ -22,11 +22,11 @@ public class SteamFluidHatchPartMachine extends FluidHatchPartMachine {
         MachineDefinition newDefinition = null;
 
         if (io == IO.IN) {
+            newDefinition = SingleBlockMachines.STEAM_EXPORT_HATCH;
         } else if (io == IO.OUT) {
             newDefinition = SingleBlockMachines.STEAM_IMPORT_HATCH;
         }
         if (newDefinition == null) return false;
-
 
 
 
