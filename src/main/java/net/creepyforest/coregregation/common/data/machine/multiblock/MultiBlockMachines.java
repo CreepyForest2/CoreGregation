@@ -10,5 +10,6 @@ public class MultiBlockMachines {
         SteamSucker.init();
         SteamOreWashingPlant.init();
         SteamMixingVessel.init();
+        SteamCentrifugalUnit.init();
     }
 }

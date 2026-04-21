@@ -7,5 +7,6 @@
   "block.coregregation.steam_crusher": "Steam Crusher",
   "block.coregregation.steam_sucker": "Steam Sucker",
   "block.coregregation.steam_ore_washing_plant": "Steam Ore Washing Plant",
-  "block.coregregation.steam_mixing_vessel": "Steam Mixing Vessel"
+  "block.coregregation.steam_mixing_vessel": "Steam Mixing Vessel",
+  "block.coregregation.steam_centrifugal_unit": "Steam Centrifugal Unit"
 }
