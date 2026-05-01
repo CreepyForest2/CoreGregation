@@ -1,11 +1,13 @@
 package net.creepyforest.coregregation;
 
+import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
+import net.creepyforest.coregregation.common.data.CoreGregationMachineRecipes;
+import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
 import net.minecraft.data.recipes.FinishedRecipe;
-import org.apache.logging.log4j.core.Core;
 
 import java.util.function.Consumer;
 
@@ -30,10 +32,8 @@ public class CoreGregationGTAddon implements IGTAddon {
     public void registerTagPrefixes() {
         // CustomTagPrefixes.init();
     }
-
     @Override
     public void addRecipes(Consumer<FinishedRecipe> provider) {
-        // CustomRecipes.init(provider);
     }
 
     @Override

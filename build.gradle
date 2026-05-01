@@ -184,6 +184,7 @@ tasks.named('processResources', ProcessResources).configure {
     }
 }
 
+
 // Example for how to get properties into the manifest for reading at runtime.
 tasks.named('jar', Jar).configure {
     manifest {
@@ -219,6 +220,18 @@ publishing {
             url "file://${project.projectDir}/mcmodsrepo"
         }
     }
+}
+def generatedResources = "$rootDir/src/generated/resources"
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/resources', generatedResources]
+        }
+    }
+}
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 tasks.withType(JavaCompile).configureEach {
