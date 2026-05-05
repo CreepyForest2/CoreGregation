@@ -11,5 +11,7 @@ public class MultiBlockMachines {
         SteamOreWashingPlant.init();
         SteamMixingVessel.init();
         SteamCentrifugalUnit.init();
+        OvenMachine.init();
+        CookingPot.init();
     }
 }
