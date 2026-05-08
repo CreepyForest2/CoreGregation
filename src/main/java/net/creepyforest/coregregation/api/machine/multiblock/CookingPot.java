@@ -31,6 +31,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import vectorwing.farmersdelight.FarmersDelight;
+import vectorwing.farmersdelight.common.block.StoveBlock;
+import vectorwing.farmersdelight.common.registry.ModBlocks;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
 import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
@@ -50,7 +53,7 @@ public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("c", "C")
                     .where('C', Predicates.controller(blocks(definition.getBlock())))
-                    .where('c', blocks(Blocks.CAMPFIRE))
+                    .where('c', blocks(ModBlocks.STOVE.get()))
                     .build())
             .register();
     public CookingPot(IMachineBlockEntity info) {
