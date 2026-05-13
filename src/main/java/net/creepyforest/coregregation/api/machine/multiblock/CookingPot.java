@@ -1,10 +1,7 @@
 package net.creepyforest.coregregation.api.machine.multiblock;
 
-import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.capability.recipe.ItemRecipeCapability;
 import com.gregtechceu.gtceu.api.data.RotationState;
-import com.gregtechceu.gtceu.api.data.chemical.ChemicalHelper;
-import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
 import com.gregtechceu.gtceu.api.gui.GuiTextures;
 import com.gregtechceu.gtceu.api.gui.UITemplate;
 import com.gregtechceu.gtceu.api.gui.widget.SlotWidget;
@@ -12,13 +9,8 @@ import com.gregtechceu.gtceu.api.gui.widget.TankWidget;
 import com.gregtechceu.gtceu.api.machine.IMachineBlockEntity;
 import com.gregtechceu.gtceu.api.machine.MultiblockMachineDefinition;
 import com.gregtechceu.gtceu.api.machine.feature.IUIMachine;
-import com.gregtechceu.gtceu.api.machine.multiblock.PartAbility;
 import com.gregtechceu.gtceu.api.pattern.FactoryBlockPattern;
 import com.gregtechceu.gtceu.api.pattern.Predicates;
-import com.gregtechceu.gtceu.common.data.GTBlocks;
-import com.gregtechceu.gtceu.common.data.GTMaterials;
-import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
-import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.primitive.PrimitiveWorkableMachine;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
 import com.lowdragmc.lowdraglib.gui.modular.ModularUI;
@@ -27,18 +19,11 @@ import com.lowdragmc.lowdraglib.gui.texture.ProgressTexture;
 import com.lowdragmc.lowdraglib.gui.widget.LabelWidget;
 import com.lowdragmc.lowdraglib.gui.widget.ProgressWidget;
 import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import vectorwing.farmersdelight.FarmersDelight;
-import vectorwing.farmersdelight.common.block.StoveBlock;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
-import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
-import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_BRONZE_BRICKS;
-import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_GEARBOX;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
@@ -46,9 +31,8 @@ public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
     public static final MultiblockMachineDefinition CookingPot = REGISTRATE
             .multiblock("cooking_pot", CookingPot::new)
             .rotationState(RotationState.NON_Y_AXIS)
-            .recipeType(CoreGregationRecipeTypes.OVEN_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.COOKING_POT_RECIPES)
             .shape(Block.box(2, 0, 2, 14, 10, 14))
-            .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
             .addOutputLimit(ItemRecipeCapability.CAP, 1)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("c", "C")
@@ -106,6 +90,7 @@ public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
 
 
 
+
                 .widget(new ProgressWidget(recipeLogic::getProgressPercent, 78, 36, 20, 20,
                         GuiTextures.PROGRESS_BAR_ARROW))
                 .widget(new SlotWidget(exportItems.storage, 0, 123, 36, true, false)
@@ -115,7 +100,11 @@ public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
                         .setBackgroundTexture(
                                 new GuiTextureGroup(GuiTextures.SLOT)))
                 .widget(UITemplate.bindPlayerInventory(entityPlayer.getInventory(), GuiTextures.SLOT, 7, 114,
-                        true));
+                        true))
+        .widget(new TankWidget(exportFluids.getStorages()[0], 123, 54, 18, 18, false, true)
+                .setBackground(GuiTextures.FLUID_SLOT)
+                .setFillDirection(ProgressTexture.FillDirection.DOWN_TO_UP)
+                .setShowAmountOverlay(true));
     }
 
     public static void init() {}

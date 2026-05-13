@@ -9,6 +9,7 @@
 
     import com.mojang.logging.LogUtils;
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+    import net.creepyforest.coregregation.common.data.CoreGregationMachineRecipes;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
     import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
     import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
@@ -33,11 +34,12 @@
         public static final String MOD_ID = "coregregation";
         public static final Logger LOGGER = LogUtils.getLogger();
 
-        public static final GTRegistrate REGISTRATE = GTRegistrate.create(MOD_ID);
+        public static final GTRegistrate REGISTRATE = GTRegistrate.create(CoreGregation.MOD_ID);
 
         public CoreGregation() {
             IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
             REGISTRATE.registerEventListeners(modEventBus);
+
 
             Datagen.init();
 
@@ -74,10 +76,10 @@
 
         public void registerRecipeTypes(GTCEuAPI.RegisterEvent<ResourceLocation, GTRecipeType> event) {
             CoreGregationRecipeTypes.init();
+
         }
 
         private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
-            CoreGregationRecipeTypes.init();
             CoreGregationPartAbility.init();
             SingleBlockMachines.init();
             MultiBlockMachines.init();
@@ -89,7 +91,7 @@
         public static class ClientModEvents {
             @SubscribeEvent
             public static void onClientSetup(FMLClientSetupEvent event) {
-
+                REGISTRATE.registerRegistrate();
             }
         }
 
