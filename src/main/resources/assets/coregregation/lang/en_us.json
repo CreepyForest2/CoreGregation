@@ -1,0 +1,4 @@
+{
+  "death.attack.chemical_burn": "Dev realized the air is 24% corrosive acid",
+  "death.attack.chemical_burn.player": "%1$ realized the air is 24% corrosive acid while fighting %2$s"
+}
