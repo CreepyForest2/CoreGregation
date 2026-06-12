@@ -62,6 +62,9 @@ repositories {
         url = "https://maven.farmersdelight.com/"
     }
     maven {
+        url = "https://maven.botarium.com/"
+    }
+    maven {
         url = "https://thedarkcolour.github.io/KotlinForForge/"
     }
     maven {
@@ -124,11 +127,6 @@ repositories {
         }
     }
 }
-jar {
-    manifest.attributes([
-            "MixinConfigs": "examplemod.mixins.json"
-    ])
-}
 
 apply from: "$rootDir/gradle/scripts/spotless.gradle"
 
@@ -144,7 +142,7 @@ dependencies {
     modRuntimeOnly("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     modRuntimeOnly("dev.emi:emi-forge:${emi_version}+${minecraft_version}")
     modRuntimeOnly("curse.maven:jade-324717:5390389")
-    modImplementation("curse.maven:farmers-delight-398521:8007609")
+
 
     // GregTech and dependencies
 
@@ -152,6 +150,10 @@ dependencies {
     modImplementation("com.lowdragmc.ldlib:ldlib-forge-${minecraft_version}:${ldlib_version}") { transitive = false }
     modImplementation("com.tterrag.registrate:Registrate:${registrate_version}")
     modImplementation("dev.toma.configuration:configuration-forge-${minecraft_version}:${configuration_version}")
+    modImplementation("curse.maven:farmers-delight-398521:8007609")
+
+    //other
+    modImplementation("earth.terrarium.botarium:botarium-forge-${minecraft_version}:${botarium_version}")
 
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.24'
