@@ -32,7 +32,6 @@ public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
             .multiblock("cooking_pot", CookingPot::new)
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.COOKING_POT_RECIPES)
-            .shape(Block.box(2, 0, 2, 14, 10, 14))
             .addOutputLimit(ItemRecipeCapability.CAP, 1)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("c", "C")
