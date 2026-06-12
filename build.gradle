@@ -62,17 +62,15 @@ repositories {
         url = "https://maven.farmersdelight.com/"
     }
     maven {
-        url = "https://maven.botarium.com/"
-    }
-    maven {
         url = "https://thedarkcolour.github.io/KotlinForForge/"
     }
     maven {
         name = 'ParchmentMC'
         url = 'https://maven.parchmentmc.org'
     }
-
 }
+
+
 
  legacyForge {
     version = project.minecraft_version + '-' + project.forge_version
@@ -150,10 +148,10 @@ dependencies {
     modImplementation("com.lowdragmc.ldlib:ldlib-forge-${minecraft_version}:${ldlib_version}") { transitive = false }
     modImplementation("com.tterrag.registrate:Registrate:${registrate_version}")
     modImplementation("dev.toma.configuration:configuration-forge-${minecraft_version}:${configuration_version}")
-    modImplementation("curse.maven:farmers-delight-398521:8007609")
+
 
     //other
-    modImplementation("earth.terrarium.botarium:botarium-forge-${minecraft_version}:${botarium_version}")
+    modImplementation("curse.maven:farmers-delight-398521:8007609")
 
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.24'
