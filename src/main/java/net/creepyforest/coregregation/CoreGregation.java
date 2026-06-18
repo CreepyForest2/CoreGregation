@@ -17,13 +17,18 @@
     import net.creepyforest.coregregation.common.data.singleblock.SingleBlockMachines;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.HazmatSuitEvent;
+    import net.creepyforest.coregregation.common.events.NetherPortalEvent;
+    import net.creepyforest.coregregation.common.items.CoreGregationItems;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
     import net.minecraft.resources.ResourceLocation;
     import net.minecraft.world.damagesource.DamageSource;
     import net.minecraft.world.entity.LivingEntity;
     import net.minecraft.world.entity.player.Player;
+    import net.minecraft.world.item.CreativeModeTab;
+    import net.minecraft.world.item.CreativeModeTabs;
     import net.minecraftforge.api.distmarker.Dist;
     import net.minecraftforge.common.MinecraftForge;
+    import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
     import net.minecraftforge.event.server.ServerStartingEvent;
     import net.minecraftforge.eventbus.api.IEventBus;
     import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -33,7 +38,7 @@
     import net.minecraftforge.fml.common.Mod;
     import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
     import org.slf4j.Logger;
-
+    import vectorwing.farmersdelight.common.registry.ModItems;
 
 
     @Mod(CoreGregation.MOD_ID)
@@ -51,8 +56,14 @@
             IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
             REGISTRATE.registerEventListeners(modEventBus);
 
-            //MinecraftForge.EVENT_BUS.register(NetherPortalEvent.class);
+            CoreGregationItems.register(modEventBus);
+
+
+
+            MinecraftForge.EVENT_BUS.register(NetherPortalEvent.class);
             Datagen.init();
+
+
 
 
 
@@ -62,6 +73,13 @@
             modEventBus.addGenericListener(GTRecipeType.class, this::registerRecipeTypes);
             modEventBus.addGenericListener(MachineDefinition.class, this::registerMachines);
             modEventBus.addListener(this::registerMaterials);
+            modEventBus.addListener(this::addCreative);
+        }
+
+        private void addCreative(BuildCreativeModeTabContentsEvent event) {
+            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+                event.accept(CoreGregationItems.NETHER_PORTAL_ACTIVATOR);
+            }
         }
 
         public static void init() {
