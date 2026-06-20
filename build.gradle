@@ -80,42 +80,55 @@ repositories {
         minecraftVersion = project.minecraft_version
     }
 
-    runs {
-        configureEach {
-            // Recommended logging data for a userdev environment
-            // The markers can be added/remove as needed separated by commas.
-            // "SCAN": For mods scan.
-            // "REGISTRIES": For firing of registry events.
-            // "REGISTRYDUMP": For getting the contents of all registries.
-            systemProperty 'forge.logging.markers', 'REGISTRIES'
+     runs {
+         //thank GOD pheonix core lets me copy this, forge docs suck so much asssssssss
+         configureEach {
 
-            // Recommended logging level for the console
-            // You can set various levels here.
-            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
-            logLevel = org.slf4j.event.Level.DEBUG
-        }
-        client {
-            client()
-            sourceSet = sourceSets.main
-            programArguments.addAll('--refresh-dependencies')
-            systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
-        }
-        server {
-            server()
-            sourceSet = sourceSets.main
-            systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
-            programArguments.addAll('--nogui', '--world', 'world-extra')
-        }
-        data {
-            data()
-            sourceSet = sourceSets.main
-            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            programArguments.addAll('--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath())
-            programArguments.addAll('--existing-mod', 'gtceu')
-        }
-    }
+             systemProperty 'forge.logging.markers', 'REGISTRIES'
 
-    mods {
+// Recommended logging level for the console
+// You can set various levels here.
+// Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
+             logLevel = org.slf4j.event.Level.DEBUG
+             sourceSet = sourceSets.main
+         }
+         client {
+             client()
+             programArguments.addAll('--refresh-dependencies')
+             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
+         }
+         client1 {
+             client()
+             sourceSet = sourceSets.main
+             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
+             programArgument '--username'
+             programArgument 'Player1'
+         }
+         client2 {
+             client()
+             sourceSet = sourceSets.main
+             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
+             programArgument '--username'
+             programArgument 'Player2'
+         }
+         server {
+             server()
+             systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
+             programArguments.addAll('--nogui', '--world', 'world-extra')
+         }
+
+
+         data {
+             data()
+
+             // REMOVE the refresh-dependencies line from here
+             programArguments.addAll('--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath())
+             programArguments.addAll('--existing-mod', 'gtceu')
+         }
+     }
+
+
+     mods {
         // define mod <-> source bindings
         // these are used to tell the game which sources are for which mod
         // mostly optional in a single mod project
