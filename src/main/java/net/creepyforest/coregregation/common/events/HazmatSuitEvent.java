@@ -16,8 +16,8 @@ public class HazmatSuitEvent {
     @SubscribeEvent
     public static void onPlayerTick(LivingEvent.LivingTickEvent event) {
         if (!(event.getEntity() instanceof Player player)) return;
-        if (player.getCommandSenderWorld().dimension() != Level.NETHER) return;
-        if (player.getCommandSenderWorld().isClientSide()) return;
+        if (event.getEntity().level().dimension() != Level.NETHER) return;
+        if (event.getEntity().level().isClientSide()) return;
         if (player.tickCount % 40 != 0) return;
 
         if (!hasHazmatSuit(player)) {

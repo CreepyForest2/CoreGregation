@@ -6,6 +6,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
+import vectorwing.farmersdelight.common.registry.ModDamageTypes;
 
 public class ChemicalBurnEffect extends MobEffect {
     public ChemicalBurnEffect(MobEffectCategory category, int color) {
@@ -16,7 +17,7 @@ public class ChemicalBurnEffect extends MobEffect {
             DamageSource source = new DamageSource(
                     entity.level().registryAccess()
                             .registryOrThrow(Registries.DAMAGE_TYPE)
-                            .getHolderOrThrow(ModDamageTypes.CHEMICAL_BURN));
+                            .getHolderOrThrow(CoreGregationDamageTypes.CHEMICAL_BURN));
             entity.hurt(source, 2.0f * (amplifier + 1));
         }
 
