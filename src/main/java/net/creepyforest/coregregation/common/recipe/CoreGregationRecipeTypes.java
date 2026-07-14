@@ -8,6 +8,7 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType OVEN_RECIPES;
     public static GTRecipeType COOKING_POT_RECIPES;
     public static GTRecipeType BLOOMERY_RECIPES;
+    public static GTRecipeType BRASS_PUNCHER_RECIPES;
 
 
     public static void init() {
@@ -22,5 +23,9 @@ public class CoreGregationRecipeTypes {
         BLOOMERY_RECIPES = GTRecipeTypes
                 .register("bloomery", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(3, 3, 0, 0);
+
+        BRASS_PUNCHER_RECIPES = GTRecipeTypes
+                .register("brass_puncher", GTRecipeTypes.ELECTRIC)
+                .setMaxIOSize(4, 1, 0, 0);
     }
 }

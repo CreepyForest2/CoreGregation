@@ -6,20 +6,47 @@ import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.tterrag.registrate.providers.RegistrateLangProvider;
 import com.gregtechceu.gtceu.utils.FormattingUtil;
 
-public class LangHandler extends com.gregtechceu.gtceu.data.lang.LangHandler {
+
+public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.LangHandler {
+
+
     private static final Set<Material> MATERIALS = Set.of();
 
     public static void init(RegistrateLangProvider provider) {
-        initItemTooltips(provider);
-        multiLang(provider,"coregregation.block.large_steam_forge_hammer.tooltip",
-                "Forging your plates 8 at a time",
-                "a",
-                "a");
+        Tooltips(provider);
     }
 
-    private static void initItemTooltips(RegistrateLangProvider provider) {
+    public static void Tooltips(RegistrateLangProvider provider) {
+        provider.add("coregregation.large.steam.forge.hammer.tooltip.0", "Forging your plates 8 at a time");
+    }
 
-        // materials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private static void initItemTooltips(RegistrateLangProvider provider) {
         for (Material material : MATERIALS) {
             provider.add(material.getUnlocalizedName(), FormattingUtil.toEnglishName(material.getName()));
         }

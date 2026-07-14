@@ -11,20 +11,17 @@
 
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
     //import net.creepyforest.coregregation.events.NetherPortalEvent;
+    import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
     import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
     import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
-    import net.creepyforest.coregregation.common.data.singleblock.SingleBlockMachines;
+    import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.HazmatSuitEvent;
     import net.creepyforest.coregregation.common.events.NetherPortalEvent;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
     import net.minecraft.resources.ResourceLocation;
-    import net.minecraft.world.damagesource.DamageSource;
-    import net.minecraft.world.entity.LivingEntity;
-    import net.minecraft.world.entity.player.Player;
-    import net.minecraft.world.item.CreativeModeTab;
     import net.minecraft.world.item.CreativeModeTabs;
     import net.minecraftforge.api.distmarker.Dist;
     import net.minecraftforge.common.MinecraftForge;
@@ -35,10 +32,8 @@
     import net.minecraftforge.fml.common.Mod;
     import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
     import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-    import net.minecraftforge.fml.common.Mod;
     import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
     import org.slf4j.Logger;
-    import vectorwing.farmersdelight.common.registry.ModItems;
 
 
     @Mod(CoreGregation.MOD_ID)
@@ -47,6 +42,11 @@
         public static final String MOD_ID = "coregregation";
         public static final Logger LOGGER = LogUtils.getLogger();
 
+//i want to blow my shit smooth off, this is so confusing
+        //all i do is take code from other mods and pray that they work, fuck this
+        //fuck constructors mannnnnnnnnnnnnnnnnnnnnnnnn
+        //also fuck lambdas
+        //and james gosling
 
 
 
@@ -74,6 +74,7 @@
             modEventBus.addGenericListener(MachineDefinition.class, this::registerMachines);
             modEventBus.addListener(this::registerMaterials);
             modEventBus.addListener(this::addCreative);
+            modEventBus.register(CoreGregationDataGenerators.class);
         }
 
         private void addCreative(BuildCreativeModeTabContentsEvent event) {
