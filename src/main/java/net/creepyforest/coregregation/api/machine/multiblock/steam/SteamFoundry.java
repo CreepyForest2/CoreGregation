@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.api.machine.multiblock;
+package net.creepyforest.coregregation.api.machine.multiblock.steam;
 
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.capability.recipe.ItemRecipeCapability;
@@ -21,7 +21,7 @@ public class SteamFoundry {
     public static final MultiblockMachineDefinition SteamFoundry = REGISTRATE
             .multiblock("steam_foundry", (holder) -> new SteamParallelMultiblockMachine(holder, 8))
             .rotationState(RotationState.ALL)
-            .appearanceBlock(BRONZE_BRICKS_HULL)
+            .appearanceBlock(CASING_BRONZE_BRICKS)
             .recipeType(GTRecipeTypes.ALLOY_SMELTER_RECIPES)
             .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
             .addOutputLimit(ItemRecipeCapability.CAP, 1)

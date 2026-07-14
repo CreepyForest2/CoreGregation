@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.api.machine.multiblock;
+package net.creepyforest.coregregation.api.machine.multiblock.steam;
 
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.capability.recipe.ItemRecipeCapability;
@@ -7,7 +7,6 @@ import com.gregtechceu.gtceu.api.machine.MultiblockMachineDefinition;
 import com.gregtechceu.gtceu.api.machine.multiblock.PartAbility;
 import com.gregtechceu.gtceu.api.pattern.FactoryBlockPattern;
 import com.gregtechceu.gtceu.api.pattern.Predicates;
-import com.gregtechceu.gtceu.common.data.GCYMBlocks;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
@@ -22,7 +21,7 @@ public class SteamSucker {
     public static final MultiblockMachineDefinition SteamFoundry = REGISTRATE
             .multiblock("steam_sucker", (holder) -> new SteamParallelMultiblockMachine(holder, 8))
             .rotationState(RotationState.ALL)
-            .appearanceBlock(GTBlocks.BRONZE_BRICKS_HULL)
+            .appearanceBlock(CASING_BRONZE_BRICKS)
             .recipeType(GTRecipeTypes.EXTRACTOR_RECIPES)
             .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
             .addOutputLimit(ItemRecipeCapability.CAP, 1)

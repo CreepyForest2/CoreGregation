@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.api.machine.multiblock;
+package net.creepyforest.coregregation.api.machine.multiblock.steam;
 
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.capability.recipe.ItemRecipeCapability;
@@ -14,7 +14,6 @@ import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
-import net.minecraft.world.level.block.Blocks;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
 import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
@@ -25,7 +24,7 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
         public static final MultiblockMachineDefinition SteamFoundry = REGISTRATE
                 .multiblock("steam_crusher", (holder) -> new SteamParallelMultiblockMachine(holder, 8))
                 .rotationState(RotationState.ALL)
-                .appearanceBlock(BRONZE_BRICKS_HULL)
+                .appearanceBlock(CASING_BRONZE_BRICKS)
                 .recipeType(GTRecipeTypes.COMPRESSOR_RECIPES)
                 .recipeModifier(SteamParallelMultiblockMachine::recipeModifier, true)
                 .addOutputLimit(ItemRecipeCapability.CAP, 1)
