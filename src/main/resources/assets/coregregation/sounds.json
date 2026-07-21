@@ -1,0 +1,12 @@
+{
+  "knapping": {
+    "category": "block",
+    "subtitle": "coregregation.subtitle.knapping",
+    "sounds": [
+      "coregregation:knapping/1",
+      "coregregation:knapping/2",
+      "coregregation:knapping/3",
+      "coregregation:knapping/4"
+    ]
+  }
+}

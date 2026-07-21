@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "coregregation:block/cartridge_assembling_mechanism" },
+    "facing=south": { "model": "coregregation:block/cartridge_assembling_mechanism", "y": 180 },
+    "facing=west":  { "model": "coregregation:block/cartridge_assembling_mechanism", "y": 270 },
+    "facing=east":  { "model": "coregregation:block/cartridge_assembling_mechanism", "y": 90 }
+  }
+}

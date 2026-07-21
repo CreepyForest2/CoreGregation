@@ -1,7 +1,0 @@
-{
-  "death.attack.chemical_burn": "%1$s realized the air is 24% corrosive gas",
-  "death.attack.chemical_burn.player": "%1$s realized the air is 24% corrosive gas while fighting %2$s",
-  "message.coregregation.portal_blocked": "You need a nether portal activator to open the portal.",
-  "item.coregregation.nether_portal_activator": "Nether Portal Activator",
-  "effect.coregregation.chemical_burn": "Chemical Burn"
-}

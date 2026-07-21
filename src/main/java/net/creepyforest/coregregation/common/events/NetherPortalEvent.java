@@ -42,7 +42,7 @@ public class NetherPortalEvent {
         boolean hasItem = false;
         for (int i = 0; i < player.getInventory().getContainerSize(); i++) {
             ItemStack stack = player.getInventory().getItem(i);
-            if (stack.is(CoreGregationItems.NETHER_PORTAL_ACTIVATOR.get())) {
+            if (stack.is(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM.get())) {
                 stack.shrink(1);
                 hasItem = true;
                 break;

@@ -68,11 +68,22 @@ repositories {
         name = 'ParchmentMC'
         url = 'https://maven.parchmentmc.org'
     }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Modrinth'
+                url = 'https://api.modrinth.com/maven'
+            }
+        }
+        filter {
+            includeGroup 'maven.modrinth'
+        }
+    }
 }
 
 
 
- legacyForge {
+legacyForge {
     version = project.minecraft_version + '-' + project.forge_version
 
     parchment {
@@ -80,54 +91,54 @@ repositories {
         minecraftVersion = project.minecraft_version
     }
 
-     runs {
-         //thank GOD pheonix core lets me copy this, forge docs suck so much asssssssss
-         configureEach {
+    runs {
+        //thank GOD pheonix core lets me copy this, forge docs suck so much asssssssss
+        configureEach {
 
-             systemProperty 'forge.logging.markers', 'REGISTRIES'
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
 
 // Recommended logging level for the console
 // You can set various levels here.
 // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
-             logLevel = org.slf4j.event.Level.DEBUG
-             sourceSet = sourceSets.main
-         }
-         client {
-             client()
-             programArguments.addAll('--refresh-dependencies')
-             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
-         }
-         client1 {
-             client()
-             sourceSet = sourceSets.main
-             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
-             programArgument '--username'
-             programArgument 'Player1'
-         }
-         client2 {
-             client()
-             sourceSet = sourceSets.main
-             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
-             programArgument '--username'
-             programArgument 'Player2'
-         }
-         server {
-             server()
-             systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
-             programArguments.addAll('--nogui', '--world', 'world-extra')
-         }
+            logLevel = org.slf4j.event.Level.DEBUG
+            sourceSet = sourceSets.main
+        }
+        client {
+            client()
+            programArguments.addAll('--refresh-dependencies')
+            systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
+        }
+        client1 {
+            client()
+            sourceSet = sourceSets.main
+            systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
+            programArgument '--username'
+            programArgument 'Player1'
+        }
+        client2 {
+            client()
+            sourceSet = sourceSets.main
+            systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
+            programArgument '--username'
+            programArgument 'Player2'
+        }
+        server {
+            server()
+            systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
+            programArguments.addAll('--nogui', '--world', 'world-extra')
+        }
 
 
-         data {
-             data()
+        data {
+            data()
 
-             programArguments.addAll('--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath())
-             programArguments.addAll('--existing-mod', 'gtceu')
-         }
-     }
+            programArguments.addAll('--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath())
+            programArguments.addAll('--existing-mod', 'gtceu')
+        }
+    }
 
 
-     mods {
+    mods {
         // define mod <-> source bindings
         // these are used to tell the game which sources are for which mod
         // mostly optional in a single mod project
@@ -165,9 +176,14 @@ dependencies {
     //other
     modImplementation("curse.maven:farmers-delight-398521:8007609")
 
+    // Carpet: NeoForged - unofficial Forge port of gnembon's Carpet mod (1.0.8, Forge 1.20.1)
+    modImplementation("maven.modrinth:XqqOkvZz:XMYeNIOx")
+
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    //utility mods
 }
 
 

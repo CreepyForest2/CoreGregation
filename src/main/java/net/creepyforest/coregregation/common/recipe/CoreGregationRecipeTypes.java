@@ -9,7 +9,7 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType COOKING_POT_RECIPES;
     public static GTRecipeType BLOOMERY_RECIPES;
     public static GTRecipeType BRASS_PUNCHER_RECIPES;
-
+    public static GTRecipeType CARTRIDGE_PRODUCTION_LINE_RECIPES;
 
     public static void init() {
         OVEN_RECIPES = GTRecipeTypes
@@ -27,5 +27,8 @@ public class CoreGregationRecipeTypes {
         BRASS_PUNCHER_RECIPES = GTRecipeTypes
                 .register("brass_puncher", GTRecipeTypes.ELECTRIC)
                 .setMaxIOSize(4, 1, 0, 0);
+
+        CARTRIDGE_PRODUCTION_LINE_RECIPES = GTRecipeTypes
+                .register("cartridge_production_line", GTRecipeTypes.MULTIBLOCK);
     }
 }

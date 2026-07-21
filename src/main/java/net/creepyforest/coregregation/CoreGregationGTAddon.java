@@ -1,14 +1,10 @@
 package net.creepyforest.coregregation;
 
-import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
-import com.gregtechceu.gtceu.common.data.GTMaterials;
-import net.creepyforest.coregregation.common.data.CoreGregationMachineRecipes;
-import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
-import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+import net.creepyforest.coregregation.common.recipe.CoreGregationMachineRecipes;
 import net.minecraft.data.recipes.FinishedRecipe;
 
 import java.util.function.Consumer;

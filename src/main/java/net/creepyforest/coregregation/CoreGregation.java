@@ -10,17 +10,20 @@
     import com.mojang.logging.LogUtils;
 
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
-    //import net.creepyforest.coregregation.events.NetherPortalEvent;
+    import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
     import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
     import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
     import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
-    import net.creepyforest.coregregation.common.events.HazmatSuitEvent;
+    import net.creepyforest.coregregation.common.events.ChemicalBurnEvent;
+    import net.creepyforest.coregregation.common.events.FlintKnappingEvent;
     import net.creepyforest.coregregation.common.events.NetherPortalEvent;
+    import net.creepyforest.coregregation.common.events.SiliconBouleEvent;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+    import net.creepyforest.coregregation.sounds.CoreGregationSounds;
     import net.minecraft.resources.ResourceLocation;
     import net.minecraft.world.item.CreativeModeTabs;
     import net.minecraftforge.api.distmarker.Dist;
@@ -49,6 +52,9 @@
         //and james gosling
 
 
+        //TODO organize stuff here man
+
+        @SuppressWarnings("deprecated")
 
         public static final GTRegistrate REGISTRATE = GTRegistrate.create(CoreGregation.MOD_ID);
 
@@ -57,11 +63,19 @@
             REGISTRATE.registerEventListeners(modEventBus);
 
             CoreGregationItems.register(modEventBus);
+            CoreGregationBlocks.register(modEventBus);
 
 
 
             MinecraftForge.EVENT_BUS.register(NetherPortalEvent.class);
+            MinecraftForge.EVENT_BUS.register(SiliconBouleEvent.class);
+            MinecraftForge.EVENT_BUS.register(ChemicalBurnEvent.class);
+            MinecraftForge.EVENT_BUS.register(FlintKnappingEvent.class);
             Datagen.init();
+
+
+            CoreGregationSounds.register(modEventBus);
+
 
 
 
@@ -75,11 +89,18 @@
             modEventBus.addListener(this::registerMaterials);
             modEventBus.addListener(this::addCreative);
             modEventBus.register(CoreGregationDataGenerators.class);
+
+
         }
 
         private void addCreative(BuildCreativeModeTabContentsEvent event) {
-            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-                event.accept(CoreGregationItems.NETHER_PORTAL_ACTIVATOR);
+            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) /*temporary*/ {
+                event.accept(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM);
+                event.accept(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK);
+                event.accept(CoreGregationItems.METALLURGICAL_SILICON_ITEM);
+                event.accept(CoreGregationItems.CONTAMINATED_SILICON_BOULE);
+                event.accept(CoreGregationItems.FLINT_SHARD);
+                event.accept(CoreGregationItems.PLANT_FIBER);
             }
         }
 
@@ -92,7 +113,7 @@
 
 
         private void commonSetup(final FMLCommonSetupEvent event) {
-            MinecraftForge.EVENT_BUS.register(HazmatSuitEvent.class);
+
         }
 
 
