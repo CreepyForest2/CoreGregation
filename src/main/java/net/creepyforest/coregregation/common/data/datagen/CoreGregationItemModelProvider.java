@@ -25,7 +25,19 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         simpleItem(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM);
         simpleItem(CoreGregationItems.CONTAMINATED_SILICON_BOULE);
         simpleItem(CoreGregationItems.FLINT_SHARD);
+        simpleItem(CoreGregationItems.FLINT_KNIFE);
+        simpleItem(CoreGregationItems.PLANT_FIBER);
 
+        //tools
+
+        handheldItem(CoreGregationItems.FLINT_KNIFE);
+    }
+
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(CoreGregation.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -23,6 +23,7 @@
     import net.creepyforest.coregregation.common.events.SiliconBouleEvent;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+    import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
     import net.creepyforest.coregregation.sounds.CoreGregationSounds;
     import net.minecraft.resources.ResourceLocation;
     import net.minecraft.world.item.CreativeModeTabs;
@@ -75,6 +76,7 @@
 
 
             CoreGregationSounds.register(modEventBus);
+            CoreGregationLootModifiers.register(modEventBus);
 
 
 
@@ -101,6 +103,7 @@
                 event.accept(CoreGregationItems.CONTAMINATED_SILICON_BOULE);
                 event.accept(CoreGregationItems.FLINT_SHARD);
                 event.accept(CoreGregationItems.PLANT_FIBER);
+                event.accept(CoreGregationItems.FLINT_KNIFE);
             }
         }
 

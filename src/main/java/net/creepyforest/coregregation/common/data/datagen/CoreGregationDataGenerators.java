@@ -24,5 +24,7 @@ public class CoreGregationDataGenerators {
             event.getGenerator().addProvider(true, new SoundEntryBuilder.SoundEntryProvider(packOutput, CoreGregation.MOD_ID));
             event.getGenerator().addProvider(true, new CoreGregationItemModelProvider(packOutput, existingFileHelper));
         }
+
+        generator.addProvider(event.includeServer(), new CoreGregationGlobalLootModifiersProvider(packOutput));
     }
 }

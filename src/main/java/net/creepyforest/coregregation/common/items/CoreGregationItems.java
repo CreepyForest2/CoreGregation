@@ -3,6 +3,8 @@ package net.creepyforest.coregregation.common.items;
 import net.creepyforest.coregregation.CoreGregation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,6 +14,9 @@ public class CoreGregationItems {
     public static final DeferredRegister<Item> ITEMS=
             DeferredRegister.create(ForgeRegistries.ITEMS, CoreGregation.MOD_ID);
 
+
+    //simple items
+
     public static final RegistryObject<Item> NETHER_PORTAL_ACTIVATOR_ITEM = ITEMS.register("nether_portal_activator", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METALLURGICAL_SILICON_ITEM = ITEMS.register("metallurgical_silicon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONTAMINATED_SILICON_BOULE = ITEMS.register("contaminated_silicon_boule", () -> new Item(new Item.Properties()));
@@ -19,7 +24,14 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> PLANT_FIBER = ITEMS.register("plant_fiber", () -> new Item(new Item.Properties()));
 
 
+
+    //tools
+
+    public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
+            () -> new SwordItem(Tiers.WOOD, 2, 0.5f, new Item.Properties()));
+
      public static void register(IEventBus eventBus) {
          ITEMS.register(eventBus);
      }
 }
+

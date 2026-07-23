@@ -47,6 +47,8 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.nether_portal_activator", "Nether Portal Activator");
         replace(provider, "item.coregregation.contaminated_silicon_boule", "Contaminated Silicon Boule");
         replace(provider, "item.coregregation.flint_shard", "Flint Shard");
+        replace(provider, "item.coregregation.flint_knife", "Flint Knife");
+        replace(provider, "item.coregregation.plant_fiber", "Plant Fiber");
     }
 
 
