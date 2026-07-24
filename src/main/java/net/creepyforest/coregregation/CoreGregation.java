@@ -102,6 +102,7 @@
                 event.accept(CoreGregationItems.FLINT_SHARD);
                 event.accept(CoreGregationItems.PLANT_FIBER);
                 event.accept(CoreGregationItems.FLINT_KNIFE);
+                event.accept(CoreGregationItems.PLANT_STRING);
             }
         }
 
