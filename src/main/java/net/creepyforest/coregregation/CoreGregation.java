@@ -17,10 +17,7 @@
     import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
     import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
-    import net.creepyforest.coregregation.common.events.ChemicalBurnEvent;
-    import net.creepyforest.coregregation.common.events.FlintKnappingEvent;
-    import net.creepyforest.coregregation.common.events.NetherPortalEvent;
-    import net.creepyforest.coregregation.common.events.SiliconBouleEvent;
+    import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
     import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
@@ -72,6 +69,7 @@
             MinecraftForge.EVENT_BUS.register(SiliconBouleEvent.class);
             MinecraftForge.EVENT_BUS.register(ChemicalBurnEvent.class);
             MinecraftForge.EVENT_BUS.register(FlintKnappingEvent.class);
+            MinecraftForge.EVENT_BUS.register(BlockBreakingEvent.class);
             Datagen.init();
 
 

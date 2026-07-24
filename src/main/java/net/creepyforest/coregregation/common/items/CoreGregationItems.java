@@ -28,7 +28,7 @@ public class CoreGregationItems {
     //tools
 
     public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
-            () -> new SwordItem(Tiers.WOOD, 2, 0.5f, new Item.Properties()));
+            () -> new SwordItem(Tiers.WOOD, 1, 0.5f, new Item.Properties()));
 
      public static void register(IEventBus eventBus) {
          ITEMS.register(eventBus);
