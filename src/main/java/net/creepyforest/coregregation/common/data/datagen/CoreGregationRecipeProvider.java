@@ -2,10 +2,7 @@ package net.creepyforest.coregregation.common.data.datagen;
 
 import net.creepyforest.coregregation.common.items.CoreGregationItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.data.recipes.packs.VanillaRecipeProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -28,6 +25,10 @@ public class CoreGregationRecipeProvider extends RecipeProvider implements ICond
                 .unlockedBy(getHasName(CoreGregationItems.FLINT_SHARD.get()), has(CoreGregationItems.FLINT_SHARD.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, CoreGregationItems.PLANT_STRING.get())
+                .requires(CoreGregationItems.PLANT_FIBER.get(), 3)
+                .unlockedBy(getHasName(CoreGregationItems.PLANT_FIBER.get()), has(CoreGregationItems.PLANT_FIBER.get()))
+                .save(pWriter);
     }
 
     @Override

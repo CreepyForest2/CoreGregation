@@ -49,6 +49,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.flint_shard", "Flint Shard");
         replace(provider, "item.coregregation.flint_knife", "Flint Knife");
         replace(provider, "item.coregregation.plant_fiber", "Plant Fiber");
+        replace(provider, "item.coregregation.plant_string", "Plant String");
     }
 
 
