@@ -3,6 +3,7 @@
 
     import com.gregtechceu.gtceu.api.GTCEuAPI;
     import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialEvent;
+    import com.gregtechceu.gtceu.api.data.chemical.material.event.PostMaterialEvent;
     import com.gregtechceu.gtceu.api.machine.MachineDefinition;
     import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
     import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
@@ -16,6 +17,7 @@
     import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
     import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
     import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
+    import net.creepyforest.coregregation.common.data.materials.MaterialModification;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
@@ -90,6 +92,7 @@
             modEventBus.addGenericListener(GTRecipeType.class, this::registerRecipeTypes);
             modEventBus.addGenericListener(MachineDefinition.class, this::registerMachines);
             modEventBus.addListener(this::registerMaterials);
+            modEventBus.addListener(this::modifyMaterials);
             modEventBus.addListener(this::addCreative);
             modEventBus.register(CoreGregationDataGenerators.class);
 
@@ -133,6 +136,11 @@
         public void registerMaterials(MaterialEvent event) {
             CoreGregationMaterials.register();
         }
+
+        private void modifyMaterials(PostMaterialEvent event) {
+            MaterialModification.modifyMaterials();
+        }
+
 
         public void registerRecipeTypes(GTCEuAPI.RegisterEvent<ResourceLocation, GTRecipeType> event) {
             CoreGregationRecipeTypes.init();
