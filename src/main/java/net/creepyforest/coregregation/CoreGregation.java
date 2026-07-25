@@ -19,6 +19,7 @@
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
+    import net.creepyforest.coregregation.common.items.special.FireStarterItem;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
     import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
     import net.creepyforest.coregregation.sounds.CoreGregationSounds;
@@ -51,6 +52,8 @@
 
 
         //TODO organize stuff here man
+
+
 
         @SuppressWarnings("deprecated")
 
@@ -91,6 +94,7 @@
             modEventBus.register(CoreGregationDataGenerators.class);
 
 
+
         }
 
         private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -103,6 +107,7 @@
                 event.accept(CoreGregationItems.PLANT_FIBER);
                 event.accept(CoreGregationItems.FLINT_KNIFE);
                 event.accept(CoreGregationItems.PLANT_STRING);
+                event.accept(CoreGregationItems.FIRE_STARTER);
             }
         }
 

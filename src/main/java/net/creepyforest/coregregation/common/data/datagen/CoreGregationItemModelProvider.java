@@ -29,9 +29,11 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         simpleItem(CoreGregationItems.PLANT_FIBER);
         simpleItem(CoreGregationItems.PLANT_STRING);
 
+
         //tools
 
         handheldItem(CoreGregationItems.FLINT_KNIFE);
+        handheldItem(CoreGregationItems.FIRE_STARTER);
     }
 
 
