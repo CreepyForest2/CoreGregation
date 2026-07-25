@@ -1,11 +1,8 @@
 package net.creepyforest.coregregation.common.events;
 
-import com.gregtechceu.gtceu.data.model.BlockstateModelLoader;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagEntry;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
@@ -13,11 +10,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import static net.minecraft.tags.ItemTags.TOOLS;
 
 
 public class BlockBreakingEvent {
@@ -82,10 +80,10 @@ public class BlockBreakingEvent {
     }
 
     private static boolean isMissingCorrectTool(BlockState state, ItemStack itemInHand) {
-        return state.is(BlockTags.MINEABLE_WITH_PICKAXE) && !itemInHand.is(ItemTags.TOOLS)
+        return state.is(BlockTags.MINEABLE_WITH_PICKAXE) && !itemInHand.is(TOOLS)
                 || state.is(BlockTags.MINEABLE_WITH_AXE) && !itemInHand.is(ItemTags.AXES)
-                || state.is(BlockTags.MINEABLE_WITH_SHOVEL) && !itemInHand.is(ItemTags.TOOLS)
-                || state.is(BlockTags.MINEABLE_WITH_HOE) && !itemInHand.is(ItemTags.TOOLS);
+                || state.is(BlockTags.MINEABLE_WITH_SHOVEL) && !itemInHand.is(TOOLS)
+                || state.is(BlockTags.MINEABLE_WITH_HOE) && !itemInHand.is(TOOLS);
     }
 
     //exclude these blocks as they are needed for progression
