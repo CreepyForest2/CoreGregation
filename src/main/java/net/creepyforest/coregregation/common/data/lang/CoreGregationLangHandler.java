@@ -23,7 +23,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
     public static void Common(RegistrateLangProvider provider) {
         replace(provider,"death.attack.chemical_burn", "%1$s realized the air is 24%% corrosive gas");
         replace(provider,"death.attack.chemical_burn.player", "%1$s realized the air is 24%% corrosive gas while fighting %2$s");
-        replace(provider, "block.coregregation.cartridge.assembling.mechanism", "Cartridge Assembling Mechanism");
+
 
         replace(provider, "effect.coregregation.chemical_burn", "Chemical Burn");
 
@@ -51,6 +51,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.plant_fiber", "Plant Fiber");
         replace(provider, "item.coregregation.plant_string", "Plant String");
         replace(provider, "item.coregregation.fire_starter", "Fire Starter");
+        replace(provider, "block.coregregation.cartridge_assembling_mechanism", "Cartridge Assembling Mechanism");
     }
 
 
