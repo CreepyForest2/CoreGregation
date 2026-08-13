@@ -25,7 +25,7 @@ public class CoreGregationBlocks {
 //i am very thankful for kaupenjoe, all hail his name
 
     public static final RegistryObject<Block> CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK = registerBlock("cartridge_assembling_mechanism",
-            () -> new CartridgeAssemblingMechanismBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new CartridgeAssemblingMechanismBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

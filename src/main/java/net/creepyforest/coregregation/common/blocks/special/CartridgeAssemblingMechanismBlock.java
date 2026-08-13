@@ -12,7 +12,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-//TODO give this block tags ffs
 public class CartridgeAssemblingMechanismBlock extends HorizontalDirectionalBlock {
 
     public static final VoxelShape SHAPE = Shapes.or(Block.box(0, 10, 0, 16, 16, 16));
