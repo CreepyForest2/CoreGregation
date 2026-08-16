@@ -2,10 +2,7 @@ package net.creepyforest.coregregation.common.items;
 
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.items.special.FireStarterItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,7 +25,14 @@ public class CoreGregationItems {
     //tools
 
     public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
-            () -> new SwordItem(Tiers.WOOD, 0, 0.5f, new Item.Properties()));
+            () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, 0.5f, new Item.Properties()));
+    public static final RegistryObject<Item> FLINT_HATCHET = ITEMS.register("flint_hatchet",
+            () -> new AxeItem(CoreGregationToolTiers.FLINT, 0, 1f, new Item.Properties()));
+
+    //flint tools
+
+
+
     public static final RegistryObject<Item> FIRE_STARTER = ITEMS.register("fire_starter",
             () -> new FireStarterItem());
 

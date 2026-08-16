@@ -53,7 +53,7 @@
         //and james gosling
 
 
-        //TODO organize stuff here man
+
 
 
 
@@ -111,6 +111,7 @@
                 event.accept(CoreGregationItems.FLINT_KNIFE);
                 event.accept(CoreGregationItems.PLANT_STRING);
                 event.accept(CoreGregationItems.FIRE_STARTER);
+                event.accept(CoreGregationItems.FLINT_HATCHET);
             }
         }
 
