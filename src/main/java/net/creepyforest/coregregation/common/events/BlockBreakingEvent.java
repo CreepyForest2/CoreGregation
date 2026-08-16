@@ -15,6 +15,8 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+import javax.annotation.Nullable;
+
 import static net.minecraft.tags.ItemTags.TOOLS;
 
 
@@ -89,7 +91,8 @@ public class BlockBreakingEvent {
     //exclude these blocks as they are needed for progression
 
     private static boolean allowedBlocks(BlockState state) {
-        return state.is(BlockTags.SAND) || state.is(BlockTags.DIRT) || state.is(Tags.Blocks.GRAVEL) || state.is(BlockTags.SAND)
+        return state.is(BlockTags.SAND) || state.is(BlockTags.DIRT) || state.is(Tags.Blocks.GRAVEL)
                 || state.is(BlockTags.LEAVES);
     }
 }
+
