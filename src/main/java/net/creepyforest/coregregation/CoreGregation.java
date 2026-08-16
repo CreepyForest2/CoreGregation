@@ -75,6 +75,7 @@
             MinecraftForge.EVENT_BUS.register(ChemicalBurnEvent.class);
             MinecraftForge.EVENT_BUS.register(FlintKnappingEvent.class);
             MinecraftForge.EVENT_BUS.register(BlockBreakingEvent.class);
+            MinecraftForge.EVENT_BUS.register(KnifeGrassBreakingEvent.class);
             Datagen.init();
 
 
