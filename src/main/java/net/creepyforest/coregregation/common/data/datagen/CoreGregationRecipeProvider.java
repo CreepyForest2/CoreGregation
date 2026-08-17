@@ -16,6 +16,8 @@ public class CoreGregationRecipeProvider extends RecipeProvider implements ICond
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+
+        //Shaped
          ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CoreGregationItems.FLINT_KNIFE.get())
                 .pattern("fF")
                 .pattern("SF")
@@ -24,7 +26,18 @@ public class CoreGregationRecipeProvider extends RecipeProvider implements ICond
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(CoreGregationItems.FLINT_SHARD.get()), has(CoreGregationItems.FLINT_SHARD.get()))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CoreGregationItems.FLINT_HATCHET.get())
+                .pattern("fF")
+                .pattern("SP")
+                .define('f', CoreGregationItems.FLINT_SHARD.get())
+                .define('F', Items.FLINT)
+                .define('S', Items.STICK)
+                .define('P', CoreGregationItems.PLANT_STRING.get())
+                .unlockedBy(getHasName(CoreGregationItems.FLINT_SHARD.get()), has(CoreGregationItems.PLANT_STRING.get()))
+                .save(pWriter);
 
+
+         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, CoreGregationItems.PLANT_STRING.get())
                 .requires(CoreGregationItems.PLANT_FIBER.get(), 3)
                 .unlockedBy(getHasName(CoreGregationItems.PLANT_FIBER.get()), has(CoreGregationItems.PLANT_FIBER.get()))

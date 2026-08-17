@@ -5,8 +5,7 @@ import java.util.Set;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.tterrag.registrate.providers.RegistrateLangProvider;
 import com.gregtechceu.gtceu.utils.FormattingUtil;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.registries.RegistryObject;
+
 
 
 public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.LangHandler {
@@ -52,6 +51,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.plant_string", "Plant String");
         replace(provider, "item.coregregation.fire_starter", "Fire Starter");
         replace(provider, "block.coregregation.cartridge_assembling_mechanism", "Cartridge Assembling Mechanism");
+        replace(provider, "item.coregregation.flint_hatchet", "Flint Hatchet");
     }
 
 

@@ -27,7 +27,7 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
             () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, 0.5f, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_HATCHET = ITEMS.register("flint_hatchet",
-            () -> new AxeItem(CoreGregationToolTiers.FLINT, 0, 1f, new Item.Properties()));
+            () -> new AxeItem(CoreGregationToolTiers.FLINT_HATCHET_TIER, 0, 1f, new Item.Properties()));
 
     //flint tools
 

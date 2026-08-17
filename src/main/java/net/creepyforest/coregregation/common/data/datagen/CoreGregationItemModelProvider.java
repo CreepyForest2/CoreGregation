@@ -37,6 +37,7 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
 
         handheldItem(CoreGregationItems.FLINT_KNIFE);
         handheldItem(CoreGregationItems.FIRE_STARTER);
+        handheldItem(CoreGregationItems.FLINT_HATCHET);
 
         //blocks
 
