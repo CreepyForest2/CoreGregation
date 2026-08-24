@@ -16,6 +16,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.minecraft.tags.ItemTags.AXES;
+
 public class CoreGregationItemTagProvider extends ItemTagsProvider {
     public CoreGregationItemTagProvider(PackOutput p_275343_, CompletableFuture<HolderLookup.Provider> p_275729_,
                                         CompletableFuture<TagLookup<Block>> p_275322_, @Nullable ExistingFileHelper existingFileHelper) {
@@ -30,6 +32,9 @@ public class CoreGregationItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(KNIVES)
                 .add(CoreGregationItems.FLINT_KNIFE.get());
+        this.tag(AXES)
+                .add(CoreGregationItems.FLINT_HATCHET.get());
+
         this.tag(Tags.Items.STRING)
                 .add(CoreGregationItems.PLANT_STRING.get());
     }

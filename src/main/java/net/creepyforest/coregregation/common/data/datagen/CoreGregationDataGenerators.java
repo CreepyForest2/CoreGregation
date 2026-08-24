@@ -2,8 +2,6 @@ package net.creepyforest.coregregation.common.data.datagen;
 
 import com.gregtechceu.gtceu.api.registry.registrate.SoundEntryBuilder;
 import net.creepyforest.coregregation.CoreGregation;
-import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
-import net.creepyforest.coregregation.sounds.CoreGregationSounds;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -34,6 +32,7 @@ public class CoreGregationDataGenerators {
 
         generator.addProvider(event.includeServer(), new CoreGregationGlobalLootModifiersProvider(packOutput));
         generator.addProvider(event.includeServer(), new CoreGregationRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(), CoreGregationLootTableProvider.create(packOutput));
         CoreGregationBlockTagProvider blockTagGenerator = generator.addProvider(event.includeServer(),
                 new CoreGregationBlockTagProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new CoreGregationItemTagProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));

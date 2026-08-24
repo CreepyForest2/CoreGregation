@@ -3,22 +3,16 @@ package net.creepyforest.coregregation.common.events;
 import net.creepyforest.coregregation.common.items.CoreGregationItems;
 import net.creepyforest.coregregation.sounds.CoreGregationSounds;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Random;
 
@@ -47,7 +41,6 @@ public class FlintKnappingEvent {
                 event.setCancellationResult(InteractionResult.SUCCESS);
                 event.getLevel().playSound(null, pos, CoreGregationSounds.FLINT_KNAPPING.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
             } else {
-
                 itemInHand.shrink(1);
                 player.addItem(new ItemStack(CoreGregationItems.FLINT_SHARD.get(), 2));
 

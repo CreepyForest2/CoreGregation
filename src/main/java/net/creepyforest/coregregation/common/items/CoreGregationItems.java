@@ -1,5 +1,6 @@
 package net.creepyforest.coregregation.common.items;
 
+import com.gregtechceu.gtceu.api.item.tool.GTAxeItem;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.items.special.FireStarterItem;
 import net.minecraft.world.item.*;
@@ -27,7 +28,9 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
             () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, 0.5f, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_HATCHET = ITEMS.register("flint_hatchet",
-            () -> new AxeItem(CoreGregationToolTiers.FLINT_HATCHET_TIER, 0, 1f, new Item.Properties()));
+            () -> new AxeItem(CoreGregationToolTiers.FLINT, 0, 0.1f, new Item.Properties()));
+
+    //WHY THE FUCK DO THESE NOT GET THEIR RESPECTIVE TAGS?????? minecraft might surpass tarkov in bad code smh
 
     //flint tools
 
