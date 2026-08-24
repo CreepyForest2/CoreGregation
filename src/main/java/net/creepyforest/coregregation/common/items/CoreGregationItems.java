@@ -1,6 +1,6 @@
 package net.creepyforest.coregregation.common.items;
 
-import com.gregtechceu.gtceu.api.item.tool.GTAxeItem;
+
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.items.special.FireStarterItem;
 import net.minecraft.world.item.*;
@@ -31,6 +31,7 @@ public class CoreGregationItems {
             () -> new AxeItem(CoreGregationToolTiers.FLINT_HATCHET_TIER, 0, -3.15f, new Item.Properties()));
 
     //WHY THE FUCK DO THESE NOT GET THEIR RESPECTIVE TAGS?????? minecraft might surpass tarkov in bad code smh
+    //howd u know i played tarkov instead of working on this mod?
 
     //flint tools
 
