@@ -17,6 +17,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         Tooltips(provider);
         Common(provider);
         Items(provider);
+        CreativeModeTabs(provider);
     }
 
     public static void Common(RegistrateLangProvider provider) {
@@ -52,6 +53,13 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.fire_starter", "Fire Starter");
         replace(provider, "block.coregregation.cartridge_assembling_mechanism", "Cartridge Assembling Mechanism");
         replace(provider, "item.coregregation.flint_hatchet", "Flint Hatchet");
+    }
+
+    public static void CreativeModeTabs(RegistrateLangProvider provider) {
+
+        replace(provider, "creativetab.coregregation_items_tab", "CoreGregation Items");
+        replace(provider, "creativetab.coregregation_tools_tab", "CoreGregation Tools");
+        replace(provider, "creativetab.coregregation_blocks_tab", "CoreGregation Blocks");
     }
 
 

@@ -11,6 +11,7 @@
     import com.mojang.logging.LogUtils;
 
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+    import net.creepyforest.coregregation.common.CoreGregationCreativeModeTabs;
     import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
@@ -46,11 +47,7 @@
         public static final String MOD_ID = "coregregation";
         public static final Logger LOGGER = LogUtils.getLogger();
 
-//i want to blow my shit smooth off, this is so confusing
-        //all i do is take code from other mods and pray that they work, fuck this
-        //fuck constructors mannnnnnnnnnnnnnnnnnnnnnnnn
-        //also fuck lambdas
-        //and james gosling
+
 
 
 
@@ -63,6 +60,11 @@
 
         public CoreGregation() {
             IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+
+            CoreGregationCreativeModeTabs.register(modEventBus);
+
+
             REGISTRATE.registerEventListeners(modEventBus);
 
             CoreGregationItems.register(modEventBus);
@@ -103,16 +105,6 @@
 
         private void addCreative(BuildCreativeModeTabContentsEvent event) {
             if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) /*temporary*/ {
-                event.accept(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM);
-                event.accept(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK);
-                event.accept(CoreGregationItems.METALLURGICAL_SILICON_ITEM);
-                event.accept(CoreGregationItems.CONTAMINATED_SILICON_BOULE);
-                event.accept(CoreGregationItems.FLINT_SHARD);
-                event.accept(CoreGregationItems.PLANT_FIBER);
-                event.accept(CoreGregationItems.FLINT_KNIFE);
-                event.accept(CoreGregationItems.PLANT_STRING);
-                event.accept(CoreGregationItems.FIRE_STARTER);
-                event.accept(CoreGregationItems.FLINT_HATCHET);
             }
         }
 

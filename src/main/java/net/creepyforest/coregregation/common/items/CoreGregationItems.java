@@ -35,6 +35,11 @@ public class CoreGregationItems {
 
     //flint tools
 
+    public static final RegistryObject<Item> FLINT_SWORD = ITEMS.register("flint_sword",
+            () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, -2.4f, new Item.Properties()));
+    public static final RegistryObject<Item> FLINT_PICKAXE = ITEMS.register("flint_pickaxe",
+            () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, -2.4f, new Item.Properties()));
+
 
 
     public static final RegistryObject<Item> FIRE_STARTER = ITEMS.register("fire_starter",
