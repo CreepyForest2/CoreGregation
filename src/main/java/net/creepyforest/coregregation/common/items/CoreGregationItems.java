@@ -31,15 +31,20 @@ public class CoreGregationItems {
             () -> new AxeItem(CoreGregationToolTiers.FLINT_HATCHET_TIER, 0, -3.15f, new Item.Properties()));
 
     //WHY THE FUCK DO THESE NOT GET THEIR RESPECTIVE TAGS?????? minecraft might surpass tarkov in bad code smh
-    //howd u know i played tarkov instead of working on this mod?
+    //how'd u know I played tarkov instead of working on this mod?
 
     //flint tools
 
     public static final RegistryObject<Item> FLINT_SWORD = ITEMS.register("flint_sword",
-            () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, -2.4f, new Item.Properties()));
+            () -> new SwordItem(CoreGregationToolTiers.FLINT, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_PICKAXE = ITEMS.register("flint_pickaxe",
-            () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, -2.4f, new Item.Properties()));
-
+            () -> new PickaxeItem(CoreGregationToolTiers.FLINT, 1, -2.4f, new Item.Properties()));
+    public static final RegistryObject<Item> FLINT_AXE = ITEMS.register("flint_axe",
+            () -> new AxeItem(CoreGregationToolTiers.FLINT, 6, -3.15f, new Item.Properties()));
+    public static final RegistryObject<Item> FLINT_SHOVEL = ITEMS.register("flint_shovel",
+            () -> new ShovelItem(CoreGregationToolTiers.FLINT, 1, -3.0f, new Item.Properties()));
+    public static final RegistryObject<Item> FLINT_HOE = ITEMS.register("flint_hoe",
+            () -> new HoeItem(CoreGregationToolTiers.FLINT, 1, -1.5f, new Item.Properties()));
 
 
     public static final RegistryObject<Item> FIRE_STARTER = ITEMS.register("fire_starter",

@@ -16,7 +16,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.minecraft.tags.ItemTags.AXES;
+import static net.minecraft.tags.ItemTags.*;
 
 public class CoreGregationItemTagProvider extends ItemTagsProvider {
     public CoreGregationItemTagProvider(PackOutput p_275343_, CompletableFuture<HolderLookup.Provider> p_275729_,
@@ -34,8 +34,19 @@ public class CoreGregationItemTagProvider extends ItemTagsProvider {
                 .add(CoreGregationItems.FLINT_KNIFE.get());
         this.tag(AXES)
                 .add(CoreGregationItems.FLINT_HATCHET.get());
-
         this.tag(Tags.Items.STRING)
                 .add(CoreGregationItems.PLANT_STRING.get());
+
+
+        this.tag(SWORDS)
+                .add(CoreGregationItems.FLINT_SWORD.get());
+        this.tag(PICKAXES)
+                .add(CoreGregationItems.FLINT_PICKAXE.get());
+        this.tag(AXES)
+                .add(CoreGregationItems.FLINT_AXE.get());
+        this.tag(SHOVELS)
+                .add(CoreGregationItems.FLINT_SHOVEL.get());
+        this.tag(HOES)
+                .add(CoreGregationItems.FLINT_HOE.get());
     }
 }

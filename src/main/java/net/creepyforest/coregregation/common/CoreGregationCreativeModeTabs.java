@@ -35,7 +35,11 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.FLINT_KNIFE.get());
                         output.accept(CoreGregationItems.FLINT_HATCHET.get());
                         output.accept(CoreGregationItems.FIRE_STARTER.get());
-
+                        output.accept(CoreGregationItems.FLINT_SWORD.get());
+                        output.accept(CoreGregationItems.FLINT_PICKAXE.get());
+                        output.accept(CoreGregationItems.FLINT_AXE.get());
+                        output.accept(CoreGregationItems.FLINT_SHOVEL.get());
+                        output.accept(CoreGregationItems.FLINT_HOE.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_BLOCKS_TAB = CREATIVE_MODE_TABS.register("coregregation_blocks_tab",

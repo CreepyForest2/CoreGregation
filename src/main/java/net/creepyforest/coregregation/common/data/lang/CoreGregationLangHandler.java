@@ -53,6 +53,12 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.fire_starter", "Fire Starter");
         replace(provider, "block.coregregation.cartridge_assembling_mechanism", "Cartridge Assembling Mechanism");
         replace(provider, "item.coregregation.flint_hatchet", "Flint Hatchet");
+        replace(provider, "item.coregregation.flint_sword", "Flint Sword");
+        replace(provider, "item.coregregation.flint_pickaxe", "Flint Pickaxe");
+        replace(provider, "item.coregregation.flint_axe", "Flint Axe");
+        replace(provider, "item.coregregation.flint_shovel", "Flint Shovel");
+        replace(provider, "item.coregregation.flint_hoe", "Flint Hoe");
+
     }
 
     public static void CreativeModeTabs(RegistrateLangProvider provider) {

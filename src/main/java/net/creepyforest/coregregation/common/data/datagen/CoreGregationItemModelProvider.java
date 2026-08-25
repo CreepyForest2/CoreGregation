@@ -1,5 +1,4 @@
 package net.creepyforest.coregregation.common.data.datagen;
-
 import com.tterrag.registrate.providers.RegistrateItemModelProvider;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
@@ -38,7 +37,11 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         handheldItem(CoreGregationItems.FLINT_KNIFE);
         handheldItem(CoreGregationItems.FIRE_STARTER);
         handheldItem(CoreGregationItems.FLINT_HATCHET);
-
+        handheldItem(CoreGregationItems.FLINT_SWORD);
+        handheldItem(CoreGregationItems.FLINT_PICKAXE);
+        handheldItem(CoreGregationItems.FLINT_AXE);
+        handheldItem(CoreGregationItems.FLINT_SHOVEL);
+        handheldItem(CoreGregationItems.FLINT_HOE);
         //blocks
 
         blockParentItem(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK);
