@@ -44,7 +44,7 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> FLINT_SHOVEL = ITEMS.register("flint_shovel",
             () -> new ShovelItem(CoreGregationToolTiers.FLINT, 1, -3.0f, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_HOE = ITEMS.register("flint_hoe",
-            () -> new HoeItem(CoreGregationToolTiers.FLINT, 1, -1.5f, new Item.Properties()));
+            () -> new HoeItem( CoreGregationToolTiers.FLINT, 3, -1.5f, new Item.Properties()));
 
 
     public static final RegistryObject<Item> FIRE_STARTER = ITEMS.register("fire_starter",
