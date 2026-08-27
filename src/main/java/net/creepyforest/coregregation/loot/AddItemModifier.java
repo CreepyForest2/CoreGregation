@@ -17,8 +17,7 @@ import java.util.function.Supplier;
 
 public class AddItemModifier extends LootModifier {
 
-//fuck java and forge with their bitch methods, wtf is this
-    //cant wait to port to 1.21.1
+//fuck forge with their bitch methods, wtf is this
     public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(()
                 -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
                 .fieldOf("item").forGetter(m -> m.item)).apply(inst, AddItemModifier::new)));

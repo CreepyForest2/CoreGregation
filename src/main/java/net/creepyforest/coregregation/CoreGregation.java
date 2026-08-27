@@ -22,7 +22,6 @@
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
-    import net.creepyforest.coregregation.common.items.special.FireStarterItem;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
     import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
     import net.creepyforest.coregregation.sounds.CoreGregationSounds;

@@ -48,7 +48,7 @@ public class CoreGregationItems {
 
 
     public static final RegistryObject<Item> FIRE_STARTER = ITEMS.register("fire_starter",
-            () -> new FireStarterItem());
+            () -> new FireStarterItem(new Item.Properties().durability(10)));
 
      public static void register(IEventBus eventBus) {
          ITEMS.register(eventBus);

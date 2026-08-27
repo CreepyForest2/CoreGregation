@@ -20,5 +20,5 @@ public class CoreGregationToolTiers {
 
     public static final Tier FLINT_HATCHET_TIER = TierSortingRegistry.registerTier(
             new ForgeTier(0, 32, 5.0f, 0f, 10, CoreGregationTags.Blocks.DUMMY_BLOCK_TAG, () -> Ingredient.of(Items.FLINT)),
-            new ResourceLocation(CoreGregation.MOD_ID, "flint_hatchet_i_should_make_this_with_kjs_fuck_java"), List.of(Tiers.WOOD), List.of());
+            new ResourceLocation(CoreGregation.MOD_ID, "flint_hatchet_i_should_make_this_with_kjs"), List.of(Tiers.WOOD), List.of());
 }
