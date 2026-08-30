@@ -37,6 +37,7 @@
     import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
     import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
     import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+    import org.checkerframework.checker.units.qual.C;
     import org.slf4j.Logger;
 
 
@@ -49,6 +50,8 @@
 
 
 
+
+        //hello, please take whatever piece of code u need from this mod and use it for ur own mod
 
 
 
@@ -76,7 +79,8 @@
             MinecraftForge.EVENT_BUS.register(ChemicalBurnEvent.class);
             MinecraftForge.EVENT_BUS.register(FlintKnappingEvent.class);
             MinecraftForge.EVENT_BUS.register(BlockBreakingEvent.class);
-            MinecraftForge.EVENT_BUS.register(KnifeGrassBreakingEvent.class);
+            MinecraftForge.EVENT_BUS.register(KnifeInstaMineBlockBreakingEvent.class);
+            MinecraftForge.EVENT_BUS.register(CampfireCreationEvent.class);
             Datagen.init();
 
 
@@ -113,6 +117,7 @@
         public static ResourceLocation id(String path) {
             return new ResourceLocation(MOD_ID, path);
         }
+
 
 
         private void commonSetup(final FMLCommonSetupEvent event) {

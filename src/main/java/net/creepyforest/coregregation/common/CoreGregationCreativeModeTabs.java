@@ -26,6 +26,7 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.CONTAMINATED_SILICON_BOULE.get());
                         output.accept(CoreGregationItems.FLINT_SHARD.get());
                         output.accept(CoreGregationItems.PLANT_FIBER.get());
+                        output.accept(CoreGregationItems.FLINT_SAW_HEAD.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_TOOLS_TAB = CREATIVE_MODE_TABS.register("coregregation_tools_tab",
@@ -40,6 +41,7 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.FLINT_AXE.get());
                         output.accept(CoreGregationItems.FLINT_SHOVEL.get());
                         output.accept(CoreGregationItems.FLINT_HOE.get());
+                        output.accept(CoreGregationItems.FLINT_SAW.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_BLOCKS_TAB = CREATIVE_MODE_TABS.register("coregregation_blocks_tab",

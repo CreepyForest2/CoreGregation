@@ -21,7 +21,7 @@ public class NetherPortalEvent {
         Player player = event.getEntity();
 
         var item = event.getItemStack().getItem();
-        if (item != Items.FLINT_AND_STEEL && item != Items.FIRE_CHARGE) return;
+        if (item != Items.FLINT_AND_STEEL && item != Items.FIRE_CHARGE && item != CoreGregationItems.FIRE_STARTER.get()) return;
 
 
         BlockPos pos = event.getPos();
@@ -39,18 +39,21 @@ public class NetherPortalEvent {
         }
         if (!validFrame) return;
 
-        boolean hasItem = false;
-        for (int i = 0; i < player.getInventory().getContainerSize(); i++) {
-            ItemStack stack = player.getInventory().getItem(i);
-            if (stack.is(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM.get())) {
-                stack.shrink(1);
-                hasItem = true;
-                break;
+        if(validFrame) {
+
+            boolean hasItem = false;
+            for (int i = 0; i < player.getInventory().getContainerSize(); i++) {
+                ItemStack stack = player.getInventory().getItem(i);
+                if (stack.is(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM.get())) {
+                    stack.shrink(1);
+                    hasItem = true;
+                    break;
+                }
             }
-        }
-        if (!hasItem) {
-            event.setCanceled(true);
-            player.displayClientMessage(Component.translatable("message.coregregation.portal_blocked"), true);
+            if (!hasItem) {
+                event.setCanceled(true);
+                player.displayClientMessage(Component.translatable("message.coregregation.portal_blocked"), true);
+            }
         }
     }
 }

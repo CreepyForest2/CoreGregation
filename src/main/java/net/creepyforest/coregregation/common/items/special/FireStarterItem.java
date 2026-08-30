@@ -3,7 +3,6 @@ package net.creepyforest.coregregation.common.items.special;
 
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -14,6 +13,10 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CampfireBlock;
+import net.minecraft.world.level.block.CandleBlock;
+import net.minecraft.world.level.block.CandleCakeBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
@@ -47,10 +50,15 @@ public class FireStarterItem extends Item {
 
             BlockHitResult result = getPlayerPOVHitResult(level, player, ClipContext.Fluid.NONE);
             if (result.getType() == HitResult.Type.BLOCK) {
+
+
                 BlockPos pos = result.getBlockPos();
+
                 if (!level.isClientSide) {
+
                     stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
                     level.setBlockAndUpdate(pos.above(), Blocks.FIRE.defaultBlockState());
+
                 }
             }
         }
