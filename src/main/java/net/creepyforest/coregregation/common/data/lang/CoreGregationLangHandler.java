@@ -58,6 +58,8 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.flint_axe", "Flint Axe");
         replace(provider, "item.coregregation.flint_shovel", "Flint Shovel");
         replace(provider, "item.coregregation.flint_hoe", "Flint Hoe");
+        replace(provider, "item.coregregation.flint_saw_head", "Flint Saw Head");
+        replace(provider, "item.coregregation.flint_saw", "Flint Saw");
 
     }
 

@@ -42,6 +42,9 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         handheldItem(CoreGregationItems.FLINT_AXE);
         handheldItem(CoreGregationItems.FLINT_SHOVEL);
         handheldItem(CoreGregationItems.FLINT_HOE);
+        handheldItem(CoreGregationItems.FLINT_SAW);
+
+
         //blocks
 
         blockParentItem(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK);
