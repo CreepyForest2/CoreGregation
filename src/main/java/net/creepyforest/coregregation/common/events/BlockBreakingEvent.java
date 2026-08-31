@@ -31,6 +31,7 @@ public class BlockBreakingEvent {
         if (event.getHand() != InteractionHand.MAIN_HAND) return;
 
         Player player = event.getEntity();
+
         if (player.isCreative()) return;
 
 

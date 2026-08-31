@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraft.world.level.block.CandleBlock;
 import net.minecraft.world.level.block.CandleCakeBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
@@ -58,6 +59,12 @@ public class FireStarterItem extends Item {
 
                     stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
                     level.setBlockAndUpdate(pos.above(), Blocks.FIRE.defaultBlockState());
+
+                    BlockState state = level.getBlockState(pos);
+
+                    if(CampfireBlock.canLight(state)) {
+                        level.setBlock(pos, state.setValue(BlockStateProperties.LIT, true), 11);
+                    }
 
                 }
             }
