@@ -10,6 +10,7 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType BLOOMERY_RECIPES;
     public static GTRecipeType BRASS_PUNCHER_RECIPES;
     public static GTRecipeType CARTRIDGE_PRODUCTION_LINE_RECIPES;
+    public static GTRecipeType WEAPON_PARTS_ASSEMBLER_RECIPES;
 
     public static void init() {
         OVEN_RECIPES = GTRecipeTypes
@@ -30,5 +31,8 @@ public class CoreGregationRecipeTypes {
 
         CARTRIDGE_PRODUCTION_LINE_RECIPES = GTRecipeTypes
                 .register("cartridge_production_line", GTRecipeTypes.MULTIBLOCK);
+
+        WEAPON_PARTS_ASSEMBLER_RECIPES = GTRecipeTypes
+                .register("weapon_parts_assembler", GTRecipeTypes.MULTIBLOCK);
     }
 }
