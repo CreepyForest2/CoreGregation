@@ -27,6 +27,7 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.FLINT_SHARD.get());
                         output.accept(CoreGregationItems.PLANT_FIBER.get());
                         output.accept(CoreGregationItems.FLINT_SAW_HEAD.get());
+                        output.accept(CoreGregationItems.SILICON_BOULE.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_TOOLS_TAB = CREATIVE_MODE_TABS.register("coregregation_tools_tab",

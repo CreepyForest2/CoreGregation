@@ -37,7 +37,6 @@
     import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
     import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
     import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-    import org.checkerframework.checker.units.qual.C;
     import org.slf4j.Logger;
 
 
@@ -73,9 +72,7 @@
             CoreGregationBlocks.register(modEventBus);
 
 
-
             MinecraftForge.EVENT_BUS.register(NetherPortalEvent.class);
-            MinecraftForge.EVENT_BUS.register(SiliconBouleEvent.class);
             MinecraftForge.EVENT_BUS.register(ChemicalBurnEvent.class);
             MinecraftForge.EVENT_BUS.register(FlintKnappingEvent.class);
             MinecraftForge.EVENT_BUS.register(BlockBreakingEvent.class);

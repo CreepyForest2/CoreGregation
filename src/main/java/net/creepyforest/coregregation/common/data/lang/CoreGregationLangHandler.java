@@ -40,6 +40,12 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
 
         provider.add("coregregation.large.steam.forge.hammer.tooltip.0", "Forging your plates 8 at a time");
         provider.add("coregregation.steam_parallel_tooltip", "Has §6Steam Parallel,§r meaning it will run 8 recipes §3in parallel§r as fast as 5.3 LV machines of the same kind");
+
+
+
+        //other
+
+        provider.add("coregregation.silicon_boule_tooltip", "§8Don't ask why this item is not from GregTech...");
     }
 
     public static void Items(RegistrateLangProvider provider) {
@@ -60,6 +66,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.flint_hoe", "Flint Hoe");
         replace(provider, "item.coregregation.flint_saw_head", "Flint Saw Head");
         replace(provider, "item.coregregation.flint_saw", "Flint Saw");
+        replace(provider, "item.coregregation.silicon_boule", "Monocrystaline Silicon Boule");
 
     }
 
