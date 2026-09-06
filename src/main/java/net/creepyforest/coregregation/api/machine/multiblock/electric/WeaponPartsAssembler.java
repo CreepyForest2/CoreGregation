@@ -8,6 +8,7 @@ import com.gregtechceu.gtceu.api.machine.multiblock.WorkableElectricMultiblockMa
 import com.gregtechceu.gtceu.api.pattern.FactoryBlockPattern;
 import com.gregtechceu.gtceu.api.pattern.Predicates;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
+import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
 import net.minecraft.network.chat.Component;
@@ -29,7 +30,7 @@ public class WeaponPartsAssembler {
                     .aisle("SSSSSSS", "SSSSSSS", "SSSSSSS")
                     .aisle("SSSSSSS", "SBBBBBS", "SSSSSSS")
                     .aisle("SSSSSSS", "SBSGGGS", "SSSSSSS")
-                    .aisle("SSS    ", "SCS    ", "SSSSSSS")
+                    .aisle("SSSSSSS", "SCS   F", "SSSSSSS")
                     .where('C', Predicates.controller(blocks(definition.getBlock())))
                     .where(' ', any())
                     .where('G', blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
@@ -38,6 +39,7 @@ public class WeaponPartsAssembler {
                             .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
                     .where('B', blocks(GTBlocks.CASING_STEEL_GEARBOX.get()))
+                    .where('F', frames(GTMaterials.Invar))
                     .build())
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
