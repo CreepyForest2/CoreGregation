@@ -39,7 +39,7 @@ public class CampfireCreationEvent {
 
         if (!state.is(BlockTags.LOGS) && !itemInHand.is(CoreGregationItems.FLINT_SAW.get()) || (!ToolHelper.is(itemInHand, GTToolType.SAW))) {
             return;
-        } else if (state.is(BlockTags.LOGS) && !itemInHand.is(CoreGregationItems.FLINT_SAW.get()) || (ToolHelper.is(itemInHand, GTToolType.SAW))) {
+        } else if (state.is(BlockTags.LOGS) && itemInHand.is(CoreGregationItems.FLINT_SAW.get()) || (ToolHelper.is(itemInHand, GTToolType.SAW))) {
 
             Level level = event.getLevel();
             BlockPos pos = event.getPos();
