@@ -59,7 +59,7 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> FIRE_STARTER = ITEMS.register("fire_starter",
             () -> new FireStarterItem(new Item.Properties().durability(10)));
     public static final RegistryObject<Item> FLINT_SAW = ITEMS.register("flint_saw",
-            () -> new Item(new Item.Properties().durability(64)));
+            () -> new SwordItem(CoreGregationToolTiers.FLINT, 2, -3f, new Item.Properties()));
 
 
 

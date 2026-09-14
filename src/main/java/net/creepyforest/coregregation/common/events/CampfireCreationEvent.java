@@ -11,6 +11,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -27,19 +28,18 @@ public class CampfireCreationEvent {
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 
-        if (event.getLevel().isClientSide()) return;
+        if(event.getLevel().isClientSide()) return;
         if (event.getHand() != InteractionHand.MAIN_HAND) return;
 
         Player player = event.getEntity();
 
-        if (player.isCreative()) return;
 
         ItemStack itemInHand = player.getMainHandItem();
         BlockState state = event.getLevel().getBlockState(event.getPos());
 
-        if (!state.is(BlockTags.LOGS) && !itemInHand.is(CoreGregationItems.FLINT_SAW.get()) || (!ToolHelper.is(itemInHand, GTToolType.SAW))) {
+        if (!state.is(BlockTags.LOGS) && !saws(itemInHand)) {
             return;
-        } else if (state.is(BlockTags.LOGS) && itemInHand.is(CoreGregationItems.FLINT_SAW.get()) || (ToolHelper.is(itemInHand, GTToolType.SAW))) {
+        } else if (state.is(BlockTags.LOGS) && saws(itemInHand)) {
 
             Level level = event.getLevel();
             BlockPos pos = event.getPos();
@@ -48,6 +48,10 @@ public class CampfireCreationEvent {
             event.getLevel().playSound(null, pos, SoundEvent.createVariableRangeEvent(new ResourceLocation("gtceu:saw")), SoundSource.BLOCKS, 1.0f, 1.0f);
             itemInHand.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         }
+    }
+
+    public static boolean saws(ItemStack itemInHand) {
+       return itemInHand.is(CoreGregationItems.FLINT_SAW.get()) || (ToolHelper.is(itemInHand, GTToolType.SAW));
     }
 }
 

@@ -54,17 +54,18 @@ public class FireStarterItem extends Item {
 
 
                 BlockPos pos = result.getBlockPos();
+                BlockState state = level.getBlockState(pos);
 
-                if (!level.isClientSide) {
+                if(CampfireBlock.canLight(state)) {
+
+                    level.setBlock(pos, state.setValue(BlockStateProperties.LIT, true), 11);
+
+                } else  if (!level.isClientSide) {
 
                     stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
                     level.setBlockAndUpdate(pos.above(), Blocks.FIRE.defaultBlockState());
 
-                    BlockState state = level.getBlockState(pos);
 
-                    if(CampfireBlock.canLight(state)) {
-                        level.setBlock(pos, state.setValue(BlockStateProperties.LIT, true), 11);
-                    }
 
                 }
             }
