@@ -33,6 +33,7 @@ public class CoreGregationRecipeTypes {
                 .register("cartridge_production_line", GTRecipeTypes.MULTIBLOCK);
 
         WEAPON_PARTS_ASSEMBLER_RECIPES = GTRecipeTypes
-                .register("weapon_assembler", GTRecipeTypes.MULTIBLOCK);
+                .register("weapon_assembler", GTRecipeTypes.MULTIBLOCK)
+                .setMaxIOSize(16, 1, 0, 0);
     }
 }
