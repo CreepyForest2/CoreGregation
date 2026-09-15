@@ -17,10 +17,10 @@ import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_SOLID;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
-public class WeaponAssembler {
+public class WeaponPartsAssembler {
 
 
-    public static final MachineDefinition WeaponAssembler = REGISTRATE
+    public static final MachineDefinition WeaponPartsAssembler = REGISTRATE
             .multiblock("weapon_assembler", WorkableElectricMultiblockMachine::new)
             .tooltips(Component.nullToEmpty("coregregation"))
             .rotationState(RotationState.NON_Y_AXIS)

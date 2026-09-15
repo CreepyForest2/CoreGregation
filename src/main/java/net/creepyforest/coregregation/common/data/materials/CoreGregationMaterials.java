@@ -21,11 +21,5 @@ public class CoreGregationMaterials {
                 .color(0xFFDF80).secondaryColor(0x840707).iconSet(MaterialIconSet.DULL)
                 .flags(MaterialFlags.GENERATE_PLATE, MaterialFlags.GENERATE_GEAR, MaterialFlags.GENERATE_SMALL_GEAR, MaterialFlags.GENERATE_BOLT_SCREW, MaterialFlags.GENERATE_ROD)
                 .buildAndRegister();
-        Duraluminium = new Material.Builder(CoreGregation.id("duraluminium"))
-                .ingot()
-                .components(GTMaterials.Aluminium, 8, GTMaterials.Copper, 1, GTMaterials.Magnesium, 1)
-                .color(0x0077B3).secondaryColor(0x00334D).iconSet(MaterialIconSet.DULL)
-                .flags(MaterialFlags.GENERATE_PLATE, MaterialFlags.GENERATE_GEAR, MaterialFlags.GENERATE_SMALL_GEAR, MaterialFlags.GENERATE_BOLT_SCREW, MaterialFlags.GENERATE_ROD)
-                .buildAndRegister();
     }
 }

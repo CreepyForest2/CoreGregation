@@ -1,7 +1,7 @@
 package net.creepyforest.coregregation.common.data.machine.multiblock;
 
 import net.creepyforest.coregregation.api.machine.multiblock.electric.CartridgeProductionLine;
-import net.creepyforest.coregregation.api.machine.multiblock.electric.WeaponAssembler;
+import net.creepyforest.coregregation.api.machine.multiblock.electric.WeaponPartsAssembler;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.Bloomery;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.CookingPot;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.OvenMachine;
@@ -21,6 +21,6 @@ public class MultiBlockMachines {
         CookingPot.init();
         Bloomery.init();
         CartridgeProductionLine.init();
-        WeaponAssembler.init();
+        WeaponPartsAssembler.init();
     }
 }
