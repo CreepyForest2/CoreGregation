@@ -21,7 +21,7 @@ public class WeaponPartsAssembler {
 
 
     public static final MachineDefinition WeaponPartsAssembler = REGISTRATE
-            .multiblock("weapon_assembler", WorkableElectricMultiblockMachine::new)
+            .multiblock("weapon_parts_assembler", WorkableElectricMultiblockMachine::new)
             .tooltips(Component.nullToEmpty("coregregation"))
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.CARTRIDGE_PRODUCTION_LINE_RECIPES)

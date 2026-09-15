@@ -22,7 +22,6 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 public class CartridgeProductionLine {
 
-    //TODO vezi cum faci cu necking si cu trim
     public static final MachineDefinition CartridgeProductionLine = REGISTRATE
             .multiblock("cartridge_production_line", WorkableElectricMultiblockMachine::new)
             .tooltips(Component.nullToEmpty("coregregation"))
