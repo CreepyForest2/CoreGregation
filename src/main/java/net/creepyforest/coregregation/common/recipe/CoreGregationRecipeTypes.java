@@ -1,5 +1,6 @@
 package net.creepyforest.coregregation.common.recipe;
 
+import com.gregtechceu.gtceu.api.capability.recipe.IO;
 import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 
@@ -34,6 +35,6 @@ public class CoreGregationRecipeTypes {
 
         WEAPON_PARTS_ASSEMBLER_RECIPES = GTRecipeTypes
                 .register("weapon_parts_assembler", GTRecipeTypes.MULTIBLOCK)
-                .setMaxIOSize(16, 1, 0, 0);
+                .setMaxIOSize(16, 1, 0, 0).setEUIO(IO.IN);
     }
 }
