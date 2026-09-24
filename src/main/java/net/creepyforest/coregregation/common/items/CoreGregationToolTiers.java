@@ -1,5 +1,6 @@
 package net.creepyforest.coregregation.common.items;
 
+import com.gregtechceu.gtceu.common.data.GTItems;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.CoreGregationTags;
 import net.minecraft.resources.ResourceLocation;

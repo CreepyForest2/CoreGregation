@@ -14,7 +14,10 @@ import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
 import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 
+import static com.gregtechceu.gtceu.api.GTValues.VLVH;
+import static com.gregtechceu.gtceu.api.GTValues.VLVT;
 import static com.gregtechceu.gtceu.common.data.machines.GTMachineUtils.*;
+import static com.gregtechceu.gtceu.utils.FormattingUtil.toEnglishName;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 public class SingleBlockMachines {
@@ -61,6 +64,7 @@ public class SingleBlockMachines {
                     .editableUI(SimpleTieredMachine.EDITABLE_UI_CREATOR.apply(CoreGregation.id("brass_puncher"),
                             CoreGregationRecipeTypes.BRASS_PUNCHER_RECIPES))
                     .workableTieredHullModel(GTCEu.id("block/machines/forge_hammer"))
+                    .langValue("%s %s %s".formatted(VLVH[tier], toEnglishName("brass_puncher"), VLVT[tier]))
                     .register(),
             ELECTRIC_TIERS);
 

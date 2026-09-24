@@ -11,6 +11,7 @@
     import com.mojang.logging.LogUtils;
 
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+    import net.creepyforest.coregregation.client.ScreenEvents;
     import net.creepyforest.coregregation.common.CoreGregationCreativeModeTabs;
     import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
@@ -26,10 +27,8 @@
     import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
     import net.creepyforest.coregregation.sounds.CoreGregationSounds;
     import net.minecraft.resources.ResourceLocation;
-    import net.minecraft.world.item.CreativeModeTabs;
     import net.minecraftforge.api.distmarker.Dist;
     import net.minecraftforge.common.MinecraftForge;
-    import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
     import net.minecraftforge.event.server.ServerStartingEvent;
     import net.minecraftforge.eventbus.api.IEventBus;
     import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -63,6 +62,7 @@
             IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
 
+
             CoreGregationCreativeModeTabs.register(modEventBus);
 
 
@@ -78,6 +78,7 @@
             MinecraftForge.EVENT_BUS.register(BlockBreakingEvent.class);
             MinecraftForge.EVENT_BUS.register(KnifeInstaMineBlockBreakingEvent.class);
             MinecraftForge.EVENT_BUS.register(CampfireCreationEvent.class);
+            MinecraftForge.EVENT_BUS.register(ScreenEvents.class);
             Datagen.init();
 
 
@@ -96,17 +97,10 @@
             modEventBus.addGenericListener(MachineDefinition.class, this::registerMachines);
             modEventBus.addListener(this::registerMaterials);
             modEventBus.addListener(this::modifyMaterials);
-            modEventBus.addListener(this::addCreative);
             modEventBus.register(CoreGregationDataGenerators.class);
 
-
-
         }
 
-        private void addCreative(BuildCreativeModeTabContentsEvent event) {
-            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) /*temporary*/ {
-            }
-        }
 
         public static void init() {
         }
@@ -157,5 +151,4 @@
                 REGISTRATE.registerRegistrate();
             }
         }
-
     }

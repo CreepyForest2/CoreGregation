@@ -1,6 +1,7 @@
 package net.creepyforest.coregregation.common.items;
 
 
+import com.gregtechceu.gtceu.common.data.GTItems;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.items.special.FireStarterItem;
@@ -27,6 +28,25 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> PLANT_FIBER = ITEMS.register("plant_fiber", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLANT_STRING = ITEMS.register("plant_string", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FLINT_SAW_HEAD = ITEMS.register("flint_saw_head", () -> new Item(new Item.Properties()));
+
+
+
+    //bullet related things
+
+    public static final RegistryObject<Item> SMALL_BRASS_CASING_DISK = ITEMS.register("small_brass_casing_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MEDIUM_SIZED_BRASS_CASING_DISK = ITEMS.register("medium_sized_brass_casing_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BIG_CASING_BRASS_CASING_DISK = ITEMS.register("big_brass_casing_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HUGE_CASING_BRASS_CASING_DISK = ITEMS.register("huge_brass_casing_disk", () -> new Item(new Item.Properties()));
+    //steel
+    public static final RegistryObject<Item> SMALL_STEEL_CASING_DISK = ITEMS.register("small_steel_casing_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MEDIUM_SIZED_STEEL_CASING_DISK = ITEMS.register("medium_sized_steel_casing_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BIG_STEEL_CASING_DISK = ITEMS.register("big_steel_casing_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HUGE_STEEL_CASING_DISK = ITEMS.register("huge_steel_casing_disk", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SMALL_COPPER_BULLET_DISK = ITEMS.register("small_copper_bullet_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MEDIUM_SIZED_COPPER_BULLET_DISK = ITEMS.register("medium_sized_copper_bullet_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BIG_COPPER_BULLET_DISK = ITEMS.register("big_copper_bullet_disk", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HUGE_COPPER_BULLET_DISK = ITEMS.register("huge_copper_bullet_disk", () -> new Item(new Item.Properties()));
 
     //tools
 

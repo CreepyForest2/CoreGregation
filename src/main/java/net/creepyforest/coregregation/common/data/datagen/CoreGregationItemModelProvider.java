@@ -30,6 +30,19 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         simpleItem(CoreGregationItems.PLANT_FIBER);
         simpleItem(CoreGregationItems.PLANT_STRING);
         simpleItem(CoreGregationItems.SILICON_BOULE);
+        simpleItem(CoreGregationItems.SMALL_BRASS_CASING_DISK);
+        simpleItem(CoreGregationItems.MEDIUM_SIZED_BRASS_CASING_DISK);
+        simpleItem(CoreGregationItems.BIG_CASING_BRASS_CASING_DISK);
+        simpleItem(CoreGregationItems.HUGE_CASING_BRASS_CASING_DISK);
+        simpleItem(CoreGregationItems.SMALL_COPPER_BULLET_DISK);
+        simpleItem(CoreGregationItems.MEDIUM_SIZED_COPPER_BULLET_DISK);
+        simpleItem(CoreGregationItems.BIG_COPPER_BULLET_DISK);
+        simpleItem(CoreGregationItems.HUGE_COPPER_BULLET_DISK);
+        simpleItem(CoreGregationItems.SMALL_STEEL_CASING_DISK);
+        simpleItem(CoreGregationItems.MEDIUM_SIZED_STEEL_CASING_DISK);
+        simpleItem(CoreGregationItems.BIG_STEEL_CASING_DISK);
+        simpleItem(CoreGregationItems.HUGE_STEEL_CASING_DISK);
+        simpleItem(CoreGregationItems.FLINT_SAW_HEAD);
 
 
 

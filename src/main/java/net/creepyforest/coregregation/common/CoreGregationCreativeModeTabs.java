@@ -28,6 +28,18 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.PLANT_FIBER.get());
                         output.accept(CoreGregationItems.FLINT_SAW_HEAD.get());
                         output.accept(CoreGregationItems.SILICON_BOULE.get());
+                        output.accept(CoreGregationItems.SMALL_BRASS_CASING_DISK.get());
+                        output.accept(CoreGregationItems.MEDIUM_SIZED_BRASS_CASING_DISK.get());
+                        output.accept(CoreGregationItems.BIG_CASING_BRASS_CASING_DISK.get());
+                        output.accept(CoreGregationItems.HUGE_CASING_BRASS_CASING_DISK.get());
+                        output.accept(CoreGregationItems.SMALL_COPPER_BULLET_DISK.get());
+                        output.accept(CoreGregationItems.MEDIUM_SIZED_COPPER_BULLET_DISK.get());
+                        output.accept(CoreGregationItems.BIG_COPPER_BULLET_DISK.get());
+                        output.accept(CoreGregationItems.HUGE_COPPER_BULLET_DISK.get());
+                        output.accept(CoreGregationItems.SMALL_STEEL_CASING_DISK.get());
+                        output.accept(CoreGregationItems.MEDIUM_SIZED_STEEL_CASING_DISK.get());
+                        output.accept(CoreGregationItems.BIG_STEEL_CASING_DISK.get());
+                        output.accept(CoreGregationItems.HUGE_STEEL_CASING_DISK.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_TOOLS_TAB = CREATIVE_MODE_TABS.register("coregregation_tools_tab",
