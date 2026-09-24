@@ -24,6 +24,7 @@
     import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
     import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+    import net.creepyforest.coregregation.common.world_preset.TerrainConfigLogic;
     import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
     import net.creepyforest.coregregation.sounds.CoreGregationSounds;
     import net.minecraft.resources.ResourceLocation;
@@ -64,6 +65,8 @@
 
 
             CoreGregationCreativeModeTabs.register(modEventBus);
+
+            TerrainConfigLogic.loadState();
 
 
             REGISTRATE.registerEventListeners(modEventBus);

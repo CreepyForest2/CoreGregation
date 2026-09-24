@@ -4,6 +4,7 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.*;
 import java.util.stream.Stream;
@@ -39,6 +40,7 @@ public class TerrainConfigLogic {
         isEpicTerrainandWWEEActive = false;
         isLithoSphereAndStillLifeActive = false;
         isVanillaTerrainActive = false;
+        saveState("TERRATONIC");
     }
 
     public static void epicTerrainAndWWEEActive() throws Exception {
@@ -50,6 +52,7 @@ public class TerrainConfigLogic {
         isEpicTerrainandWWEEActive = true;
         isLithoSphereAndStillLifeActive = false;
         isVanillaTerrainActive = false;
+        saveState("EPIC_TERRAIN+WWEE");
     }
 
     public static void lithoSphereAndStillLifeActive() throws Exception {
@@ -61,6 +64,7 @@ public class TerrainConfigLogic {
         isEpicTerrainandWWEEActive = false;
         isLithoSphereAndStillLifeActive = true;
         isVanillaTerrainActive = false;
+        saveState("LITHOSPHERE+STILL_LIFE");
     }
 
     public static void vanillaTerrainActive() throws Exception {
@@ -72,6 +76,7 @@ public class TerrainConfigLogic {
         isEpicTerrainandWWEEActive = false;
         isLithoSphereAndStillLifeActive = false;
         isVanillaTerrainActive = true;
+        saveState("VANILLA");
     }
 
     private static boolean matches(Path p, List<String> prefixes) {
@@ -125,5 +130,37 @@ public class TerrainConfigLogic {
         pb.redirectOutput(ProcessBuilder.Redirect.DISCARD);
         pb.redirectError(ProcessBuilder.Redirect.DISCARD);
         pb.start();
+    }
+
+    //yep this half-AI cus again idk how to read/write files
+
+    private static final Path STATE_FILE = FMLPaths.GAMEDIR.get().resolve("config/coregregation_active_preset.txt");
+        public static void loadState() {
+        String saved = "EPIC_TERRAIN_WWEE"; // default preset
+        try {
+            if (Files.exists(STATE_FILE)) {
+                saved = Files.readString(STATE_FILE, StandardCharsets.UTF_8).trim();
+            }
+        } catch (IOException exception) {
+            LOGGER.error("Couldn't read the active terrain preset, defaulting to Epic Terrain + WWEE", exception);
+        }
+
+        isTerraTonicActive = saved.equals("TERRATONIC");
+        isEpicTerrainandWWEEActive = saved.equals("EPIC_TERRAIN_WWEE");
+        isLithoSphereAndStillLifeActive = saved.equals("LITHOSPHERE_STILL_LIFE");
+        isVanillaTerrainActive = saved.equals("VANILLA");
+
+        if (!isTerraTonicActive && !isEpicTerrainandWWEEActive && !isLithoSphereAndStillLifeActive && !isVanillaTerrainActive) {
+            isEpicTerrainandWWEEActive = true;
+        }
+    }
+
+    private static void saveState(String presetId) {
+        try {
+            Files.createDirectories(STATE_FILE.getParent());
+            Files.writeString(STATE_FILE, presetId, StandardCharsets.UTF_8);
+        } catch (IOException exception) {
+            LOGGER.error("Couldn't persist the active terrain preset", exception);
+        }
     }
 }
