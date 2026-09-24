@@ -38,13 +38,13 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
 
         //steam
 
-        provider.add("coregregation.large_steam_forge_hammer.tooltip", "Forging your plates 8 at a time, with §e Steam");
-        provider.add("coregregation.large_steam_centrifugal_unit.tooltip", "Making things spin fast with the power of §e Steam");
-        provider.add("coregregation.large_steam_crusher.tooltip", "Crushing and compacting like never before, with §e Steam");
-        provider.add("coregregation.large_steam_foundry.tooltip", "Amalgamating your ingots using hot-hot §e Steam");
-        provider.add("coregregation.large_steam_mixing_vessel.tooltip", "Mixing your dough evenly with §e Steam");
-        provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §e Steam §r, with §e Steam");
-        provider.add("coregregation.large_steam_sucker.tooltip", "This sucks! With §e Steam");
+        provider.add("coregregation.large_steam_forge_hammer.tooltip", "Forging your plates 8 at a time, with §eSteam");
+        provider.add("coregregation.large_steam_centrifugal_unit.tooltip", "Making things spin fast with the power of §eSteam");
+        provider.add("coregregation.large_steam_crusher.tooltip", "Crushing and compacting like never before, with §eSteam");
+        provider.add("coregregation.large_steam_foundry.tooltip", "Amalgamating your ingots using hot-hot §eSteam");
+        provider.add("coregregation.large_steam_mixing_vessel.tooltip", "Mixing your dough evenly with §eSteam");
+        provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §eSteam §r, with §eSteam");
+        provider.add("coregregation.large_steam_sucker.tooltip", "This sucks! With §eSteam");
 
 
         provider.add("coregregation.steam_parallel_tooltip", "Has §6Steam Parallel,§r meaning it will run 8 recipes §3in parallel§r as fast as 5.3 LV machines of the same kind");

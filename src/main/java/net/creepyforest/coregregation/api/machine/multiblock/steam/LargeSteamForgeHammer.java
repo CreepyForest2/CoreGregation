@@ -53,7 +53,7 @@ public class LargeSteamForgeHammer {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                     GTCEu.id("block/multiblock/generator/large_bronze_boiler")))
-            .tooltips(Component.translatable("coregregation.large_steam.forge.hammer.tooltip"),
+            .tooltips(Component.translatable("block.coregregation.large_steam_forge_hammer"),
                       Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
     public static void init() {}
