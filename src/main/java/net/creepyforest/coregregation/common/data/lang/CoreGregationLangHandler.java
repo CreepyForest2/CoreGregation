@@ -39,11 +39,11 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         //steam
 
         provider.add("coregregation.large_steam_forge_hammer.tooltip", "Forging your plates 8 at a time, with §eSteam");
-        provider.add("coregregation.large_steam_centrifugal_unit.tooltip", "Making things spin fast with the power of §eSteam");
+        provider.add("coregregation.large_steam_centrifugal_unit.tooltip", "Making things spin really fast with the power of §eSteam");
         provider.add("coregregation.large_steam_crusher.tooltip", "Crushing and compacting like never before, with §eSteam");
         provider.add("coregregation.large_steam_foundry.tooltip", "Amalgamating your ingots using hot-hot §eSteam");
         provider.add("coregregation.large_steam_mixing_vessel.tooltip", "Mixing your dough evenly with §eSteam");
-        provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §eSteam §r, with §eSteam");
+        provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §eSteam§r, with §eSteam");
         provider.add("coregregation.large_steam_sucker.tooltip", "This sucks! With §eSteam");
 
 
