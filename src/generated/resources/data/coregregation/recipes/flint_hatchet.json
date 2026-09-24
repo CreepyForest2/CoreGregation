@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "P": {
+      "item": "coregregation:plant_string"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "f": {
+      "item": "coregregation:flint_shard"
+    }
+  },
+  "pattern": [
+    "fF",
+    "SP"
+  ],
+  "result": {
+    "item": "coregregation:flint_hatchet"
+  },
+  "show_notification": true
+}

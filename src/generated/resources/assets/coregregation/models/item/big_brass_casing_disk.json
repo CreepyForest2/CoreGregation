@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "coregregation:item/big_brass_casing_disk"
+  }
+}

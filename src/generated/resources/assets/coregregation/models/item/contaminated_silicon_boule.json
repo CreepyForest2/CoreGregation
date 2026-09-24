@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "coregregation:item/contaminated_silicon_boule"
+  }
+}

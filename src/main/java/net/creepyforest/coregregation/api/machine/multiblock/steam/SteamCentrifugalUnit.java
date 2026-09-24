@@ -14,6 +14,7 @@ import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
 import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Blocks;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
@@ -56,6 +57,8 @@ public class SteamCentrifugalUnit {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                     GTCEu.id("block/multiblock/generator/large_steam_turbine")))
+            .tooltips(Component.translatable("coregregation.large.steam.centrifugal_unit.tooltip"),
+                    Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 
     public static void init() {}

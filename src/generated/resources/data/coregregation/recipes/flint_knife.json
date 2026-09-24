@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "minecraft:flowers"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "f": {
+      "item": "coregregation:flint_shard"
+    }
+  },
+  "pattern": [
+    "fF",
+    "SF"
+  ],
+  "result": {
+    "item": "coregregation:flint_knife"
+  },
+  "show_notification": true
+}

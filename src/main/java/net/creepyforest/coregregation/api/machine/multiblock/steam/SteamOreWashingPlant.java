@@ -12,6 +12,7 @@ import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
 import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Blocks;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
@@ -50,6 +51,8 @@ public class SteamOreWashingPlant {
                 .model(GTMachineModels.createWorkableCasingMachineModel(
                         GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                         GTCEu.id("block/machines/ore_washer")))
+                .tooltips(Component.translatable("coregregation.large.steam_ore_washing_plant.tooltip"),
+                        Component.translatable("coregregation.steam_parallel_tooltip"))
                 .register();
 
         public static void init() {}

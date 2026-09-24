@@ -14,6 +14,7 @@ import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
+import net.minecraft.network.chat.Component;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
 import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
@@ -48,6 +49,8 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
                 .model(GTMachineModels.createWorkableCasingMachineModel(
                         GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                         GTCEu.id("block/machines/compressor")))
+                .tooltips(Component.translatable("coregregation.large.steam.crusher.tooltip"),
+                        Component.translatable("coregregation.steam_parallel_tooltip"))
                 .register();
 
         public static void init() {

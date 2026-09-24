@@ -11,6 +11,7 @@ import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels; // only once
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.Blocks;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
@@ -41,6 +42,8 @@ public class SteamFoundry {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                     GTCEu.id("block/machines/alloy_smelter")))
+            .tooltips(Component.translatable("coregregation.large.steam_foundry.tooltip"),
+                    Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 
     public static void init() {}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "coregregation:block/machine/zpm_brass_puncher",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "coregregation:block/machine/zpm_brass_puncher"
+    },
+    "facing=south": {
+      "model": "coregregation:block/machine/zpm_brass_puncher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coregregation:block/machine/zpm_brass_puncher",
+      "y": 270
+    }
+  }
+}

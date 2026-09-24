@@ -1,0 +1,6 @@
+// 1.20.1	2026-07-23T14:35:00.5241308	Global Loot Modifiers : coregregation
+9df5cf40449c6331c5fac62283ae9f45046d1f96 data/coregregation/loot_modifiers/plant_fiber_from_fern.json
+e9da0a3a104b26cc212b3b166f3c721086180fce data/coregregation/loot_modifiers/plant_fiber_from_grass.json
+6710005d17e2f8d048f1b0657b95f89bac586a1d data/coregregation/loot_modifiers/plant_fiber_from_large_fern.json
+577c1548464c2191209d6c5cb1eab664af9c1c3f data/coregregation/loot_modifiers/plant_fiber_from_tall_grass.json
+2874efe7aef9ee4edea06c16619605aa2aa51012 data/forge/loot_modifiers/global_loot_modifiers.json

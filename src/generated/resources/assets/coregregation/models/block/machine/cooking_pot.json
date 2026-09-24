@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "coregregation:cooking_pot",
+  "variants": {
+    "is_formed=false,recipe_logic_status=idle": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=false,recipe_logic_status=suspend": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=false,recipe_logic_status=waiting": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=false,recipe_logic_status=working": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=true,recipe_logic_status=idle": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=true,recipe_logic_status=suspend": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=true,recipe_logic_status=waiting": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    },
+    "is_formed=true,recipe_logic_status=working": {
+      "model": "coregregation:block/machine/template/cooking_pot"
+    }
+  }
+}

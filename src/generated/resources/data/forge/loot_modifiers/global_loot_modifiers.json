@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "coregregation:plant_fiber_from_grass",
+    "coregregation:plant_fiber_from_fern",
+    "coregregation:plant_fiber_from_large_fern",
+    "coregregation:plant_fiber_from_tall_grass"
+  ],
+  "replace": false
+}

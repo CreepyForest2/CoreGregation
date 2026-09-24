@@ -14,6 +14,7 @@ import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine;
 import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+import net.minecraft.network.chat.Component;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.blocks;
 import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
@@ -50,6 +51,8 @@ public class SteamMixingVessel {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                     GTCEu.id("block/multiblock/gcym/large_cutter")))
+            .tooltips(Component.translatable("coregregation.large.steam_mixing_vessel.tooltip"),
+                    Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 
     public static void init() {}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "coregregation:plant_fiber"
+    },
+    {
+      "item": "coregregation:plant_fiber"
+    },
+    {
+      "item": "coregregation:plant_fiber"
+    }
+  ],
+  "result": {
+    "item": "coregregation:plant_string"
+  }
+}
