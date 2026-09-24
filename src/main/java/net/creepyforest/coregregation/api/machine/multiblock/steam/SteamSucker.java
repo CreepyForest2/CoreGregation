@@ -41,7 +41,7 @@ public class SteamSucker {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                     GTCEu.id("block/machines/extractor")))
-            .tooltips(Component.translatable("coregregation.large.steam_sucker.tooltip"),
+            .tooltips(Component.translatable("coregregation.large_steam_sucker.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 

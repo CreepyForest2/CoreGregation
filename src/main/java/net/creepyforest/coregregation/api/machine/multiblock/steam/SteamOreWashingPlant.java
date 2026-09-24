@@ -51,7 +51,7 @@ public class SteamOreWashingPlant {
                 .model(GTMachineModels.createWorkableCasingMachineModel(
                         GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                         GTCEu.id("block/machines/ore_washer")))
-                .tooltips(Component.translatable("coregregation.large.steam_ore_washing_plant.tooltip"),
+                .tooltips(Component.translatable("coregregation.large_steam_ore_washing_plant.tooltip"),
                         Component.translatable("coregregation.steam_parallel_tooltip"))
                 .register();
 

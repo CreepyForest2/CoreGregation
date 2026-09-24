@@ -57,7 +57,7 @@ public class SteamCentrifugalUnit {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                     GTCEu.id("block/multiblock/generator/large_steam_turbine")))
-            .tooltips(Component.translatable("coregregation.large.steam.centrifugal_unit.tooltip"),
+            .tooltips(Component.translatable("coregregation.large.steam_centrifugal_unit.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 

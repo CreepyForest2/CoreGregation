@@ -49,7 +49,7 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
                 .model(GTMachineModels.createWorkableCasingMachineModel(
                         GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                         GTCEu.id("block/machines/compressor")))
-                .tooltips(Component.translatable("coregregation.large.steam.crusher.tooltip"),
+                .tooltips(Component.translatable("coregregation.large.steam_crusher.tooltip"),
                         Component.translatable("coregregation.steam_parallel_tooltip"))
                 .register();
 

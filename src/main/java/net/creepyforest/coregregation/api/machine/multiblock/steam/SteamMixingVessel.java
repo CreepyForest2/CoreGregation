@@ -51,7 +51,7 @@ public class SteamMixingVessel {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                     GTCEu.id("block/multiblock/gcym/large_cutter")))
-            .tooltips(Component.translatable("coregregation.large.steam_mixing_vessel.tooltip"),
+            .tooltips(Component.translatable("coregregation.large_steam_mixing_vessel.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 

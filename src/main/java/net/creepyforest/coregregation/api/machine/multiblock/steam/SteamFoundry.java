@@ -42,7 +42,7 @@ public class SteamFoundry {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                     GTCEu.id("block/machines/alloy_smelter")))
-            .tooltips(Component.translatable("coregregation.large.steam_foundry.tooltip"),
+            .tooltips(Component.translatable("coregregation.large_steam_foundry.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"))
             .register();
 
