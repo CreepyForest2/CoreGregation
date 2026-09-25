@@ -25,6 +25,7 @@ public class WeaponPartsAssembler {
             .tooltips(Component.nullToEmpty("coregregation"))
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.WEAPON_PARTS_ASSEMBLER_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.WEAPON_ASSEMBLING_RECIPES)
             .appearanceBlock(CASING_STEEL_SOLID)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("SSSSSSS", "SSSSSSS", "SSSSSSS")
