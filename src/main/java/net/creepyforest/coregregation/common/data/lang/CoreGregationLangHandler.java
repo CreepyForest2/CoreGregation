@@ -46,8 +46,13 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §eSteam§r, with §eSteam");
         provider.add("coregregation.large_steam_sucker.tooltip", "This sucks! With §eSteam");
 
+        provider.add("coregregation.cartridge_production_line.tooltip", "Twisting and pulling brass all day");
+
+
+
 
         provider.add("coregregation.steam_parallel_tooltip", "Has §6Steam Parallel,§r meaning it will run 8 recipes §3in parallel§r as fast as 5.3 LV machines of the same kind");
+        provider.add("coregregation.one_energy_hatch_allowed", "May only accept §bone§r energy hatch");
 
 
 

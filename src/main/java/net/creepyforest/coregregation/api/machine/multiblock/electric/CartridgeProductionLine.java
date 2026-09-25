@@ -52,6 +52,8 @@ public class CartridgeProductionLine {
                     .model(GTMachineModels.createWorkableCasingMachineModel(
                       GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
                       GTCEu.id("block/multiblock/blast_furnace")))
+            .tooltips(Component.translatable("coregregation.cartridge_production_line.tooltip"),
+                    Component.translatable("coregregation.one_energy_hatch_allowed"))
             .register();
 
 

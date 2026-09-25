@@ -6,12 +6,18 @@ import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 
 
 public class CoreGregationRecipeTypes {
+
+    //gui multis
     public static GTRecipeType OVEN_RECIPES;
     public static GTRecipeType COOKING_POT_RECIPES;
     public static GTRecipeType BLOOMERY_RECIPES;
+
+    //electric stuff
     public static GTRecipeType BRASS_PUNCHER_RECIPES;
     public static GTRecipeType CARTRIDGE_PRODUCTION_LINE_RECIPES;
     public static GTRecipeType WEAPON_PARTS_ASSEMBLER_RECIPES;
+    public static GTRecipeType WEAPON_ASSEMBLING_RECIPES;
+
 
     public static void init() {
         OVEN_RECIPES = GTRecipeTypes
@@ -36,5 +42,9 @@ public class CoreGregationRecipeTypes {
         WEAPON_PARTS_ASSEMBLER_RECIPES = GTRecipeTypes
                 .register("weapon_parts_assembler", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(16, 1, 0, 0).setEUIO(IO.IN);
+
+        WEAPON_ASSEMBLING_RECIPES = GTRecipeTypes
+                .register("weapon_assembler", GTRecipeTypes.MULTIBLOCK)
+                .setMaxIOSize(25, 1, 0, 0).setEUIO(IO.IN);
     }
 }
