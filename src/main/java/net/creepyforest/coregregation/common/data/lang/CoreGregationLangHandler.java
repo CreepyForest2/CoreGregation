@@ -46,7 +46,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §eSteam§r, with §eSteam");
         provider.add("coregregation.large_steam_sucker.tooltip", "This sucks! With §eSteam");
 
-        provider.add("coregregation.casing_production_line.tooltip", "Twisting and pulling brass all dayF");
+        provider.add("coregregation.casing_production_line.tooltip", "Twisting and pulling brass all day");
 
 
 
