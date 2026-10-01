@@ -1,20 +1,18 @@
 package net.creepyforest.coregregation.common.blocks;
 
 import net.creepyforest.coregregation.CoreGregation;
-import net.creepyforest.coregregation.common.blocks.special.CartridgeAssemblingMechanismBlock;
+import net.creepyforest.coregregation.common.blocks.special.CasingAssemblingMechanismBlock;
 import net.creepyforest.coregregation.common.items.CoreGregationItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import javax.print.DocFlavor;
 import java.util.function.Supplier;
 
 public class CoreGregationBlocks {
@@ -25,7 +23,7 @@ public class CoreGregationBlocks {
 //i am very thankful for kaupenjoe, all hail his name
 
     public static final RegistryObject<Block> CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK = registerBlock("cartridge_assembling_mechanism",
-            () -> new CartridgeAssemblingMechanismBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+            () -> new CasingAssemblingMechanismBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

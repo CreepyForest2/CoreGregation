@@ -1,4 +1,3 @@
-
 package net.creepyforest.coregregation.api.machine.multiblock.electric;
 
 import com.gregtechceu.gtceu.GTCEu;
@@ -20,18 +19,17 @@ import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_SOLID;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 
-public class CartridgeProductionLine {
+public class CasingProductionLine {
 
-    public static final MachineDefinition CartridgeProductionLine = REGISTRATE
-            .multiblock("cartridge_production_line", WorkableElectricMultiblockMachine::new)
-            .tooltips(Component.nullToEmpty("coregregation"))
+    public static final MachineDefinition CasingProductionLine = REGISTRATE
+            .multiblock("casing_production_line", WorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
-            .recipeType(CoreGregationRecipeTypes.CARTRIDGE_PRODUCTION_LINE_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.CASING_PRODUCTION_LINE_RECIPES)
             .appearanceBlock(CASING_STEEL_SOLID)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("SSSSS", "F   F", "F   F", "F   F", "SSSSS")
                     .aisle("SSSSS", " SSS ", " SGS ", " SSS ", "SSSSS")
-                    .aisle("SSSSS", " SBS " ," GMG ", " SBS ", "SSSSS")
+                    .aisle("SSSSS", " SBS ", " GMG ", " SBS ", "SSSSS")
                     .aisle("SSSSS", " SBS ", " GMG ", " SBS ", "SSSSS")
                     .aisle("SSSSS", " SBS ", " GMG ", " SBS ", "SSSSS")
                     .aisle("SSSSS", " SBS ", " GMG ", " SBS ", "SSSSS")
@@ -42,23 +40,23 @@ public class CartridgeProductionLine {
                     .where(' ', any())
                     .where('G', blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
                     .where('S', blocks(GTBlocks.CASING_STEEL_SOLID.get())
-                                    .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
-                                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
-                                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
+                            .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                            .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                            .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
                     .where('B', blocks(GTBlocks.CASING_STEEL_GEARBOX.get()))
                     .where('M', blocks(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK.get()))
                     .where('F', frames(GTMaterials.Invar))
                     .build())
-                    .model(GTMachineModels.createWorkableCasingMachineModel(
-                      GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
-                      GTCEu.id("block/multiblock/blast_furnace")))
-            .tooltips(Component.translatable("coregregation.cartridge_production_line.tooltip"),
+            .model(GTMachineModels.createWorkableCasingMachineModel(
+                    GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
+                    GTCEu.id("block/multiblock/blast_furnace")))
+            .tooltips(Component.translatable("coregregation.casing_production_line.tooltip"),
                     Component.translatable("coregregation.one_energy_hatch_allowed"))
             .register();
 
 
-
-    public static void init() {}
+    public static void init() {
+    }
 }
 
 

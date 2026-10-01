@@ -46,7 +46,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         provider.add("coregregation.large_steam_ore_washing_plant.tooltip", "Washing your ores with liquid §eSteam§r, with §eSteam");
         provider.add("coregregation.large_steam_sucker.tooltip", "This sucks! With §eSteam");
 
-        provider.add("coregregation.cartridge_production_line.tooltip", "Twisting and pulling brass all day");
+        provider.add("coregregation.casing_production_line.tooltip", "Twisting and pulling brass all dayF");
 
 
 
@@ -70,7 +70,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.plant_fiber", "Plant Fiber");
         replace(provider, "item.coregregation.plant_string", "Plant String");
         replace(provider, "item.coregregation.fire_starter", "Fire Starter");
-        replace(provider, "block.coregregation.cartridge_assembling_mechanism", "Cartridge Assembling Mechanism");
+        replace(provider, "block.coregregation.casing_assembling_mechanism", "Casing Assembling Mechanism");
         replace(provider, "item.coregregation.flint_hatchet", "Flint Hatchet");
         replace(provider, "item.coregregation.flint_sword", "Flint Sword");
         replace(provider, "item.coregregation.flint_pickaxe", "Flint Pickaxe");

@@ -11,21 +11,19 @@ import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
-import net.minecraft.network.chat.Component;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_SOLID;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
-public class WeaponPartsAssembler {
+public class FirearmAssembler {
 
 
-    public static final MachineDefinition WeaponPartsAssembler = REGISTRATE
-            .multiblock("weapon_parts_assembler", WorkableElectricMultiblockMachine::new)
-            .tooltips(Component.nullToEmpty("coregregation"))
+    public static final MachineDefinition FirearmAssembler = REGISTRATE
+            .multiblock("firearm_assembler", WorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
-            .recipeType(CoreGregationRecipeTypes.WEAPON_PARTS_ASSEMBLER_RECIPES)
-            .recipeType(CoreGregationRecipeTypes.WEAPON_ASSEMBLING_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.FIREARM_PARTS_ASSEMBLING_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.FIREARM_ASSEMBLING_RECIPES)
             .appearanceBlock(CASING_STEEL_SOLID)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("SSSSSSS", "SSSSSSS", "SSSSSSS")

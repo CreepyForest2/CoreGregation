@@ -14,9 +14,9 @@ public class CoreGregationRecipeTypes {
 
     //electric stuff
     public static GTRecipeType BRASS_PUNCHER_RECIPES;
-    public static GTRecipeType CARTRIDGE_PRODUCTION_LINE_RECIPES;
-    public static GTRecipeType WEAPON_PARTS_ASSEMBLER_RECIPES;
-    public static GTRecipeType WEAPON_ASSEMBLING_RECIPES;
+    public static GTRecipeType CASING_PRODUCTION_LINE_RECIPES;
+    public static GTRecipeType FIREARM_PARTS_ASSEMBLING_RECIPES;
+    public static GTRecipeType FIREARM_ASSEMBLING_RECIPES;
 
 
     public static void init() {
@@ -36,15 +36,15 @@ public class CoreGregationRecipeTypes {
                 .register("brass_puncher", GTRecipeTypes.ELECTRIC)
                 .setMaxIOSize(4, 1, 0, 0);
 
-        CARTRIDGE_PRODUCTION_LINE_RECIPES = GTRecipeTypes
+        CASING_PRODUCTION_LINE_RECIPES = GTRecipeTypes
                 .register("cartridge_production_line", GTRecipeTypes.MULTIBLOCK);
 
-        WEAPON_PARTS_ASSEMBLER_RECIPES = GTRecipeTypes
-                .register("weapon_parts_assembler", GTRecipeTypes.MULTIBLOCK)
+        FIREARM_PARTS_ASSEMBLING_RECIPES = GTRecipeTypes
+                .register("firearm_parts_assembler", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(16, 1, 0, 0).setEUIO(IO.IN);
 
-        WEAPON_ASSEMBLING_RECIPES = GTRecipeTypes
-                .register("weapon_assembler", GTRecipeTypes.MULTIBLOCK)
+        FIREARM_ASSEMBLING_RECIPES = GTRecipeTypes
+                .register("firearm_assembler", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(25, 1, 0, 0).setEUIO(IO.IN);
     }
 }

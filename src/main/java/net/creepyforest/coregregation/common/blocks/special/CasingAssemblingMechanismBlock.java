@@ -12,11 +12,11 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class CartridgeAssemblingMechanismBlock extends HorizontalDirectionalBlock {
+public class CasingAssemblingMechanismBlock extends HorizontalDirectionalBlock {
 
     public static final VoxelShape SHAPE = Shapes.or(Block.box(0, 10, 0, 16, 16, 16));
 
-    public CartridgeAssemblingMechanismBlock(Properties properties) {
+    public CasingAssemblingMechanismBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
