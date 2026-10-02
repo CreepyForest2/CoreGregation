@@ -37,11 +37,11 @@ public class CoreGregationRecipeTypes {
                 .setMaxIOSize(4, 1, 0, 0);
 
         CASING_PRODUCTION_LINE_RECIPES = GTRecipeTypes
-                .register("cartridge_production_line", GTRecipeTypes.MULTIBLOCK);
+                .register("casing_production_line", GTRecipeTypes.MULTIBLOCK);
 
         FIREARM_PARTS_ASSEMBLING_RECIPES = GTRecipeTypes
                 .register("firearm_parts_assembler", GTRecipeTypes.MULTIBLOCK)
-                .setMaxIOSize(16, 1, 0, 0).setEUIO(IO.IN);
+                .setMaxIOSize(25, 1, 0, 0).setEUIO(IO.IN);
 
         FIREARM_ASSEMBLING_RECIPES = GTRecipeTypes
                 .register("firearm_assembler", GTRecipeTypes.MULTIBLOCK)
