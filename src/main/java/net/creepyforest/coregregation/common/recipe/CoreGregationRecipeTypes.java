@@ -37,7 +37,9 @@ public class CoreGregationRecipeTypes {
                 .setMaxIOSize(4, 1, 0, 0);
 
         CASING_PRODUCTION_LINE_RECIPES = GTRecipeTypes
-                .register("casing_production_line", GTRecipeTypes.MULTIBLOCK);
+                .register("casing_production_line", GTRecipeTypes.MULTIBLOCK)
+                .setMaxIOSize(4, 1, 0, 0);
+
 
         FIREARM_PARTS_ASSEMBLING_RECIPES = GTRecipeTypes
                 .register("firearm_parts_assembler", GTRecipeTypes.MULTIBLOCK)
