@@ -52,7 +52,8 @@ public class SteamMixingVessel {
                     GTCEu.id("block/casings/gcym/industrial_steam_casing"),
                     GTCEu.id("block/multiblock/gcym/large_cutter")))
             .tooltips(Component.translatable("coregregation.large_steam_mixing_vessel.tooltip"),
-                    Component.translatable("coregregation.steam_parallel_tooltip"))
+                    Component.translatable("coregregation.steam_parallel_tooltip"),
+                    Component.translatable("coregre"))
             .register();
 
     public static void init() {}

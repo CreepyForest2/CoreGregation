@@ -43,6 +43,7 @@ public class SteamSucker {
                     GTCEu.id("block/machines/extractor")))
             .tooltips(Component.translatable("coregregation.large_steam_sucker.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"))
+
             .register();
 
     public static void init() {}
