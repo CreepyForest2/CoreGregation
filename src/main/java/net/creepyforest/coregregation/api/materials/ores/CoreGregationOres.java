@@ -12,7 +12,7 @@ public class CoreGregationOres {
         LightOilSands = new Material.Builder(CoreGregation.id("light_oilsands"))
                 .ore()
                 .dust()
-                .color(0xFFDF80).secondaryColor(0x840707).iconSet(MaterialIconSet.DULL)
+                .color(0xFFDF80).secondaryColor(0x840707).iconSet(MaterialIconSet.CERTUS)
                 .buildAndRegister();
     }
 }
