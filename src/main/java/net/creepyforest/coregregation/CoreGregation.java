@@ -11,6 +11,7 @@
     import com.mojang.logging.LogUtils;
 
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
+    import net.creepyforest.coregregation.api.materials.ores.CoreGregationOres;
     import net.creepyforest.coregregation.client.ScreenEvents;
     import net.creepyforest.coregregation.common.CoreGregationCreativeModeTabs;
     import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
@@ -127,6 +128,7 @@
         @SubscribeEvent
         public void registerMaterials(MaterialEvent event) {
             CoreGregationMaterials.register();
+            CoreGregationOres.register();
         }
 
         private void modifyMaterials(PostMaterialEvent event) {
@@ -136,7 +138,6 @@
 
         public void registerRecipeTypes(GTCEuAPI.RegisterEvent<ResourceLocation, GTRecipeType> event) {
             CoreGregationRecipeTypes.init();
-
         }
 
         private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {

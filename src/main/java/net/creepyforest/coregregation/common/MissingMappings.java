@@ -14,7 +14,7 @@ public class MissingMappings {
 
     @SubscribeEvent
     public static void remapIds(MissingMappingsEvent event) {
-        event.getAllMappings(Registries.ITEM).forEach(ForgeCommonEventListener::remapItems);
+       // event.getAllMappings(Registries.ITEM).forEach(ForgeCommonEventListener::remapItems);
     }
 
 

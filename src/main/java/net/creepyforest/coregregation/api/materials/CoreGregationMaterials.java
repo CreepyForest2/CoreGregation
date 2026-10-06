@@ -3,6 +3,8 @@ package net.creepyforest.coregregation.api.materials;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconSet;
+import com.gregtechceu.gtceu.common.data.GTElements;
+import com.gregtechceu.gtceu.common.data.GTMaterialBlocks;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 import net.creepyforest.coregregation.CoreGregation;
 
@@ -10,6 +12,7 @@ public class CoreGregationMaterials {
 
     public static Material Tombac;
     public static Material SmokelessPowder;
+
 
 
 

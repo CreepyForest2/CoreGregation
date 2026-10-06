@@ -4,6 +4,7 @@ import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
+import net.creepyforest.coregregation.api.materials.ores.CoreGregationOres;
 import net.creepyforest.coregregation.api.recipe.CoreGregationMachineRecipes;
 import net.minecraft.data.recipes.FinishedRecipe;
 
@@ -37,7 +38,6 @@ public class CoreGregationGTAddon implements IGTAddon {
 
     @Override
     public void registerElements() {
-        // CustomElements.init();
     }
     
     // If you have custom ingredient types, uncomment this & change to match your capability.
