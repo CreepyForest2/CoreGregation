@@ -10,7 +10,7 @@ import com.gregtechceu.gtceu.api.pattern.Predicates;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
-import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_SOLID;

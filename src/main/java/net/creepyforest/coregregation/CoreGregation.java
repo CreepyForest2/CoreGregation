@@ -17,13 +17,13 @@
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
     import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
-    import net.creepyforest.coregregation.common.data.materials.CoreGregationMaterials;
+    import net.creepyforest.coregregation.api.materials.CoreGregationMaterials;
     import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
-    import net.creepyforest.coregregation.common.data.materials.MaterialModification;
+    import net.creepyforest.coregregation.api.materials.MaterialModification;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
-    import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+    import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
     import net.creepyforest.coregregation.common.world_preset.TerrainConfigLogic;
     import net.creepyforest.coregregation.loot.CoreGregationLootModifiers;
     import net.creepyforest.coregregation.sounds.CoreGregationSounds;

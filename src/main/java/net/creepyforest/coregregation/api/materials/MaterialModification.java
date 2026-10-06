@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.common.data.materials;
+package net.creepyforest.coregregation.api.materials;
 
 import com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey;
 import com.gregtechceu.gtceu.api.data.chemical.material.properties.ToolProperty;

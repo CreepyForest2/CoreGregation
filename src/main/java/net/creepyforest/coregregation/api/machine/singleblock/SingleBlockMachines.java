@@ -11,7 +11,7 @@ import com.gregtechceu.gtceu.common.data.machines.GTMachineUtils;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
 
-import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 
 import static com.gregtechceu.gtceu.api.GTValues.VLVH;

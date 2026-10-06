@@ -64,9 +64,6 @@ public class FireStarterItem extends Item {
 
                     stack.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
                     level.setBlockAndUpdate(pos.above(), Blocks.FIRE.defaultBlockState());
-
-
-
                 }
             }
         }

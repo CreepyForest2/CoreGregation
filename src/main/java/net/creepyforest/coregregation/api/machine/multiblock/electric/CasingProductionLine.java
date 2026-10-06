@@ -11,7 +11,7 @@ import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
-import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.minecraft.network.chat.Component;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;

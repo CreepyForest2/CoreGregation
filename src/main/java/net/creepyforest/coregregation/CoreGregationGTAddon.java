@@ -4,7 +4,7 @@ import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
-import net.creepyforest.coregregation.common.recipe.CoreGregationMachineRecipes;
+import net.creepyforest.coregregation.api.recipe.CoreGregationMachineRecipes;
 import net.minecraft.data.recipes.FinishedRecipe;
 
 import java.util.function.Consumer;

@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.common.data.materials;
+package net.creepyforest.coregregation.api.materials;
 
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags;

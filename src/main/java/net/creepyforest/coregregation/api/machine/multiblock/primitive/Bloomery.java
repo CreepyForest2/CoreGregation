@@ -16,7 +16,7 @@ import com.lowdragmc.lowdraglib.gui.modular.ModularUI;
 import com.lowdragmc.lowdraglib.gui.texture.GuiTextureGroup;
 import com.lowdragmc.lowdraglib.gui.widget.LabelWidget;
 import com.lowdragmc.lowdraglib.gui.widget.ProgressWidget;
-import net.creepyforest.coregregation.common.recipe.CoreGregationRecipeTypes;
+import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
@@ -50,7 +50,6 @@ public class Bloomery extends PrimitiveWorkableMachine implements IUIMachine {
     public Bloomery(IMachineBlockEntity info) {
         super(info);
     }
-
     @Override
     public ModularUI createUI(Player entityPlayer) {
         return new ModularUI(176, 166, this, entityPlayer)

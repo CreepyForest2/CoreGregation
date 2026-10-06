@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.common.recipe;
+package net.creepyforest.coregregation.api.recipe;
 
 import net.minecraft.data.recipes.FinishedRecipe;
 import java.util.function.Consumer;

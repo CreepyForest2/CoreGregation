@@ -1,4 +1,4 @@
-package net.creepyforest.coregregation.common.recipe;
+package net.creepyforest.coregregation.api.recipe;
 
 import com.gregtechceu.gtceu.api.capability.recipe.IO;
 import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
