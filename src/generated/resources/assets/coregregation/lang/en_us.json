@@ -61,6 +61,9 @@
   "item.coregregation.plant_fiber": "Plant Fiber",
   "item.coregregation.plant_string": "Plant String",
   "item.coregregation.silicon_boule": "Monocrystaline Silicon Boule",
+  "item.coregregation.unfinished_lv_conveyor_module": "Unfinished Conveyor Module",
+  "item.coregregation.unfinished_lv_electric_pump": "Unfinished Electric Pump",
+  "item.coregregation.unfinished_lv_robot_arm": "Unfinished Robot Arm",
   "message.coregregation.portal_blocked": "You need a nether portal activator to open the portal.",
   "message.coregregation.ruined_silicon_boule": "You need a hazmat suit to not contaminate silicon boules."
 }

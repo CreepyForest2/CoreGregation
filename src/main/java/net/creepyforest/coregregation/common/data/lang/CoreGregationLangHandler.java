@@ -81,6 +81,9 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.flint_saw_head", "Flint Saw Head");
         replace(provider, "item.coregregation.flint_saw", "Flint Saw");
         replace(provider, "item.coregregation.silicon_boule", "Monocrystaline Silicon Boule");
+        replace(provider, "item.coregregation.unfinished_lv_conveyor_module", "Unfinished Conveyor Module");
+        replace(provider, "item.coregregation.unfinished_lv_robot_arm", "Unfinished Robot Arm");
+        replace(provider, "item.coregregation.unfinished_lv_electric_pump", "Unfinished Electric Pump");
 
     }
 

@@ -43,6 +43,9 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         simpleItem(CoreGregationItems.BIG_STEEL_CASING_DISK);
         simpleItem(CoreGregationItems.HUGE_STEEL_CASING_DISK);
         simpleItem(CoreGregationItems.FLINT_SAW_HEAD);
+        simpleItem(CoreGregationItems.UNFINISHED_LV_CONVEYOR_MODULE);
+        simpleItem(CoreGregationItems.UNFINISHED_LV_ROBOT_ARM);
+        simpleItem(CoreGregationItems.UNFINISHED_LV_ELECTRIC_PUMP);
 
 
 

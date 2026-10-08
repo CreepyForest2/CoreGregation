@@ -1,4 +1,4 @@
-// 1.20.1	2026-09-21T20:13:20.4003927	Item Models: coregregation
+// 1.20.1	2026-10-08T11:56:55.2419647	Item Models: coregregation
 dde7a1010bd71a3d8c4ced0f095847c8762d5c1e assets/coregregation/models/item/big_brass_casing_disk.json
 29f7d8dc1089d95c0f057a784665b1e43f437213 assets/coregregation/models/item/big_copper_bullet_disk.json
 b0ee30e5790b53c67391f37ae194718ae38d14f2 assets/coregregation/models/item/big_steel_casing_disk.json
@@ -28,3 +28,6 @@ e72f0c43534f055ecbdf0626c62d983a14765f35 assets/coregregation/models/item/plant_
 eb43b58f85fdc7dc93b048db0d4fc9ba1903b2c4 assets/coregregation/models/item/small_brass_casing_disk.json
 f02c808a6c3bd45d15adfa2f26287de1e486fa6a assets/coregregation/models/item/small_copper_bullet_disk.json
 393e3dd185863053c28a2461fa876fddd89db1a0 assets/coregregation/models/item/small_steel_casing_disk.json
+fbf3368eae8dfa4c3dc6ab18b094f45bd00b567c assets/coregregation/models/item/unfinished_lv_conveyor_module.json
+36d8fd2f61e9a3f094205540bb7fb1dae72f7baa assets/coregregation/models/item/unfinished_lv_electric_pump.json
+193721b53549321f231b195def5ae72ea0825f97 assets/coregregation/models/item/unfinished_lv_robot_arm.json

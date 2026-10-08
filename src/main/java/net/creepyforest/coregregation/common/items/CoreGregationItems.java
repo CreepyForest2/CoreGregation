@@ -20,7 +20,6 @@ public class CoreGregationItems {
 
 
     //simple items
-
     public static final RegistryObject<Item> NETHER_PORTAL_ACTIVATOR_ITEM = ITEMS.register("nether_portal_activator", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METALLURGICAL_SILICON_ITEM = ITEMS.register("metallurgical_silicon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONTAMINATED_SILICON_BOULE = ITEMS.register("contaminated_silicon_boule", () -> new Item(new Item.Properties()));
@@ -32,7 +31,6 @@ public class CoreGregationItems {
 
 
     //bullet related things
-
     public static final RegistryObject<Item> SMALL_BRASS_CASING_DISK = ITEMS.register("small_brass_casing_disk", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MEDIUM_SIZED_BRASS_CASING_DISK = ITEMS.register("medium_sized_brass_casing_disk", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BIG_CASING_BRASS_CASING_DISK = ITEMS.register("big_brass_casing_disk", () -> new Item(new Item.Properties()));
@@ -48,8 +46,18 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> BIG_COPPER_BULLET_DISK = ITEMS.register("big_copper_bullet_disk", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HUGE_COPPER_BULLET_DISK = ITEMS.register("huge_copper_bullet_disk", () -> new Item(new Item.Properties()));
 
-    //tools
 
+
+    //intermidiate stuff
+    public static final RegistryObject<Item> UNFINISHED_LV_CONVEYOR_MODULE = ITEMS.register("unfinished_lv_conveyor_module", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UNFINISHED_LV_ROBOT_ARM = ITEMS.register("unfinished_lv_robot_arm", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UNFINISHED_LV_ELECTRIC_PUMP = ITEMS.register("unfinished_lv_electric_pump", () -> new Item(new Item.Properties()));
+
+
+
+
+
+    //tools
     public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
             () -> new SwordItem(CoreGregationToolTiers.FLINT, 0, 0.5f, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_HATCHET = ITEMS.register("flint_hatchet",
