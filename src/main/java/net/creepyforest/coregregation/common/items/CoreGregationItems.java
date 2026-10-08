@@ -52,6 +52,7 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> UNFINISHED_LV_CONVEYOR_MODULE = ITEMS.register("unfinished_lv_conveyor_module", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> UNFINISHED_LV_ROBOT_ARM = ITEMS.register("unfinished_lv_robot_arm", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> UNFINISHED_LV_ELECTRIC_PUMP = ITEMS.register("unfinished_lv_electric_pump", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UNFINISHED_LV_ELECTRIC_PISTON = ITEMS.register("unfinished_lv_electric_piston", () -> new Item(new Item.Properties()));
 
 
 

@@ -62,6 +62,7 @@
   "item.coregregation.plant_string": "Plant String",
   "item.coregregation.silicon_boule": "Monocrystaline Silicon Boule",
   "item.coregregation.unfinished_lv_conveyor_module": "Unfinished Conveyor Module",
+  "item.coregregation.unfinished_lv_electric_piston": "Unfinished Electric Piston",
   "item.coregregation.unfinished_lv_electric_pump": "Unfinished Electric Pump",
   "item.coregregation.unfinished_lv_robot_arm": "Unfinished Robot Arm",
   "message.coregregation.portal_blocked": "You need a nether portal activator to open the portal.",
