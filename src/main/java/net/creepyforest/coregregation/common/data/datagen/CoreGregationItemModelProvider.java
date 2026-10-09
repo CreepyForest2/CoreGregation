@@ -47,6 +47,7 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         simpleItem(CoreGregationItems.UNFINISHED_LV_ROBOT_ARM);
         simpleItem(CoreGregationItems.UNFINISHED_LV_ELECTRIC_PUMP);
         simpleItem(CoreGregationItems.UNFINISHED_LV_ELECTRIC_PISTON);
+        simpleItem(CoreGregationItems.RUBBER_BELT);
 
 
 

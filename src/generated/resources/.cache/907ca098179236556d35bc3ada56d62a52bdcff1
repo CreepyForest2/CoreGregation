@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-08T19:56:55.4982068	Item Models: coregregation
+// 1.20.1	2026-10-10T00:11:19.8977013	Item Models: coregregation
 dde7a1010bd71a3d8c4ced0f095847c8762d5c1e assets/coregregation/models/item/big_brass_casing_disk.json
 29f7d8dc1089d95c0f057a784665b1e43f437213 assets/coregregation/models/item/big_copper_bullet_disk.json
 b0ee30e5790b53c67391f37ae194718ae38d14f2 assets/coregregation/models/item/big_steel_casing_disk.json
@@ -24,6 +24,7 @@ ce6df88c520b94316c27930304afdec0cd3e1b1a assets/coregregation/models/item/medium
 433f31c668a89ba2e5f7013d2fafd3557bd6d6f8 assets/coregregation/models/item/nether_portal_activator.json
 cb92d6ba19af0b569f2f75a2e324f97f4ddf0fee assets/coregregation/models/item/plant_fiber.json
 e72f0c43534f055ecbdf0626c62d983a14765f35 assets/coregregation/models/item/plant_string.json
+c8712f48ca56c1d811df584d49104f082f1b4d99 assets/coregregation/models/item/rubber_belt.json
 11007f9eb244c68d255001db7f640f74b9de1440 assets/coregregation/models/item/silicon_boule.json
 eb43b58f85fdc7dc93b048db0d4fc9ba1903b2c4 assets/coregregation/models/item/small_brass_casing_disk.json
 f02c808a6c3bd45d15adfa2f26287de1e486fa6a assets/coregregation/models/item/small_copper_bullet_disk.json

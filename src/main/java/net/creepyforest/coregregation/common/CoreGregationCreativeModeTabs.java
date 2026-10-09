@@ -40,6 +40,7 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.MEDIUM_SIZED_STEEL_CASING_DISK.get());
                         output.accept(CoreGregationItems.BIG_STEEL_CASING_DISK.get());
                         output.accept(CoreGregationItems.HUGE_STEEL_CASING_DISK.get());
+                        output.accept(CoreGregationItems.RUBBER_BELT.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_TOOLS_TAB = CREATIVE_MODE_TABS.register("coregregation_tools_tab",
