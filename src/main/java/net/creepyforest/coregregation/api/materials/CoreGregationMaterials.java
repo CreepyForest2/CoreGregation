@@ -10,7 +10,6 @@ public class CoreGregationMaterials {
 
     public static Material Tombac;
     public static Material SmokelessPowder;
-    public static Material RoastedCobalt; //credit to gtnh
 
 
 
@@ -25,10 +24,6 @@ public class CoreGregationMaterials {
         SmokelessPowder = new Material.Builder(CoreGregation.id("smokeless_powder"))
                 .dust()
                 .color(0xC7ABA7).secondaryColor(0xDECDC8).iconSet(MaterialIconSet.DULL)
-                .buildAndRegister();
-        RoastedCobalt = new Material.Builder(CoreGregation.id("roasted_cobalt"))
-                .dust()
-                .color(0xB8CC9B).secondaryColor(0x959E85).iconSet(MaterialIconSet.DULL)
                 .buildAndRegister();
     }
 }
