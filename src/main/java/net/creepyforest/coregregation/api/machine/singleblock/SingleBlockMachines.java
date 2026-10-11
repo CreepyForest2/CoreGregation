@@ -39,17 +39,6 @@ public class SingleBlockMachines {
             .modelProperty(GTMachineModelProperties.IS_FORMED, false)
             .langValue("Steam Fluid Input Hatch")
             .register();
-    public static final MachineDefinition STEAM_EXPORT_HATCH = REGISTRATE
-            .machine("steam_fluid_output_hatch", holder -> new SteamFluidHatchPartMachine(holder, IO.OUT, 8000, 1))
-            .rotationState(RotationState.ALL)
-            .abilities(PartAbility.EXPORT_FLUIDS)
-            .abilities(CoreGregationPartAbility.STEAM_EXPORT_FLUIDS)
-            .colorOverlaySteamHullModel(new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_pipe"),
-                    new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_fluid_hatch"),
-                    new ResourceLocation(GTCEu.MOD_ID, "block/overlay/machine/overlay_fluid_hatch"))
-            .modelProperty(GTMachineModelProperties.IS_FORMED, false)
-            .langValue("Fluid Output Hatch (Steam)")
-            .register();
 
     //electric machines
 

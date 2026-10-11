@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-10T00:11:19.8956879	Registrate Provider for coregregation [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+// 1.20.1	2026-10-11T18:14:56.9859707	Registrate Provider for coregregation [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
 09577893109becf7d92608d352814351e8b23ec6 assets/coregregation/blockstates/bloomery.json
 0e3323ffcd4d3ca1b4c3f33392292f6de0570d60 assets/coregregation/blockstates/casing_production_line.json
 242e76d6f6f896bf56ce4d297e07ebb36a398001 assets/coregregation/blockstates/cooking_pot.json
@@ -15,7 +15,6 @@ c863593e5b35ab32da04f9e739f855b2e1578944 assets/coregregation/blockstates/lv_bra
 89d7e0586f4227f5fc4118d9826497b13b2dd6e2 assets/coregregation/blockstates/steam_centrifugal_unit.json
 a48c2323ca99cdb23902e85fd433b0ec81879fb2 assets/coregregation/blockstates/steam_crusher.json
 6ed7e6ce269d4de1c159a31b13c6c42724976fc0 assets/coregregation/blockstates/steam_fluid_input_hatch.json
-59d5849ffd50b389a5414cabfaffeaaee236d0c2 assets/coregregation/blockstates/steam_fluid_output_hatch.json
 b26e5702557942d534189e895172c329337ffc12 assets/coregregation/blockstates/steam_foundry.json
 16a32332671f444ccc2bd9bf3e2f44b556c34406 assets/coregregation/blockstates/steam_mixing_vessel.json
 50a2cb4348e0a69cd9b08d2da4faf4864dfdd2f8 assets/coregregation/blockstates/steam_ore_washing_plant.json
@@ -26,8 +25,8 @@ adf92dfaf55494b592816f7f59f1e4e367c8c173 assets/coregregation/blockstates/uiv_br
 fc604d7ad7866df6aee30a7292f80486172a13cf assets/coregregation/blockstates/uv_brass_puncher.json
 1ca066133021460fcff6d80f8c8fda5c4e6ae1c6 assets/coregregation/blockstates/uxv_brass_puncher.json
 a6246a465c13763a0b55c514a71e26928323f848 assets/coregregation/blockstates/zpm_brass_puncher.json
-5e36029990a220d2e4e2836eb1ccd56c3f29f88c assets/coregregation/lang/en_ud.json
-d2ecd04638c58fc5d0c2adac0e03ab1544985ab8 assets/coregregation/lang/en_us.json
+d335e17ec5384190034e7ddb0462e5e316790d1b assets/coregregation/lang/en_ud.json
+e03952a5e47a30fa5a8aa5e3e1d12e96aab87f37 assets/coregregation/lang/en_us.json
 d784cdac7d96945d55cb982913eb7ea335bc0dd7 assets/coregregation/models/block/machine/bloomery.json
 f3ccbcf6ccd81dcccf839e67e5dac3d98a28cf1c assets/coregregation/models/block/machine/casing_production_line.json
 57942460cbbd946da33147860b92bc54407c5c1b assets/coregregation/models/block/machine/cooking_pot.json
@@ -44,7 +43,6 @@ a7609dd45f3bc12c0077dbd15fbc569a25ee0eca assets/coregregation/models/block/machi
 9d16ac3def9a91734a4187b26117e8b5e690d872 assets/coregregation/models/block/machine/steam_centrifugal_unit.json
 a17c034255eeec2a91f775f02008268107dda919 assets/coregregation/models/block/machine/steam_crusher.json
 12271ca76807d26725d6757a8e9b8721af574347 assets/coregregation/models/block/machine/steam_fluid_input_hatch.json
-9798dd0da3e979fc66e3fb59b5141840f6cd3164 assets/coregregation/models/block/machine/steam_fluid_output_hatch.json
 da8ce2286ee85a9496674c6b820e50cd6cf6b00b assets/coregregation/models/block/machine/steam_foundry.json
 9d7b0c068c82f25df59da17d41bf4fb5968aa95d assets/coregregation/models/block/machine/steam_mixing_vessel.json
 a44841d75dc871f396dde4bf277fb58aa116c636 assets/coregregation/models/block/machine/steam_ore_washing_plant.json
@@ -71,7 +69,6 @@ beca8b3594c8b92cc220cc2255d1278e4c48d56c assets/coregregation/models/item/opv_br
 6e0ff53537cba4efbd05461a9ebc796a79a66029 assets/coregregation/models/item/steam_centrifugal_unit.json
 fc9bc68a897ea36c25073148f1932ac7f7ff667c assets/coregregation/models/item/steam_crusher.json
 765b4d8a181db56bce42832fd99c21d76132b489 assets/coregregation/models/item/steam_fluid_input_hatch.json
-f4d3ce3dde198f583dd5ea9af8750e0f4423ca7a assets/coregregation/models/item/steam_fluid_output_hatch.json
 f35fe6e887e8a644fe52c04c41422160c83ce1a1 assets/coregregation/models/item/steam_foundry.json
 f0c74fb191eb6dbe4f8263b75b4292085b97ef58 assets/coregregation/models/item/steam_mixing_vessel.json
 0d776508b596ee33fb89b2c0419695a3f39d4fa7 assets/coregregation/models/item/steam_ore_washing_plant.json
