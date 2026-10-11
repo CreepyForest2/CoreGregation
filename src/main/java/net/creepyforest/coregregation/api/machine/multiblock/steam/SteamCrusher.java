@@ -22,7 +22,7 @@ import static com.gregtechceu.gtceu.common.data.GTBlocks.*;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
     public class SteamCrusher {
-        public static final MultiblockMachineDefinition SteamFoundry = REGISTRATE
+        public static final MultiblockMachineDefinition SteamCrusher = REGISTRATE
                 .multiblock("steam_crusher", (holder) -> new SteamParallelMultiblockMachine(holder, 8))
                 .rotationState(RotationState.ALL)
                 .appearanceBlock(CASING_BRONZE_BRICKS)
