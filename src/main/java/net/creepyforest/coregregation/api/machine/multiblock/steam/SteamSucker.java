@@ -42,7 +42,9 @@ public class SteamSucker {
                     GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                     GTCEu.id("block/machines/extractor")))
             .tooltips(Component.translatable("coregregation.large_steam_sucker.tooltip"),
-                    Component.translatable("coregregation.steam_parallel_tooltip"))
+                    Component.translatable("coregregation.steam_parallel_tooltip"),
+                    Component.translatable("coregregation.steam_energy_tier_tooltip"),
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip"))
 
             .register();
 

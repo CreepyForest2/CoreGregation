@@ -52,7 +52,8 @@ public class SteamMixingVessel {
                     GTCEu.id("block/multiblock/gcym/large_cutter")))
             .tooltips(Component.translatable("coregregation.large_steam_mixing_vessel.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"),
-                    Component.translatable("coregre"))
+                    Component.translatable("coregregation.steam_energy_tier_tooltip"),
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip"))
             .register();
 
     public static void init() {}

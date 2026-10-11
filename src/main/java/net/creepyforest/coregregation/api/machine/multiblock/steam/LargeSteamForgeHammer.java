@@ -54,7 +54,9 @@ public class LargeSteamForgeHammer {
                     GTCEu.id("block/casings/solid/machine_casing_bronze_plated_bricks"),
                     GTCEu.id("block/multiblock/generator/large_bronze_boiler")))
             .tooltips(Component.translatable("coregregation.large_steam_forge_hammer.tooltip"),
-                      Component.translatable("coregregation.steam_parallel_tooltip"))
+                      Component.translatable("coregregation.steam_parallel_tooltip"),
+                    Component.translatable("coregregation.steam_energy_tier_tooltip"),
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip"))
             .register();
     public static void init() {}
 }
