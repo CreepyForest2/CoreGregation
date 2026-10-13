@@ -8,5 +8,12 @@
       "coregregation:knapping/3",
       "coregregation:knapping/4"
     ]
+  },
+  "angle_grinding": {
+    "category": "block",
+    "subtitle": "coregregation.subtitle.angle_grinding",
+    "sounds": [
+      "coregregation:angle_grinding_sound_effect"
+    ]
   }
 }
