@@ -18,6 +18,7 @@ public class CoreGregationSounds {
 
 
         public static final RegistryObject<SoundEvent> FLINT_KNAPPING = registerSoundEvents("knapping");
+        public static final RegistryObject<SoundEvent> ANGLE_GRINDING = registerSoundEvents("angle_grinding");
 
 
 

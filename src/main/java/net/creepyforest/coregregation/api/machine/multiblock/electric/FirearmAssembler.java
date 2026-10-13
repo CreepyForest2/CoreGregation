@@ -44,7 +44,7 @@ public class FirearmAssembler {
                     GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
                     GTCEu.id("block/multiblock/blast_furnace")))
             .register();
-
+//TODO fix tooltip cu recipe types
 
 
     public static void init() {}
