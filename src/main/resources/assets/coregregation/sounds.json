@@ -13,7 +13,7 @@
     "category": "block",
     "subtitle": "coregregation.subtitle.angle_grinding",
     "sounds": [
-      "coregregation:angle_grinding_sound_effect"
+      "coregregation:angle_grinder_sound_effect"
     ]
   }
 }
