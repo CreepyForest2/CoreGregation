@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-11T18:14:56.9859707	Registrate Provider for coregregation [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+// 1.20.1	2026-10-15T20:19:34.8701134	Registrate Provider for coregregation [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
 09577893109becf7d92608d352814351e8b23ec6 assets/coregregation/blockstates/bloomery.json
 0e3323ffcd4d3ca1b4c3f33392292f6de0570d60 assets/coregregation/blockstates/casing_production_line.json
 242e76d6f6f896bf56ce4d297e07ebb36a398001 assets/coregregation/blockstates/cooking_pot.json
@@ -28,7 +28,7 @@ a6246a465c13763a0b55c514a71e26928323f848 assets/coregregation/blockstates/zpm_br
 d335e17ec5384190034e7ddb0462e5e316790d1b assets/coregregation/lang/en_ud.json
 e03952a5e47a30fa5a8aa5e3e1d12e96aab87f37 assets/coregregation/lang/en_us.json
 d784cdac7d96945d55cb982913eb7ea335bc0dd7 assets/coregregation/models/block/machine/bloomery.json
-f3ccbcf6ccd81dcccf839e67e5dac3d98a28cf1c assets/coregregation/models/block/machine/casing_production_line.json
+fb3f3d92be4f1bd6fd5f0346759a85d020c23776 assets/coregregation/models/block/machine/casing_production_line.json
 57942460cbbd946da33147860b92bc54407c5c1b assets/coregregation/models/block/machine/cooking_pot.json
 0995a05aa68a9e209abcb39da12d0d0faefa232a assets/coregregation/models/block/machine/ev_brass_puncher.json
 08330e12a800bd4c3a57f5bcc1a4fbe5e1b5f9fe assets/coregregation/models/block/machine/firearm_assembler.json

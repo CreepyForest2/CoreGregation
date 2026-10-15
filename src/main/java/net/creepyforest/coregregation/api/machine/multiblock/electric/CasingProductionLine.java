@@ -49,7 +49,7 @@ public class CasingProductionLine {
                     .build())
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
-                    GTCEu.id("block/multiblock/blast_furnace")))
+                    GTCEu.id("block/multiblock/pyrolyse_oven")))
             .tooltips(Component.translatable("coregregation.casing_production_line.tooltip"),
                     Component.translatable("coregregation.one_energy_hatch_allowed"))
             .register();
