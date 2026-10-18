@@ -54,6 +54,9 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> UNFINISHED_LV_ELECTRIC_PUMP = ITEMS.register("unfinished_lv_electric_pump", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> UNFINISHED_LV_ELECTRIC_PISTON = ITEMS.register("unfinished_lv_electric_piston", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUBBER_BELT = ITEMS.register("rubber_belt", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WEAK_MICA_INSULATOR_SHEET = ITEMS.register("weak_mica_insulator_sheet", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MICA_INSULATOR_SHEET = ITEMS.register("mica_insulator_sheet", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MICA_INSULATOR_FOIL = ITEMS.register("mica_insulator_foil", () -> new Item(new Item.Properties()));
 
 
 

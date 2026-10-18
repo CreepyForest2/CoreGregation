@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-10T00:11:19.8977013	Item Models: coregregation
+// 1.20.1	2026-10-18T16:12:48.8158406	Item Models: coregregation
 dde7a1010bd71a3d8c4ced0f095847c8762d5c1e assets/coregregation/models/item/big_brass_casing_disk.json
 29f7d8dc1089d95c0f057a784665b1e43f437213 assets/coregregation/models/item/big_copper_bullet_disk.json
 b0ee30e5790b53c67391f37ae194718ae38d14f2 assets/coregregation/models/item/big_steel_casing_disk.json
@@ -21,6 +21,8 @@ fdfbe48f4c6f7dc3ca37672442f02bfa69d42555 assets/coregregation/models/item/flint_
 e3406d5453c24676487968969c3bec8c5fa98203 assets/coregregation/models/item/medium_sized_brass_casing_disk.json
 d57a8833ec926bbd9f0e8dc49031d32e336a0326 assets/coregregation/models/item/medium_sized_copper_bullet_disk.json
 ce6df88c520b94316c27930304afdec0cd3e1b1a assets/coregregation/models/item/medium_sized_steel_casing_disk.json
+5f59fa85be87ce456c1ed5480217e9323a67fd79 assets/coregregation/models/item/mica_insulator_foil.json
+ec9c81e4f1f98618fd0969bd2e7e5ef1c235a33c assets/coregregation/models/item/mica_insulator_sheet.json
 433f31c668a89ba2e5f7013d2fafd3557bd6d6f8 assets/coregregation/models/item/nether_portal_activator.json
 cb92d6ba19af0b569f2f75a2e324f97f4ddf0fee assets/coregregation/models/item/plant_fiber.json
 e72f0c43534f055ecbdf0626c62d983a14765f35 assets/coregregation/models/item/plant_string.json
@@ -33,3 +35,4 @@ fbf3368eae8dfa4c3dc6ab18b094f45bd00b567c assets/coregregation/models/item/unfini
 aafbe9be3b003f0eb30ddd5c25448f444b503987 assets/coregregation/models/item/unfinished_lv_electric_piston.json
 36d8fd2f61e9a3f094205540bb7fb1dae72f7baa assets/coregregation/models/item/unfinished_lv_electric_pump.json
 193721b53549321f231b195def5ae72ea0825f97 assets/coregregation/models/item/unfinished_lv_robot_arm.json
+32c0d5ccfbf8f48150bd62f29ac3435379da34d6 assets/coregregation/models/item/weak_mica_insulator_sheet.json

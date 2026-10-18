@@ -56,6 +56,8 @@
   "item.coregregation.flint_shard": "Flint Shard",
   "item.coregregation.flint_shovel": "Flint Shovel",
   "item.coregregation.flint_sword": "Flint Sword",
+  "item.coregregation.mica_insulator_foil": "Mica Insulator Foil",
+  "item.coregregation.mica_insulator_sheet": "Mica Insulator Sheet",
   "item.coregregation.nether_portal_activator": "Nether Portal Activator",
   "item.coregregation.plant_fiber": "Plant Fiber",
   "item.coregregation.plant_string": "Plant String",
@@ -64,6 +66,7 @@
   "item.coregregation.unfinished_lv_conveyor_module": "Unfinished Conveyor Module",
   "item.coregregation.unfinished_lv_electric_pump": "Unfinished Electric Pump",
   "item.coregregation.unfinished_lv_robot_arm": "Unfinished Robot Arm",
+  "item.coregregation.weak_mica_insulator_sheets": "Weak Mica Insulator Sheets",
   "message.coregregation.portal_blocked": "You need a nether portal activator to open the portal.",
   "message.coregregation.ruined_silicon_boule": "You need a hazmat suit to not contaminate silicon boules."
 }

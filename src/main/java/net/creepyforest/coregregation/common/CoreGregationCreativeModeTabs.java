@@ -41,6 +41,9 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.BIG_STEEL_CASING_DISK.get());
                         output.accept(CoreGregationItems.HUGE_STEEL_CASING_DISK.get());
                         output.accept(CoreGregationItems.RUBBER_BELT.get());
+                        output.accept(CoreGregationItems.WEAK_MICA_INSULATOR_SHEET.get());
+                        output.accept(CoreGregationItems.MICA_INSULATOR_SHEET.get());
+                        output.accept(CoreGregationItems.MICA_INSULATOR_FOIL.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_TOOLS_TAB = CREATIVE_MODE_TABS.register("coregregation_tools_tab",

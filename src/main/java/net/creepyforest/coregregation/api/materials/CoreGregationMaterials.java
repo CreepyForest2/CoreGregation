@@ -10,7 +10,7 @@ public class CoreGregationMaterials {
 
     public static Material Tombac;
     public static Material SmokelessPowder;
-
+    public static Material MicaPaste;
 
 
 
@@ -24,6 +24,10 @@ public class CoreGregationMaterials {
         SmokelessPowder = new Material.Builder(CoreGregation.id("smokeless_powder"))
                 .dust()
                 .color(0xC7ABA7).secondaryColor(0xDECDC8).iconSet(MaterialIconSet.DULL)
+                .buildAndRegister();
+        MicaPaste = new Material.Builder(CoreGregation.id("mica_paste"))
+                .fluid()
+                .color(0xCC8BC7).secondaryColor(0xA9DA).iconSet(MaterialIconSet.DULL)
                 .buildAndRegister();
     }
 }

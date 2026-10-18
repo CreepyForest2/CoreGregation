@@ -56,6 +56,8 @@
   "item.coregregation.flint_shard": "pɹɐɥS ʇuıןℲ",
   "item.coregregation.flint_shovel": "ןǝʌoɥS ʇuıןℲ",
   "item.coregregation.flint_sword": "pɹoʍS ʇuıןℲ",
+  "item.coregregation.mica_insulator_foil": "ןıoℲ ɹoʇɐןnsuI ɐɔıW",
+  "item.coregregation.mica_insulator_sheet": "ʇǝǝɥS ɹoʇɐןnsuI ɐɔıW",
   "item.coregregation.nether_portal_activator": "ɹoʇɐʌıʇɔⱯ ןɐʇɹoԀ ɹǝɥʇǝN",
   "item.coregregation.plant_fiber": "ɹǝqıℲ ʇuɐןԀ",
   "item.coregregation.plant_string": "buıɹʇS ʇuɐןԀ",
@@ -64,6 +66,7 @@
   "item.coregregation.unfinished_lv_conveyor_module": "ǝןnpoW ɹoʎǝʌuoƆ pǝɥsıuıɟu∩",
   "item.coregregation.unfinished_lv_electric_pump": "dɯnԀ ɔıɹʇɔǝןƎ pǝɥsıuıɟu∩",
   "item.coregregation.unfinished_lv_robot_arm": "ɯɹⱯ ʇoqoᴚ pǝɥsıuıɟu∩",
+  "item.coregregation.weak_mica_insulator_sheets": "sʇǝǝɥS ɹoʇɐןnsuI ɐɔıW ʞɐǝM",
   "message.coregregation.portal_blocked": "˙ןɐʇɹod ǝɥʇ uǝdo oʇ ɹoʇɐʌıʇɔɐ ןɐʇɹod ɹǝɥʇǝu ɐ pǝǝu noʎ",
   "message.coregregation.ruined_silicon_boule": "˙sǝןnoq uoɔıןıs ǝʇɐuıɯɐʇuoɔ ʇou oʇ ʇıns ʇɐɯzɐɥ ɐ pǝǝu noʎ"
 }

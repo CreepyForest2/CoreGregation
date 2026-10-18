@@ -2,6 +2,7 @@ package net.creepyforest.coregregation.common.items.special;
 
 
 
+import com.gregtechceu.gtceu.common.data.GTItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

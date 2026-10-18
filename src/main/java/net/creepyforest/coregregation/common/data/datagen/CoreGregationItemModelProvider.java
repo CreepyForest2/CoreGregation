@@ -48,6 +48,9 @@ public class CoreGregationItemModelProvider extends ItemModelProvider {
         simpleItem(CoreGregationItems.UNFINISHED_LV_ELECTRIC_PUMP);
         simpleItem(CoreGregationItems.UNFINISHED_LV_ELECTRIC_PISTON);
         simpleItem(CoreGregationItems.RUBBER_BELT);
+        simpleItem(CoreGregationItems.WEAK_MICA_INSULATOR_SHEET);
+        simpleItem(CoreGregationItems.MICA_INSULATOR_SHEET);
+        simpleItem(CoreGregationItems.MICA_INSULATOR_FOIL);
 
 
 

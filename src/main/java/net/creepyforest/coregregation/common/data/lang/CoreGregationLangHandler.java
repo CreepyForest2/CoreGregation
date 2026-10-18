@@ -85,6 +85,10 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         replace(provider, "item.coregregation.unfinished_lv_robot_arm", "Unfinished Robot Arm");
         replace(provider, "item.coregregation.unfinished_lv_electric_pump", "Unfinished Electric Pump");
         replace(provider, "item.coregregation.rubber_belt", "Rubber Belt");
+        replace(provider, "item.coregregation.weak_mica_insulator_sheets", "Weak Mica Insulator Sheets");
+        replace(provider, "item.coregregation.mica_insulator_sheet", "Mica Insulator Sheet");
+        replace(provider, "item.coregregation.mica_insulator_foil", "Mica Insulator Foil");
+
 
     }
 
