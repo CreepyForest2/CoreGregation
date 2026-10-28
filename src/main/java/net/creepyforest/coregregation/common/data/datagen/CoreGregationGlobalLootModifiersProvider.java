@@ -25,8 +25,11 @@ public class CoreGregationGlobalLootModifiersProvider extends GlobalLootModifier
 
 
     public static final TagKey<Item> KNIVES_TAG =
-            TagKey.create(Registries.ITEM, new ResourceLocation("forge", "tools/knives")); //im gonna move this somewhere...eventually
-
+            TagKey.create(Registries.ITEM, new ResourceLocation("forge", "tools/knives")); //im gonna move these somewhere...eventually
+    public static final TagKey<Item> MINING_HAMMERS_TAG =
+            TagKey.create(Registries.ITEM, new ResourceLocation("forge", "tools/mining_hammers"));
+    public static final TagKey<Item> HAMMERS_TAG =
+            TagKey.create(Registries.ITEM, new ResourceLocation("forge", "tools/hammers"));
 
     @Override
     protected void start() {

@@ -17,6 +17,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import javax.annotation.Nullable;
 
+import static net.creepyforest.coregregation.common.data.datagen.CoreGregationGlobalLootModifiersProvider.HAMMERS_TAG;
+import static net.creepyforest.coregregation.common.data.datagen.CoreGregationGlobalLootModifiersProvider.MINING_HAMMERS_TAG;
 import static net.minecraft.tags.ItemTags.TOOLS;
 
 
@@ -83,7 +85,7 @@ public class BlockBreakingEvent {
     }
 
     private static boolean isMissingCorrectTool(BlockState state, ItemStack itemInHand) {
-        return state.is(BlockTags.MINEABLE_WITH_PICKAXE) && !itemInHand.is(TOOLS)
+        return state.is(BlockTags.MINEABLE_WITH_PICKAXE ) && !(itemInHand.is(TOOLS) || itemInHand.is(MINING_HAMMERS_TAG) || itemInHand.is(HAMMERS_TAG))
                 || state.is(BlockTags.MINEABLE_WITH_AXE) && !itemInHand.is(ItemTags.AXES)
                 || state.is(BlockTags.MINEABLE_WITH_SHOVEL) && !itemInHand.is(TOOLS)
                 || state.is(BlockTags.MINEABLE_WITH_HOE) && !itemInHand.is(TOOLS);
