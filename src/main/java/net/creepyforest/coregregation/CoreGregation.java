@@ -129,8 +129,7 @@
         }
         @SubscribeEvent
         public void registerMaterials(MaterialEvent event) {
-            CoreGregationMaterials.register();
-            CoreGregationOres.register();
+
         }
 
 
@@ -144,7 +143,9 @@
         }
 
         private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
-
+            CoreGregationPartAbility.init();
+            SingleBlockMachines.init();
+            MultiBlockMachines.init();
         }
         @SubscribeEvent
         public void addMaterialRegistries(MaterialRegistryEvent event) {
@@ -153,9 +154,8 @@
 
         @SubscribeEvent
         public void addMaterials(MaterialEvent event) {
-            CoreGregationPartAbility.init();
-            SingleBlockMachines.init();
-            MultiBlockMachines.init();
+            CoreGregationMaterials.register();
+            CoreGregationOres.register();
         }
 
 

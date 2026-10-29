@@ -64,7 +64,7 @@ public class TerrainConfigLogic {
         isEpicTerrainandWWEEActive = false;
         isLithoSphereAndStillLifeActive = true;
         isVanillaTerrainActive = false;
-        saveState("LITHOSPHERE+STILL_LIFE");
+        saveState("LITHOSPHERE_STILL_LIFE");
     }
 
     public static void vanillaTerrainActive() throws Exception {
