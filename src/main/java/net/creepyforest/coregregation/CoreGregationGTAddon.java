@@ -4,6 +4,7 @@ import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
+import net.creepyforest.coregregation.api.materials.CoreGregationMaterials;
 import net.creepyforest.coregregation.api.materials.ores.CoreGregationOres;
 import net.creepyforest.coregregation.api.recipe.CoreGregationMachineRecipes;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -11,6 +12,7 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import java.util.function.Consumer;
 
 @SuppressWarnings("unused")
+
 @GTAddon
 public class CoreGregationGTAddon implements IGTAddon {
 
@@ -39,7 +41,7 @@ public class CoreGregationGTAddon implements IGTAddon {
     @Override
     public void registerElements() {
     }
-    
+
     // If you have custom ingredient types, uncomment this & change to match your capability.
     // KubeJS WILL REMOVE YOUR RECIPES IF THESE ARE NOT REGISTERED.
     /*

@@ -2,7 +2,9 @@
 
 
     import com.gregtechceu.gtceu.api.GTCEuAPI;
+    import com.gregtechceu.gtceu.api.data.chemical.Element;
     import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialEvent;
+    import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialRegistryEvent;
     import com.gregtechceu.gtceu.api.data.chemical.material.event.PostMaterialEvent;
     import com.gregtechceu.gtceu.api.machine.MachineDefinition;
     import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
@@ -131,6 +133,7 @@
             CoreGregationOres.register();
         }
 
+
         private void modifyMaterials(PostMaterialEvent event) {
             MaterialModification.modifyMaterials();
         }
@@ -141,6 +144,15 @@
         }
 
         private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
+
+        }
+        @SubscribeEvent
+        public void addMaterialRegistries(MaterialRegistryEvent event) {
+            GTCEuAPI.materialManager.createRegistry(CoreGregation.MOD_ID);
+        }
+
+        @SubscribeEvent
+        public void addMaterials(MaterialEvent event) {
             CoreGregationPartAbility.init();
             SingleBlockMachines.init();
             MultiBlockMachines.init();

@@ -29,7 +29,6 @@ public class CoreGregationItems {
     public static final RegistryObject<Item> FLINT_SAW_HEAD = ITEMS.register("flint_saw_head", () -> new Item(new Item.Properties()));
 
 
-
     //bullet related things
     public static final RegistryObject<Item> SMALL_BRASS_CASING_DISK = ITEMS.register("small_brass_casing_disk", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MEDIUM_SIZED_BRASS_CASING_DISK = ITEMS.register("medium_sized_brass_casing_disk", () -> new Item(new Item.Properties()));
