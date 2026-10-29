@@ -8,6 +8,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -95,7 +96,7 @@ public class BlockBreakingEvent {
 
     private static boolean allowedBlocks(BlockState state) {
         return state.is(BlockTags.SAND) || state.is(BlockTags.DIRT) || state.is(Tags.Blocks.GRAVEL)
-                || state.is(BlockTags.LEAVES);
+                || state.is(BlockTags.LEAVES) || state.is(Blocks.PUMPKIN) || state.is(Blocks.MELON) || state.is(Blocks.CLAY);
     }
 }
 
