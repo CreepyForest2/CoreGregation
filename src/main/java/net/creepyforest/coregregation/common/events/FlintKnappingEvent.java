@@ -22,7 +22,7 @@ public class FlintKnappingEvent {
     private static final Random rd = new Random();
 
     @SubscribeEvent
-    public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
+    public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 
         Player player = event.getEntity();
         ItemStack itemInHand = player.getMainHandItem();
@@ -33,10 +33,9 @@ public class FlintKnappingEvent {
         if (event.getHand() != InteractionHand.MAIN_HAND) return;
         if (!state.is(Tags.Blocks.STONE) || !state.is(BlockTags.TERRACOTTA)) return;
 
-        if (itemInHand.is(Items.FLINT) && state.is(Tags.Blocks.STONE)) {
-
-
+        if (itemInHand.is(Items.FLINT) && state.is(Tags.Blocks.STONE) || state.is(BlockTags.TERRACOTTA)) {
             int knappingChance = rd.nextInt(1,3 );
+
             if (knappingChance == 1) {
                 event.setCanceled(true);
                 event.setCancellationResult(InteractionResult.SUCCESS);
