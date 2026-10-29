@@ -27,6 +27,9 @@ public class CoreGregationItemTagProvider extends ItemTagsProvider {
     public static final TagKey<Item> KNIVES = ItemTags.create(
             new ResourceLocation("forge", "tools/knives")
     );
+    public static final TagKey<Item> STRING = ItemTags.create(
+            new ResourceLocation("forge", "strings")
+    );
     public static final TagKey<Item> CRAFTING_KNIVES = ItemTags.create(
             new ResourceLocation("gtceu", "tools/crafting_knives")
     );
@@ -39,7 +42,7 @@ public class CoreGregationItemTagProvider extends ItemTagsProvider {
                 .add(CoreGregationItems.FLINT_KNIFE.get());
         this.tag(AXES)
                 .add(CoreGregationItems.FLINT_HATCHET.get());
-        this.tag(Tags.Items.STRING)
+        this.tag(STRING)
                 .add(CoreGregationItems.PLANT_STRING.get());
 
 
