@@ -36,22 +36,22 @@ public class CoreGregationGlobalLootModifiersProvider extends GlobalLootModifier
         add("plant_fiber_from_grass", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
                 MatchTool.toolMatches(ItemPredicate.Builder.item().of(KNIVES_TAG)).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build()},
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 CoreGregationItems.PLANT_FIBER.get()));
         add("plant_fiber_from_tall_grass", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.TALL_GRASS).build(),
                 MatchTool.toolMatches(ItemPredicate.Builder.item().of(KNIVES_TAG)).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build()},
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 CoreGregationItems.PLANT_FIBER.get()));
         add("plant_fiber_from_fern", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.FERN).build(),
                 MatchTool.toolMatches(ItemPredicate.Builder.item().of(KNIVES_TAG)).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build()},
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 CoreGregationItems.PLANT_FIBER.get()));
         add("plant_fiber_from_large_fern", new AddItemModifier(new LootItemCondition[]{
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.LARGE_FERN).build(),
                 MatchTool.toolMatches(ItemPredicate.Builder.item().of(KNIVES_TAG)).build(),
-                LootItemRandomChanceCondition.randomChance(0.25f).build()},
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 CoreGregationItems.PLANT_FIBER.get()));
     }
 

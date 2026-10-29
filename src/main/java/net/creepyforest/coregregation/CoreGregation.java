@@ -129,7 +129,8 @@
         }
         @SubscribeEvent
         public void registerMaterials(MaterialEvent event) {
-
+            CoreGregationMaterials.register();
+            CoreGregationOres.register();
         }
 
 
@@ -154,8 +155,6 @@
 
         @SubscribeEvent
         public void addMaterials(MaterialEvent event) {
-            CoreGregationMaterials.register();
-            CoreGregationOres.register();
         }
 
 
