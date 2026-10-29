@@ -1,6 +1,7 @@
-// 1.20.1	2026-08-25T19:11:48.3024005	Tags for minecraft:item mod id coregregation
+// 1.20.1	2026-10-29T16:32:20.7550106	Tags for minecraft:item mod id coregregation
 d6bbb5a395f6dc15d8e85471b02a088ad162a474 data/forge/tags/items/string.json
 017f2e71fd4ee252cec9dc9a139a4dc3fec54902 data/forge/tags/items/tools/knives.json
+017f2e71fd4ee252cec9dc9a139a4dc3fec54902 data/gtceu/tags/items/tools/crafting_knives.json
 fd18e0ff12bb4825495abc1c5abe2783a7720c73 data/minecraft/tags/items/axes.json
 f12c03abbd11c086e2deaa7a70091bd2ace0d601 data/minecraft/tags/items/hoes.json
 b1e1d77f69c917f576fd9fe03e909b7cac5f9256 data/minecraft/tags/items/pickaxes.json

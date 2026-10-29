@@ -66,7 +66,7 @@
   "item.coregregation.unfinished_lv_conveyor_module": "Unfinished Conveyor Module",
   "item.coregregation.unfinished_lv_electric_pump": "Unfinished Electric Pump",
   "item.coregregation.unfinished_lv_robot_arm": "Unfinished Robot Arm",
-  "item.coregregation.weak_mica_insulator_sheets": "Weak Mica Insulator Sheets",
+  "item.coregregation.weak_mica_insulator_sheet": "Weak Mica Insulator Sheets",
   "message.coregregation.portal_blocked": "You need a nether portal activator to open the portal.",
   "message.coregregation.ruined_silicon_boule": "You need a hazmat suit to not contaminate silicon boules."
 }
