@@ -27,10 +27,15 @@ public class CoreGregationItemTagProvider extends ItemTagsProvider {
     public static final TagKey<Item> KNIVES = ItemTags.create(
             new ResourceLocation("forge", "tools/knives")
     );
+    public static final TagKey<Item> CRAFTING_KNIVES = ItemTags.create(
+            new ResourceLocation("gtceu", "tools/crafting_knives")
+    );
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(KNIVES)
+                .add(CoreGregationItems.FLINT_KNIFE.get());
+        this.tag(CRAFTING_KNIVES)
                 .add(CoreGregationItems.FLINT_KNIFE.get());
         this.tag(AXES)
                 .add(CoreGregationItems.FLINT_HATCHET.get());
