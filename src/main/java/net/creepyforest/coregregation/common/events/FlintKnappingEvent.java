@@ -4,6 +4,7 @@ import net.creepyforest.coregregation.common.items.CoreGregationItems;
 import net.creepyforest.coregregation.sounds.CoreGregationSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -30,7 +31,7 @@ public class FlintKnappingEvent {
 
         if (event.getLevel().isClientSide()) return;
         if (event.getHand() != InteractionHand.MAIN_HAND) return;
-        if (!state.is(Tags.Blocks.STONE)) return;
+        if (!state.is(Tags.Blocks.STONE) || !state.is(BlockTags.TERRACOTTA)) return;
 
         if (itemInHand.is(Items.FLINT) && state.is(Tags.Blocks.STONE)) {
 
