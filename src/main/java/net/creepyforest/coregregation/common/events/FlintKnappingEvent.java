@@ -33,7 +33,9 @@ public class FlintKnappingEvent {
         if (event.getHand() != InteractionHand.MAIN_HAND) return;
         if (!(state.is(Tags.Blocks.STONE) || state.is(BlockTags.TERRACOTTA))) return;
 
-        int knappingChance = rd.nextInt(1,3 );
+        if (itemInHand.is(Items.FLINT) && (state.is(Tags.Blocks.STONE) || state.is(BlockTags.TERRACOTTA))) {
+
+            int knappingChance = rd.nextInt(1, 3);
 
             if (knappingChance == 1) {
                 event.setCanceled(true);
@@ -47,5 +49,6 @@ public class FlintKnappingEvent {
                 event.setCancellationResult(InteractionResult.SUCCESS);
                 event.getLevel().playSound(null, pos, CoreGregationSounds.FLINT_KNAPPING.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
             }
+        }
      }
 }
