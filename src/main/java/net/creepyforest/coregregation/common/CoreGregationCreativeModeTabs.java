@@ -26,6 +26,7 @@ public class CoreGregationCreativeModeTabs {
                         output.accept(CoreGregationItems.CONTAMINATED_SILICON_BOULE.get());
                         output.accept(CoreGregationItems.FLINT_SHARD.get());
                         output.accept(CoreGregationItems.PLANT_FIBER.get());
+                        output.accept(CoreGregationItems.PLANT_STRING.get());
                         output.accept(CoreGregationItems.FLINT_SAW_HEAD.get());
                         output.accept(CoreGregationItems.SILICON_BOULE.get());
                         output.accept(CoreGregationItems.SMALL_BRASS_CASING_DISK.get());
