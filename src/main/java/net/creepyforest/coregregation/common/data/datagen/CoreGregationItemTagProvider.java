@@ -28,7 +28,7 @@ public class CoreGregationItemTagProvider extends ItemTagsProvider {
             new ResourceLocation("forge", "tools/knives")
     );
     public static final TagKey<Item> STRING = ItemTags.create(
-            new ResourceLocation("forge", "strings")
+            new ResourceLocation("forge", "string")
     );
     public static final TagKey<Item> CRAFTING_KNIVES = ItemTags.create(
             new ResourceLocation("gtceu", "tools/crafting_knives")
