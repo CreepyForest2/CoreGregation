@@ -22,7 +22,7 @@ public class FlintKnappingEvent {
     private static final Random rd = new Random();
 
     @SubscribeEvent
-    public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
+    public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 
         Player player = event.getEntity();
         ItemStack itemInHand = player.getMainHandItem();
@@ -31,10 +31,9 @@ public class FlintKnappingEvent {
 
         if (event.getLevel().isClientSide()) return;
         if (event.getHand() != InteractionHand.MAIN_HAND) return;
-        if (!state.is(Tags.Blocks.STONE) || !state.is(BlockTags.TERRACOTTA)) return;
+        if (!(state.is(Tags.Blocks.STONE) || state.is(BlockTags.TERRACOTTA))) return;
 
-        if (itemInHand.is(Items.FLINT) && state.is(Tags.Blocks.STONE) || state.is(BlockTags.TERRACOTTA)) {
-            int knappingChance = rd.nextInt(1,3 );
+        int knappingChance = rd.nextInt(1,3 );
 
             if (knappingChance == 1) {
                 event.setCanceled(true);
@@ -48,6 +47,5 @@ public class FlintKnappingEvent {
                 event.setCancellationResult(InteractionResult.SUCCESS);
                 event.getLevel().playSound(null, pos, CoreGregationSounds.FLINT_KNAPPING.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
             }
-        }
      }
 }
