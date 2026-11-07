@@ -15,6 +15,7 @@
     import net.creepyforest.coregregation.api.machine.materials.ores.CoreGregationOres;
     import net.creepyforest.coregregation.client.ScreenEvents;
     import net.creepyforest.coregregation.common.CoreGregationCreativeModeTabs;
+    import net.creepyforest.coregregation.common.MissingMappings;
     import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
@@ -84,6 +85,7 @@
             MinecraftForge.EVENT_BUS.register(KnifeInstaMineBlockBreakingEvent.class);
             MinecraftForge.EVENT_BUS.register(CampfireCreationEvent.class);
             MinecraftForge.EVENT_BUS.register(ScreenEvents.class);
+            MinecraftForge.EVENT_BUS.register(MissingMappings.class);
             Datagen.init();
 
 
