@@ -1,5 +1,6 @@
 package net.creepyforest.coregregation.common.world_preset;
 
+import com.gregtechceu.gtceu.common.data.GTItems;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLPaths;
 
@@ -86,7 +87,7 @@ public class TerrainConfigLogic {
 
     private static List<Path[]> buildMovesFor(TerrainPresets chosen) throws IOException {
         Path modsDir = FMLPaths.MODSDIR.get();
-        Path disabledDir = FMLPaths.GAMEDIR.get().resolve("disabled_mods");
+        Path disabledDir = FMLPaths.GAMEDIR.get().resolve("disabled terrain generation mods (DONT FUCKING TOUCH THIS)");
 
         List<String> keep = PREFIXES.get(chosen);
         List<String> all = PREFIXES.values().stream().flatMap(List::stream).toList();
@@ -134,7 +135,7 @@ public class TerrainConfigLogic {
 
     //yep this half-AI cus again idk how to read/write files
 
-    private static final Path STATE_FILE = FMLPaths.GAMEDIR.get().resolve("config/coregregation_active_preset.txt");
+    private static final Path STATE_FILE = FMLPaths.GAMEDIR.get().resolve("saves/coregregation_active_preset.txt");
         public static void loadState() {
         String saved = "EPIC_TERRAIN_WWEE"; // default preset
         try {
@@ -164,3 +165,4 @@ public class TerrainConfigLogic {
         }
     }
 }
+

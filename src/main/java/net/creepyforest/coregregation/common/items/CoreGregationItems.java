@@ -1,8 +1,5 @@
 package net.creepyforest.coregregation.common.items;
 
-
-import com.gregtechceu.gtceu.common.data.GTItems;
-import com.tterrag.registrate.util.entry.ItemEntry;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.items.special.FireStarterItem;
 import net.creepyforest.coregregation.common.items.special.SiliconeBouleItem;
@@ -11,8 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import static com.gregtechceu.gtceu.common.registry.GTRegistration.REGISTRATE;
 
 public class CoreGregationItems {
     public static final DeferredRegister<Item> ITEMS=
@@ -99,7 +94,6 @@ public class CoreGregationItems {
 
     public static final RegistryObject<Item> SILICON_BOULE = ITEMS.register("silicon_boule",
             () -> new SiliconeBouleItem(new Item.Properties()));
-
 
 
 

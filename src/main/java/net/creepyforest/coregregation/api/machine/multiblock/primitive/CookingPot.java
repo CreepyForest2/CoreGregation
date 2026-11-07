@@ -27,7 +27,7 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
 
-    public static final MultiblockMachineDefinition CookingPot = REGISTRATE
+    public static final MultiblockMachineDefinition COOKING_POT = REGISTRATE
             .multiblock("cooking_pot", CookingPot::new)
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.COOKING_POT_RECIPES)
