@@ -44,7 +44,7 @@ public class FirearmAssembler {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
                     GTCEu.id("block/multiblock/blast_furnace")))
-            .tooltips(Component.translatable("block.coregregation.firearm_assembler_tooltip"),
+            .tooltips(Component.translatable("coregregation.firearm_assember.tooltip"),
                     Component.translatable("coregregation.one_energy_hatch_allowed"),
                     Component.translatable("gtceu.machine.available_recipe_map_2.tooltip", "Firearm Assembling", "Firearm Parts Assembling"))
             .register();
