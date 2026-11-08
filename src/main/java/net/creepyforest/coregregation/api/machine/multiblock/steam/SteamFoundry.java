@@ -45,7 +45,7 @@ public class SteamFoundry {
             .tooltips(Component.translatable("coregregation.large_steam_foundry.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"),
                     Component.translatable("coregregation.steam_energy_tier_tooltip"),
-                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip"))
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip", "Alloy Smelter"))
             .register();
 
     public static void init() {}

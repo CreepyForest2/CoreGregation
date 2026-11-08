@@ -104,6 +104,8 @@
             modEventBus.addGenericListener(MachineDefinition.class, this::registerMachines);
             modEventBus.addListener(this::registerMaterials);
             modEventBus.addListener(this::modifyMaterials);
+            modEventBus.addListener(this::addMaterialRegistries);
+
             modEventBus.register(CoreGregationDataGenerators.class);
 
         }

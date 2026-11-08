@@ -11,6 +11,7 @@ import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
+import net.minecraft.network.chat.Component;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_SOLID;
@@ -43,8 +44,11 @@ public class FirearmAssembler {
             .model(GTMachineModels.createWorkableCasingMachineModel(
                     GTCEu.id("block/casings/solid/machine_casing_solid_steel"),
                     GTCEu.id("block/multiblock/blast_furnace")))
+            .tooltips(Component.translatable("block.coregregation.firearm_assembler_tooltip"),
+                    Component.translatable("coregregation.one_energy_hatch_allowed"),
+                    Component.translatable("gtceu.machine.available_recipe_map_2.tooltip", "Firearm Assembling", "Firearm Parts Assembling"))
             .register();
-//TODO fix tooltip cu recipe types
+
 
 
     public static void init() {}

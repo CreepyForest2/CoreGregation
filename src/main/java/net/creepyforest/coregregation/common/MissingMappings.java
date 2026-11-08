@@ -30,11 +30,14 @@ public class MissingMappings {
     private static void remapItems(MissingMappingsEvent.Mapping<Item> mapping) {
         if (mapping.getKey().equals(new ResourceLocation("notreepunching:fire_starter"))) mapping.remap(CoreGregationItems.FIRE_STARTER.get());
         if (mapping.getKey().equals(new ResourceLocation("notreepunching:flint_axe"))) mapping.remap(CoreGregationItems.FLINT_HATCHET.get());
+        if (mapping.getKey().equals(new ResourceLocation("notreepunching:flint_shard"))) mapping.remap(CoreGregationItems.FLINT_SHARD.get());
+
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_axe"))) mapping.remap(CoreGregationItems.FLINT_AXE.get());
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_pickaxe"))) mapping.remap(CoreGregationItems.FLINT_PICKAXE.get());
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_shovel"))) mapping.remap(CoreGregationItems.FLINT_SHOVEL.get());
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_sword"))) mapping.remap(CoreGregationItems.FLINT_SWORD.get());
-        if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_hoe"))) mapping.remap(CoreGregationItems.FLINT_HOE.get());
+        if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_saw_head"))) mapping.remap(CoreGregationItems.FLINT_SAW_HEAD.get());
+        if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_saw"))) mapping.remap(CoreGregationItems.FLINT_SAW.get());
     }
 
     private static void remapBlocks(MissingMappingsEvent.Mapping<Block> mapping) {

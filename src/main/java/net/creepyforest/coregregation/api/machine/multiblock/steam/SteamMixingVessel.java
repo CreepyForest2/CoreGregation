@@ -53,7 +53,7 @@ public class SteamMixingVessel {
             .tooltips(Component.translatable("coregregation.large_steam_mixing_vessel.tooltip"),
                     Component.translatable("coregregation.steam_parallel_tooltip"),
                     Component.translatable("coregregation.steam_energy_tier_tooltip"),
-                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip"))
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip", "Mixer"))
             .register();
 
     public static void init() {}
