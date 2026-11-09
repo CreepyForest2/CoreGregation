@@ -23,6 +23,7 @@ import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_BRONZE_PIPE;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_GEARBOX;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
+
 public class SteamCentrifugalUnit {
     public static final MultiblockMachineDefinition SteamCentrifugalUnit = REGISTRATE
             .multiblock("steam_centrifugal_unit", (holder) -> new SteamParallelMultiblockMachine(holder, 8))

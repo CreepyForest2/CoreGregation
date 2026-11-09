@@ -8,6 +8,7 @@ import com.gregtechceu.gtceu.utils.FormattingUtil;
 
 
 
+
 public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.LangHandler {
 
 
@@ -16,13 +17,12 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
     public static void init(RegistrateLangProvider provider) {
         Tooltips(provider);
         Common(provider);
-        Items(provider);
         CreativeModeTabs(provider);
     }
 
     public static void Common(RegistrateLangProvider provider) {
-        replace(provider,"death.attack.chemical_burn", "%1$s realized the air is 24%% corrosive gas");
-        replace(provider,"death.attack.chemical_burn.player", "%1$s realized the air is 24%% corrosive gas while fighting %2$s");
+        replace(provider, "death.attack.chemical_burn", "%1$s realized the air is 24%% corrosive gas");
+        replace(provider, "death.attack.chemical_burn.player", "%1$s realized the air is 24%% corrosive gas while fighting %2$s");
 
 
         replace(provider, "effect.coregregation.chemical_burn", "Chemical Burn");
@@ -37,7 +37,6 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
     public static void Tooltips(RegistrateLangProvider provider) {
 
         //steam
-
         provider.add("coregregation.large_steam_forge_hammer.tooltip", "Forging your plates 8 at a time, with §eSteam");
         provider.add("coregregation.large_steam_centrifugal_unit.tooltip", "Making things spin really fast with the power of §eSteam");
         provider.add("coregregation.large_steam_crusher.tooltip", "Crushing and compacting like never before, with §eSteam");
@@ -50,86 +49,20 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         provider.add("coregregation.firearm_assember.tooltip", "For all your firearm making needs");
 
 
-
-
         provider.add("coregregation.steam_parallel_tooltip", "Has §6Steam Parallel,§r meaning it will run 8 recipes §3in parallel§r as fast as 5.3 LV machines of the same kind");
         provider.add("coregregation.steam_energy_tier_tooltip", "Can only run recipes up to the §8LV tier");
         provider.add("coregregation.one_energy_hatch_allowed", "May only accept §bone§r energy hatch");
 
 
-
         //other
-
         provider.add("coregregation.silicon_boule_tooltip", "§8Don't ask why this item is not from GregTech...");
     }
 
-    public static void Items(RegistrateLangProvider provider) {
-
-        replace(provider, "item.coregregation.nether_portal_activator", "Nether Portal Activator");
-        replace(provider, "item.coregregation.contaminated_silicon_boule", "Contaminated Silicon Boule");
-        replace(provider, "item.coregregation.flint_shard", "Flint Shard");
-        replace(provider, "item.coregregation.flint_knife", "Flint Knife");
-        replace(provider, "item.coregregation.plant_fiber", "Plant Fiber");
-        replace(provider, "item.coregregation.plant_string", "Plant String");
-        replace(provider, "item.coregregation.fire_starter", "Fire Starter");
-        replace(provider, "block.coregregation.casing_assembling_mechanism", "Casing Assembling Mechanism");
-        replace(provider, "item.coregregation.flint_hatchet", "Flint Hatchet");
-        replace(provider, "item.coregregation.flint_sword", "Flint Sword");
-        replace(provider, "item.coregregation.flint_pickaxe", "Flint Pickaxe");
-        replace(provider, "item.coregregation.flint_axe", "Flint Axe");
-        replace(provider, "item.coregregation.flint_shovel", "Flint Shovel");
-        replace(provider, "item.coregregation.flint_hoe", "Flint Hoe");
-        replace(provider, "item.coregregation.flint_saw_head", "Flint Saw Head");
-        replace(provider, "item.coregregation.flint_saw", "Flint Saw");
-        replace(provider, "item.coregregation.silicon_boule", "Monocrystaline Silicon Boule");
-        replace(provider, "item.coregregation.unfinished_lv_conveyor_module", "Unfinished Conveyor Module");
-        replace(provider, "item.coregregation.unfinished_lv_robot_arm", "Unfinished Robot Arm");
-        replace(provider, "item.coregregation.unfinished_lv_electric_pump", "Unfinished Electric Pump");
-        replace(provider, "item.coregregation.rubber_belt", "Rubber Belt");
-        replace(provider, "item.coregregation.weak_mica_insulator_sheet", "Weak Mica Insulator Sheets");
-        replace(provider, "item.coregregation.mica_insulator_sheet", "Mica Insulator Sheet");
-        replace(provider, "item.coregregation.mica_insulator_foil", "Mica Insulator Foil");
-
-
-    }
 
     public static void CreativeModeTabs(RegistrateLangProvider provider) {
 
         replace(provider, "creativetab.coregregation_items_tab", "CoreGregation Items");
         replace(provider, "creativetab.coregregation_tools_tab", "CoreGregation Tools");
         replace(provider, "creativetab.coregregation_blocks_tab", "CoreGregation Blocks");
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private static void initItemTooltips(RegistrateLangProvider provider) {
-        for (Material material : MATERIALS) {
-            provider.add(material.getUnlocalizedName(), FormattingUtil.toEnglishName(material.getName()));
-        }
-
     }
 }

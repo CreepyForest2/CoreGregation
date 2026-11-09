@@ -1,5 +1,6 @@
 package net.creepyforest.coregregation.common;
 
+import com.tterrag.registrate.util.entry.RegistryEntry;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
 import net.creepyforest.coregregation.common.items.CoreGregationItems;
@@ -18,17 +19,16 @@ public class CoreGregationCreativeModeTabs {
 
 
     public static final RegistryObject<CreativeModeTab> COREGREGATION_ITEMS_TAB = CREATIVE_MODE_TABS.register("coregregation_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CoreGregationItems.METALLURGICAL_SILICON_ITEM.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CoreGregationItems.METALLURGICAL_SILICON.get()))
                     .title(Component.translatable("creativetab.coregregation_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(CoreGregationItems.NETHER_PORTAL_ACTIVATOR_ITEM.get());
-                        output.accept(CoreGregationItems.METALLURGICAL_SILICON_ITEM.get());
+                        output.accept(CoreGregationItems.METALLURGICAL_SILICON.get());
                         output.accept(CoreGregationItems.CONTAMINATED_SILICON_BOULE.get());
                         output.accept(CoreGregationItems.FLINT_SHARD.get());
                         output.accept(CoreGregationItems.PLANT_FIBER.get());
                         output.accept(CoreGregationItems.PLANT_STRING.get());
                         output.accept(CoreGregationItems.FLINT_SAW_HEAD.get());
-                        output.accept(CoreGregationItems.SILICON_BOULE.get());
                         output.accept(CoreGregationItems.SMALL_BRASS_CASING_DISK.get());
                         output.accept(CoreGregationItems.MEDIUM_SIZED_BRASS_CASING_DISK.get());
                         output.accept(CoreGregationItems.BIG_CASING_BRASS_CASING_DISK.get());

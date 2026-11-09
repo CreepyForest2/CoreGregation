@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.creepyforest.coregregation.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "coregregation.refmap.json",
+  "mixins": [
+    "SiliconBouleMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1 }
+}

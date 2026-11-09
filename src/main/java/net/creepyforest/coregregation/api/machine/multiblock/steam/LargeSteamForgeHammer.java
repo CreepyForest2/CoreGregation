@@ -24,6 +24,7 @@ import static com.gregtechceu.gtceu.api.pattern.Predicates.frames;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.*;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
+
 public class LargeSteamForgeHammer {
 
     public static final MultiblockMachineDefinition LargeSteamForgeHammer = REGISTRATE

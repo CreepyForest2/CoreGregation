@@ -28,7 +28,7 @@ import net.minecraft.world.phys.HitResult;
 public class FireStarterItem extends Item {
 
 
-    //lowk spent the past half an hour trying to rewrite this with the og code for reference but i basically copied it so
+    //lowk spent the past half an hour trying to rewrite this with the og code for reference, but I basically copied it so
     //credit to alcatrazescape for the code
 
 
@@ -38,8 +38,7 @@ public class FireStarterItem extends Item {
 
     @Override
 
-    //no idea what this does, its not mine and the thing dosent work without it
-
+    //no idea what this does, it's not mine and the thing doesn't work without it
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         player.startUsingItem(hand);
         return new InteractionResultHolder<>(InteractionResult.PASS, player.getItemInHand(hand));
@@ -47,7 +46,7 @@ public class FireStarterItem extends Item {
 
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
-
+        //thankfully the code dosen't need to be as complicated as the og
         if (entity instanceof Player player) {
 
             BlockHitResult result = getPlayerPOVHitResult(level, player, ClipContext.Fluid.NONE);
