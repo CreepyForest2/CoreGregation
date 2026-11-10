@@ -13,6 +13,7 @@ import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
 import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.block.Block;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static com.gregtechceu.gtceu.common.data.GTBlocks.CASING_STEEL_SOLID;
@@ -44,7 +45,7 @@ public class CasingProductionLine {
                             .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1)))
                     .where('B', blocks(GTBlocks.CASING_STEEL_GEARBOX.get()))
-                    .where('M', blocks(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK.get()))
+                    .where('M', blocks(CoreGregationBlocks.CASING_ASSEMBLING_MECHANISM.get()))
                     .where('F', frames(GTMaterials.Invar))
                     .build())
             .model(GTMachineModels.createWorkableCasingMachineModel(

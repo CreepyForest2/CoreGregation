@@ -19,10 +19,7 @@ public class CoreGregationBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK.get());
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK.get());
+
 
     }
 }

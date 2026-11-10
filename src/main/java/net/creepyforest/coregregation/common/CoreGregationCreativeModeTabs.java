@@ -94,10 +94,10 @@ public class CoreGregationCreativeModeTabs {
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> COREGREGATION_BLOCKS_TAB = CREATIVE_MODE_TABS.register("coregregation_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CoreGregationBlocks.CASING_ASSEMBLING_MECHANISM.get()))
                     .title(Component.translatable("creativetab.coregregation_blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(CoreGregationBlocks.CARTRIDGE_ASSEMBLING_MECHANISM_BLOCK.get());
+                        output.accept(CoreGregationBlocks.CASING_ASSEMBLING_MECHANISM.get());
                     })
                     .build());
 
