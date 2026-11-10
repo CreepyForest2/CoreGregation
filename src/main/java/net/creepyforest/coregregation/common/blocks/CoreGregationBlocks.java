@@ -31,7 +31,6 @@ public class CoreGregationBlocks {
 
 static {
     CASING_ASSEMBLING_MECHANISM = ((BlockBuilder) REGISTRATE.block("casing_assembling_mechanism", CasingAssemblingMechanismBlock::new).initialProperties(() -> Blocks.IRON_BLOCK).exBlockstate(GTModels.createModelBlockState(CoreGregation.id("block/casing_assembling_mechanism"))).tag(new TagKey[]{BlockTags.MINEABLE_WITH_PICKAXE}).lang("Casing Assembling Mechanism").item().build()).register();
-    //CASING_ASSEMBLING_MECHANISM = ((BlockBuilder)REGISTRATE.block("casing_assembling_mechanism_block", CasingAssemblingMechanism::new).initialProperties(() -> Blocks.IRON_BLOCK).lang("Casing Assembling Mechanism Block").tag(new TagKey[]{BlockTags.MINEABLE_WITH_PICKAXE}).item().build()).register();
 }
 
 
