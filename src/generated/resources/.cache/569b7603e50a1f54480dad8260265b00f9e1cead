@@ -1,4 +1,4 @@
-// 1.20.1	2026-11-10T11:07:15.8136063	Registrate Provider for coregregation [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+// 1.20.1	2026-11-10T11:42:07.8617447	Registrate Provider for coregregation [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
 09577893109becf7d92608d352814351e8b23ec6 assets/coregregation/blockstates/bloomery.json
 8e36a11e7d8aaceec693847f58cb01662328d581 assets/coregregation/blockstates/casing_assembling_mechanism.json
 0e3323ffcd4d3ca1b4c3f33392292f6de0570d60 assets/coregregation/blockstates/casing_production_line.json
@@ -26,8 +26,8 @@ adf92dfaf55494b592816f7f59f1e4e367c8c173 assets/coregregation/blockstates/uiv_br
 fc604d7ad7866df6aee30a7292f80486172a13cf assets/coregregation/blockstates/uv_brass_puncher.json
 1ca066133021460fcff6d80f8c8fda5c4e6ae1c6 assets/coregregation/blockstates/uxv_brass_puncher.json
 a6246a465c13763a0b55c514a71e26928323f848 assets/coregregation/blockstates/zpm_brass_puncher.json
-f3ad5a3bfdb1494e4c151faeb35df434afcddec1 assets/coregregation/lang/en_ud.json
-1ba4450cf23d92389e0c9851a0e0b881e5f896ed assets/coregregation/lang/en_us.json
+241cb0b222aafdd445155e19187cec5472e83562 assets/coregregation/lang/en_ud.json
+673dedac43bc9e6546ee338aca35a0933c03c5a5 assets/coregregation/lang/en_us.json
 d784cdac7d96945d55cb982913eb7ea335bc0dd7 assets/coregregation/models/block/machine/bloomery.json
 fb3f3d92be4f1bd6fd5f0346759a85d020c23776 assets/coregregation/models/block/machine/casing_production_line.json
 57942460cbbd946da33147860b92bc54407c5c1b assets/coregregation/models/block/machine/cooking_pot.json
@@ -73,6 +73,7 @@ d938ee3305af6ccff9b0541070886f2d49bd52e2 assets/coregregation/models/item/flint_
 56d55c09e0965724b22fbdbc1041d3855156fa91 assets/coregregation/models/item/flint_saw.json
 898b0b769dd8944a29038f5e883db40015cf36f7 assets/coregregation/models/item/flint_saw_head.json
 4f1e1181214ddcb23c975bf8de883eb17b8c8756 assets/coregregation/models/item/flint_shard.json
+0c088a542e29946346216bbf26007fd432e94b49 assets/coregregation/models/item/flint_shovel.json
 fdfbe48f4c6f7dc3ca37672442f02bfa69d42555 assets/coregregation/models/item/flint_sword.json
 79fc57843d7ec5aecf890a19f5004ea1e53c0891 assets/coregregation/models/item/huge_brass_casing_disk.json
 735b96b11a2ce753da6a4dc0a3cbec3d0b265a74 assets/coregregation/models/item/huge_copper_bullet_disk.json
@@ -117,8 +118,8 @@ aafbe9be3b003f0eb30ddd5c25448f444b503987 assets/coregregation/models/item/unfini
 ea60c1c026ded71b76e23baf984cd8552a0de485 assets/coregregation/models/item/zpm_brass_puncher.json
 ee42d814b50f34176d3d5ac2d5d29106c7bdea0d data/coregregation/loot_tables/blocks/casing_assembling_mechanism.json
 3b2b8a0dc05fb368a92dede2e0cb6e36db7aa782 data/minecraft/tags/blocks/mineable/pickaxe.json
-42b843648ba7260b83cdd99d86046e5f0e473a82 data/minecraft/tags/items/axes.json
+fd18e0ff12bb4825495abc1c5abe2783a7720c73 data/minecraft/tags/items/axes.json
 f12c03abbd11c086e2deaa7a70091bd2ace0d601 data/minecraft/tags/items/hoes.json
 b1e1d77f69c917f576fd9fe03e909b7cac5f9256 data/minecraft/tags/items/pickaxes.json
-974135ed89284ff5e31f2f52347e96dbb470db01 data/minecraft/tags/items/shovels.json
+43efd875929d6d59932f6ab3011eaaa37efe7d54 data/minecraft/tags/items/shovels.json
 623110c7b9d1830392d988f268daad3d68b6e923 data/minecraft/tags/items/swords.json
