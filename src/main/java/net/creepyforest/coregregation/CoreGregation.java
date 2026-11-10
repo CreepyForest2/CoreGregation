@@ -12,7 +12,7 @@
     import com.mojang.logging.LogUtils;
 
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
-    import net.creepyforest.coregregation.api.machine.materials.ores.CoreGregationOres;
+    import net.creepyforest.coregregation.api.materials.ores.CoreGregationOres;
     import net.creepyforest.coregregation.client.ScreenEvents;
     import net.creepyforest.coregregation.common.CoreGregationCreativeModeTabs;
     import net.creepyforest.coregregation.common.MissingMappings;
@@ -20,9 +20,9 @@
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
     import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
-    import net.creepyforest.coregregation.api.machine.materials.CoreGregationMaterials;
+    import net.creepyforest.coregregation.api.materials.CoreGregationMaterials;
     import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
-    import net.creepyforest.coregregation.api.machine.materials.MaterialModification;
+    import net.creepyforest.coregregation.api.materials.MaterialModification;
     import net.creepyforest.coregregation.common.effects.CoregregationEffects;
     import net.creepyforest.coregregation.common.events.*;
     import net.creepyforest.coregregation.common.items.CoreGregationItems;
