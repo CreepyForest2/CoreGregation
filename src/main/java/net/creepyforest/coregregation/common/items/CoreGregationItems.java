@@ -3,6 +3,7 @@ package net.creepyforest.coregregation.common.items;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer;
 import net.creepyforest.coregregation.CoreGregation;
+import net.creepyforest.coregregation.common.CoreGregationCreativeModeTabs;
 import net.creepyforest.coregregation.common.items.special.FireStarterItem;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.*;
@@ -63,20 +64,13 @@ public class CoreGregationItems {
 
 
     static {
-        //to be implemented REGISTRATE.creativeModeTab(() -> CoreGregationCreativeModeTabs.COREGREGATION_ITEMS_TAB);
-
-        //simple items
         NETHER_PORTAL_ACTIVATOR_ITEM = REGISTRATE.item("nether_portal_activator", Item::new).lang("Nether Portal Activator").register();
         CONTAMINATED_SILICON_BOULE = REGISTRATE.item("contaminated_silicon_boule", Item::new).lang("Contaminated Silicon Boule").register();
-       METALLURGICAL_SILICON = REGISTRATE.item("metallurgical_silicon", Item::new).lang("Metallurgical Silicon").model(NonNullBiConsumer.noop()).register();
+        METALLURGICAL_SILICON = REGISTRATE.item("metallurgical_silicon", Item::new).lang("Metallurgical Silicon").model(NonNullBiConsumer.noop()).register();
         FLINT_SHARD = REGISTRATE.item("flint_shard", Item::new).lang("Flint Shard").register();
         PLANT_FIBER = REGISTRATE.item("plant_fiber", Item::new).lang("Plant Fiber").register();
         PLANT_STRING = REGISTRATE.item("plant_string", Item::new).lang("Plant String").register();
         FLINT_SAW_HEAD = REGISTRATE.item("flint_saw_head", Item::new).lang("Flint Saw Head").register();
-        METALLURGICAL_SILICON = REGISTRATE.item("metallurgical_silicon", Item::new).lang("Nether Portal Activator").register();
-        METALLURGICAL_SILICON = REGISTRATE.item("metallurgical_silicon", Item::new).lang("Nether Portal Activator").register();
-        METALLURGICAL_SILICON = REGISTRATE.item("metallurgical_silicon", Item::new).lang("Nether Portal Activator").register();
-        METALLURGICAL_SILICON = REGISTRATE.item("metallurgical_silicon", Item::new).lang("Nether Portal Activator").register();
 
         //bullet related things
         SMALL_BRASS_CASING_DISK = REGISTRATE.item("small_brass_casing_disk", Item::new).lang("Small Brass Casing Disk").register();

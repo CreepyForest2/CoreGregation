@@ -20,13 +20,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class SiliconBouleMixin {
 
     @Unique
-    private static final ResourceLocation COREGREGATION$BOULE = new ResourceLocation("gtceu", "silicon_boule");
+    private static final ResourceLocation COREGREGATION_BOULE = new ResourceLocation("gtceu", "silicon_boule");
 
     @Inject(method = "inventoryTick", at = @At("HEAD"))
-    private void coregregation$bouleTick(ItemStack stack, Level level, Entity entity,
-                                         int slotId, boolean isSelected, CallbackInfo ci) {
+    private void coregregation_bouleTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected, CallbackInfo ci) {
         if (level.isClientSide() || !(entity instanceof Player player)) return;
-        if (!COREGREGATION$BOULE.equals(ForgeRegistries.ITEMS.getKey((Item) (Object) this))) return;
+        if (!COREGREGATION_BOULE.equals(ForgeRegistries.ITEMS.getKey((Item) (Object) this))) return;
         if (ChemicalBurnEvent.hasHazmatSuit(player)) return;
 
         int count = stack.getCount();

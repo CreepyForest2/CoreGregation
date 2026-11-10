@@ -14,8 +14,39 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class CoreGregationCreativeModeTabs {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CoreGregation.MOD_ID);
+
+
+
 
 
     public static final RegistryObject<CreativeModeTab> COREGREGATION_ITEMS_TAB = CREATIVE_MODE_TABS.register("coregregation_items_tab",
