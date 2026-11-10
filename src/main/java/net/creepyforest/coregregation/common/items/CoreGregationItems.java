@@ -120,7 +120,7 @@ public class CoreGregationItems {
                 .model((context, provider) -> provider.handheld(context::getEntry))
                 .tag(ItemTags.AXES)
                 .register();
-        FLINT_SHOVEL = REGISTRATE.item("flint_axe",properties -> new ShovelItem(CoreGregationToolTiers.FLINT, 1, -3.0f, properties))
+        FLINT_SHOVEL = REGISTRATE.item("flint_shovel",properties -> new ShovelItem(CoreGregationToolTiers.FLINT, 1, -3.0f, properties))
                 .model((context, provider) -> provider.handheld(context::getEntry))
                 .tag(ItemTags.SHOVELS)
                 .register();
