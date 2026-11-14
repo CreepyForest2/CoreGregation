@@ -3,6 +3,7 @@
   "block.coregregation.casing_assembling_mechanism": "ɯsıuɐɥɔǝW buıןqɯǝssⱯ buısɐƆ",
   "block.coregregation.casing_production_line": "ǝuıꞀ uoıʇɔnpoɹԀ buısɐƆ",
   "block.coregregation.cooking_pot": "ʇoԀ buıʞooƆ",
+  "block.coregregation.electric_oven": "uǝʌO ɔıɹʇɔǝןƎ",
   "block.coregregation.ev_brass_puncher": "ɹ§III ɹǝɥɔunԀ ssɐɹᗺ pǝɔuɐʌpⱯϛ§",
   "block.coregregation.firearm_assembler": "ɹǝןqɯǝssⱯ ɯɹɐǝɹıℲ",
   "block.coregregation.hv_brass_puncher": "ɹ§II ɹǝɥɔunԀ ssɐɹᗺ pǝɔuɐʌpⱯ9§",
@@ -13,6 +14,7 @@
   "block.coregregation.mv_brass_puncher": "ɹ§ ɹǝɥɔunԀ ssɐɹᗺ pǝɔuɐʌpⱯq§",
   "block.coregregation.opv_brass_puncher": "ɹ§ ɹǝɥɔunԀ ssɐɹᗺ ʎɹɐpuǝbǝꞀן§6§",
   "block.coregregation.oven": "uǝʌO",
+  "block.coregregation.porcelain_enameled_steel_casing": "buısɐƆ ןǝǝʇS pǝןǝɯɐuƎ uıɐןǝɔɹoԀ",
   "block.coregregation.steam_centrifugal_unit": "ʇıu∩ ןɐbnɟıɹʇuǝƆ ɯɐǝʇS",
   "block.coregregation.steam_crusher": "ɹǝɥsnɹƆ ɯɐǝʇS",
   "block.coregregation.steam_fluid_input_hatch": "ɥɔʇɐH ʇnduI pınןℲ ɯɐǝʇS",
@@ -27,6 +29,7 @@
   "block.coregregation.uxv_brass_puncher": "ɹ§ΛI ɹǝɥɔunԀ ssɐɹᗺ ɔıdƎǝ§",
   "block.coregregation.zpm_brass_puncher": "ɹ§III ɹǝɥɔunԀ ssɐɹᗺ ǝʇıןƎɔ§",
   "coregregation.casing_production_line.tooltip": "ʎɐp ןןɐ ssɐɹq buıןןnd puɐ buıʇsıʍ⟘",
+  "coregregation.electric_oven.tooltip": "puıɯɹǝʌǝu 8§ ɹ§˙˙˙uǝʌO ɔıɹʇɔǝןƎq§ ǝɥʇ s,ǝɹǝɥʍ uǝɥʇ 'poob os sı ɹ§ℲᗺƎǝ§ ǝɥʇ ɟI",
   "coregregation.firearm_assember.tooltip": "spǝǝu buıʞɐɯ ɯɹɐǝɹıɟ ɹnoʎ ןןɐ ɹoℲ",
   "coregregation.large_steam_centrifugal_unit.tooltip": "ɯɐǝʇSǝ§ ɟo ɹǝʍod ǝɥʇ ɥʇıʍ ʇsɐɟ ʎןןɐǝɹ uıds sbuıɥʇ buıʞɐW",
   "coregregation.large_steam_crusher.tooltip": "ɯɐǝʇSǝ§ ɥʇıʍ 'ǝɹoɟǝq ɹǝʌǝu ǝʞıן buıʇɔɐdɯoɔ puɐ buıɥsnɹƆ",
@@ -91,7 +94,7 @@
   "material.coregregation.scoria": "ɐıɹoɔS",
   "material.coregregation.smokeless_powder": "ɹǝpʍoԀ ssǝןǝʞoɯS",
   "material.coregregation.tombac": "ɔɐqɯo⟘",
-  "material.coregregation.veridium": "ɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐɐ",
+  "material.coregregation.veridium": "ɯnıpıɹǝΛ",
   "message.coregregation.portal_blocked": "˙ןɐʇɹod ǝɥʇ uǝdo oʇ ɹoʇɐʌıʇɔɐ ןɐʇɹod ɹǝɥʇǝu ɐ pǝǝu noʎ",
   "message.coregregation.ruined_silicon_boule": "˙sǝןnoq uoɔıןıs ǝʇɐuıɯɐʇuoɔ ʇou oʇ ʇıns ʇɐɯzɐɥ ɐ pǝǝu noʎ"
 }

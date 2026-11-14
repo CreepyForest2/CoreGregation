@@ -1,6 +1,7 @@
-package net.creepyforest.coregregation.common.data.machine.multiblock;
+package net.creepyforest.coregregation.api.machine.multiblock;
 
 import net.creepyforest.coregregation.api.machine.multiblock.electric.CasingProductionLine;
+import net.creepyforest.coregregation.api.machine.multiblock.electric.ElectricOven;
 import net.creepyforest.coregregation.api.machine.multiblock.electric.FirearmAssembler;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.Bloomery;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.CookingPot;
@@ -8,7 +9,7 @@ import net.creepyforest.coregregation.api.machine.multiblock.primitive.OvenMachi
 import net.creepyforest.coregregation.api.machine.multiblock.steam.*;
 
 
-public class MultiBlockMachines {
+public class MultiBlockMachineInit {
     public static void init() {
         LargeSteamForgeHammer.init();
         SteamFoundry.init();
@@ -22,5 +23,6 @@ public class MultiBlockMachines {
         Bloomery.init();
         CasingProductionLine.init();
         FirearmAssembler.init();
+        ElectricOven.init();
     }
 }

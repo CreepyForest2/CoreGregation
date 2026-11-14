@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "coregregation:block/casings/porcelain_enameled_steel_casing"
+  }
+}

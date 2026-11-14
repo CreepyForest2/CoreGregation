@@ -66,7 +66,6 @@ public class CoreGregationMaterials {
         Veridium = new Material.Builder(CoreGregation.id("veridium"))
                 .dust()
                 .color(0x568C78).secondaryColor(0x82B39A).iconSet(MaterialIconSet.DULL)
-                .langValue("aaaaaaaaaaaaaaaaaaaaa")
                 .buildAndRegister();
     }
 }

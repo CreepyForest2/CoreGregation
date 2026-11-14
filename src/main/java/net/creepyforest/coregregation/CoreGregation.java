@@ -11,6 +11,7 @@
 
     import com.mojang.logging.LogUtils;
 
+    import net.creepyforest.coregregation.api.machine.multiblock.MultiBlockMachineInit;
     import net.creepyforest.coregregation.api.machine.part.CoreGregationPartAbility;
     import net.creepyforest.coregregation.api.materials.ores.CoreGregationOres;
     import net.creepyforest.coregregation.client.ScreenEvents;
@@ -19,7 +20,6 @@
     import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
     import net.creepyforest.coregregation.common.data.datagen.CoreGregationDataGenerators;
     import net.creepyforest.coregregation.common.data.datagen.Datagen;
-    import net.creepyforest.coregregation.common.data.machine.multiblock.MultiBlockMachines;
     import net.creepyforest.coregregation.api.materials.CoreGregationMaterials;
     import net.creepyforest.coregregation.api.machine.singleblock.SingleBlockMachines;
     import net.creepyforest.coregregation.api.materials.MaterialModification;
@@ -149,7 +149,7 @@
         private void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
             CoreGregationPartAbility.init();
             SingleBlockMachines.init();
-            MultiBlockMachines.init();
+            MultiBlockMachineInit.init();
         }
         @SubscribeEvent
         public void addMaterialRegistries(MaterialRegistryEvent event) {

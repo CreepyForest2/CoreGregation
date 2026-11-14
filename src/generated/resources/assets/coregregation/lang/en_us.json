@@ -3,6 +3,7 @@
   "block.coregregation.casing_assembling_mechanism": "Casing Assembling Mechanism",
   "block.coregregation.casing_production_line": "Casing Production Line",
   "block.coregregation.cooking_pot": "Cooking Pot",
+  "block.coregregation.electric_oven": "Electric Oven",
   "block.coregregation.ev_brass_puncher": "§5Advanced Brass Puncher III§r",
   "block.coregregation.firearm_assembler": "Firearm Assembler",
   "block.coregregation.hv_brass_puncher": "§6Advanced Brass Puncher II§r",
@@ -13,6 +14,7 @@
   "block.coregregation.mv_brass_puncher": "§bAdvanced Brass Puncher §r",
   "block.coregregation.opv_brass_puncher": "§9§lLegendary Brass Puncher §r",
   "block.coregregation.oven": "Oven",
+  "block.coregregation.porcelain_enameled_steel_casing": "Porcelain Enameled Steel Casing",
   "block.coregregation.steam_centrifugal_unit": "Steam Centrifugal Unit",
   "block.coregregation.steam_crusher": "Steam Crusher",
   "block.coregregation.steam_fluid_input_hatch": "Steam Fluid Input Hatch",
@@ -27,6 +29,7 @@
   "block.coregregation.uxv_brass_puncher": "§eEpic Brass Puncher IV§r",
   "block.coregregation.zpm_brass_puncher": "§cElite Brass Puncher III§r",
   "coregregation.casing_production_line.tooltip": "Twisting and pulling brass all day",
+  "coregregation.electric_oven.tooltip": "If the §eEBF§r is so good, then where's the §bElectric Oven...§r §8 nevermind",
   "coregregation.firearm_assember.tooltip": "For all your firearm making needs",
   "coregregation.large_steam_centrifugal_unit.tooltip": "Making things spin really fast with the power of §eSteam",
   "coregregation.large_steam_crusher.tooltip": "Crushing and compacting like never before, with §eSteam",
@@ -91,7 +94,7 @@
   "material.coregregation.scoria": "Scoria",
   "material.coregregation.smokeless_powder": "Smokeless Powder",
   "material.coregregation.tombac": "Tombac",
-  "material.coregregation.veridium": "aaaaaaaaaaaaaaaaaaaaa",
+  "material.coregregation.veridium": "Veridium",
   "message.coregregation.portal_blocked": "You need a nether portal activator to open the portal.",
   "message.coregregation.ruined_silicon_boule": "You need a hazmat suit to not contaminate silicon boules."
 }

@@ -48,6 +48,9 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         provider.add("coregregation.casing_production_line.tooltip", "Twisting and pulling brass all day");
         provider.add("coregregation.firearm_assember.tooltip", "For all your firearm making needs");
 
+        provider.add("coregregation.electric_oven.tooltip", "If the §eEBF§r is so good, then where's the §bElectric Oven...§r §8 nevermind");
+
+
 
         provider.add("coregregation.steam_parallel_tooltip", "Has §6Steam Parallel,§r meaning it will run 8 recipes §3in parallel§r as fast as 5.3 LV machines of the same kind");
         provider.add("coregregation.steam_energy_tier_tooltip", "Can only run recipes up to the §8LV tier");
