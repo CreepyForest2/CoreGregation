@@ -1,8 +1,12 @@
 package net.creepyforest.coregregation.api.recipe;
 
 import com.gregtechceu.gtceu.api.capability.recipe.IO;
+import com.gregtechceu.gtceu.api.gui.GuiTextures;
 import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
+import com.gregtechceu.gtceu.common.data.GTSoundEntries;
+import com.lowdragmc.lowdraglib.gui.texture.ProgressTexture;
+import net.minecraft.world.item.crafting.RecipeType;
 
 
 public class CoreGregationRecipeTypes {
@@ -17,6 +21,7 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType CASING_PRODUCTION_LINE_RECIPES;
     public static GTRecipeType FIREARM_PARTS_ASSEMBLING_RECIPES;
     public static GTRecipeType FIREARM_ASSEMBLING_RECIPES;
+    public static GTRecipeType SMOKER_RECIPES;
 
 
     public static void init() {
@@ -48,5 +53,9 @@ public class CoreGregationRecipeTypes {
         FIREARM_ASSEMBLING_RECIPES = GTRecipeTypes
                 .register("firearm_assembler", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(25, 1, 0, 0).setEUIO(IO.IN);
+
+        SMOKER_RECIPES = GTRecipeTypes
+                .register("electric_smoker", "electric", RecipeType.SMOKING).setMaxIOSize(1, 1, 0, 0).setEUIO(IO.IN).prepareBuilder((recipeBuilder) -> recipeBuilder.EUt(4L)).setSlotOverlay(false, false, GuiTextures.FURNACE_OVERLAY_1).setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressTexture.FillDirection.LEFT_TO_RIGHT).setSteamProgressBar(GuiTextures.PROGRESS_BAR_ARROW_STEAM, ProgressTexture.FillDirection.LEFT_TO_RIGHT).setSound(GTSoundEntries.FURNACE);
+
     }
 }

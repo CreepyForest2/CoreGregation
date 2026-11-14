@@ -48,7 +48,7 @@ public class CoreGregationLangHandler extends com.gregtechceu.gtceu.data.lang.La
         provider.add("coregregation.casing_production_line.tooltip", "Twisting and pulling brass all day");
         provider.add("coregregation.firearm_assember.tooltip", "For all your firearm making needs");
 
-        provider.add("coregregation.electric_oven.tooltip", "If the §eEBF§r is so good, then where's the §bElectric Oven...§r §8 nevermind");
+        provider.add("coregregation.electric_oven.tooltip", "If the §eEBF§r is so good, then where's the §bElectric Oven...§r§8 nevermind");
 
 
 

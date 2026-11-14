@@ -10,6 +10,7 @@ import com.gregtechceu.gtceu.api.pattern.Predicates;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
+import mezz.jei.api.constants.RecipeTypes;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
@@ -24,7 +25,7 @@ public class ElectricOven {
             .multiblock("electric_oven", WorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.OVEN_RECIPES)
-            .recipeType(GTRecipeTypes.FURNACE_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.SMOKER_RECIPES)
             .appearanceBlock(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("PPPPP", "F###F", "PPPPP")
