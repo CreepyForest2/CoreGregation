@@ -3,12 +3,13 @@ package net.creepyforest.coregregation.api.machine.multiblock.electric;
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.data.RotationState;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
+import com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine;
 import com.gregtechceu.gtceu.api.machine.multiblock.PartAbility;
-import com.gregtechceu.gtceu.api.machine.multiblock.WorkableElectricMultiblockMachine;
 import com.gregtechceu.gtceu.api.pattern.FactoryBlockPattern;
 import com.gregtechceu.gtceu.api.pattern.Predicates;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
+import com.gregtechceu.gtceu.common.data.GTRecipeModifiers;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
@@ -23,9 +24,10 @@ import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 public class ElectricCookingPot {
     public static final MachineDefinition ElectricCookingPot = REGISTRATE
-            .multiblock("electric_cooking_pot", WorkableElectricMultiblockMachine::new)
+            .multiblock("electric_cooking_pot", CoilWorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.COOKING_POT_RECIPES)
+            .recipeModifiers(GTRecipeModifiers::crackerOverclock)
             .appearanceBlock(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("PPPPP", "F###F", "PPPPP")
@@ -40,6 +42,7 @@ public class ElectricCookingPot {
                     .where('P', blocks(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING.get()).setMinGlobalLimited(30)
                             .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
+                            .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))
                             .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.INPUT_ENERGY)))
                     .where('F', frames(GTMaterials.BlackSteel))
@@ -50,7 +53,8 @@ public class ElectricCookingPot {
                     CoreGregation.id("block/casings/porcelain_enameled_steel_casing"),
                     GTCEu.id("block/multiblock/generator/large_steam_turbine")))
             .tooltips(Component.translatable("coregregation.electric_cooking_pot.tooltip"),
-                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip", "Cooking Pot"))
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip", "Cooking Pot"),
+                    Component.translatable("gtceu.machine.cracker.tooltip.1"))
             .register();
 
 

@@ -3,30 +3,30 @@ package net.creepyforest.coregregation.api.machine.multiblock.electric;
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.data.RotationState;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
+import com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine;
 import com.gregtechceu.gtceu.api.machine.multiblock.PartAbility;
 import com.gregtechceu.gtceu.api.machine.multiblock.WorkableElectricMultiblockMachine;
 import com.gregtechceu.gtceu.api.pattern.FactoryBlockPattern;
 import com.gregtechceu.gtceu.api.pattern.Predicates;
 import com.gregtechceu.gtceu.common.data.GTMaterials;
+import com.gregtechceu.gtceu.common.data.GTRecipeModifiers;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.models.GTMachineModels;
-import mezz.jei.api.constants.RecipeTypes;
 import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.crafting.RecipeType;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
 
 public class ElectricOven {
-
     public static final MachineDefinition ElectricOven = REGISTRATE
-            .multiblock("electric_oven", WorkableElectricMultiblockMachine::new)
+            .multiblock("electric_oven", CoilWorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.ELECTRIC_OVEN_RECIPES)
-            .recipeType(CoreGregationRecipeTypes.SMOKER_RECIPES)
+            .recipeType(GTRecipeTypes.FURNACE_RECIPES)
+            .recipeModifiers(GTRecipeModifiers::crackerOverclock)
             .appearanceBlock(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING)
             .pattern(definition -> FactoryBlockPattern.start()
                     .aisle("PPPPP", "F###F", "PPPPP")
@@ -49,7 +49,8 @@ public class ElectricOven {
                     CoreGregation.id("block/casings/porcelain_enameled_steel_casing"),
                     GTCEu.id("block/multiblock/blast_furnace")))
             .tooltips(Component.translatable("coregregation.electric_oven.tooltip"),
-                    Component.translatable("gtceu.machine.available_recipe_map_2.tooltip", "Oven", "Smoker"))
+                    Component.translatable("gtceu.machine.available_recipe_map_2.tooltip", "Oven", "Smoker"),
+                    Component.translatable("gtceu.machine.cracker.tooltip.1"))
             .register();
 
 

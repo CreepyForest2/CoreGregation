@@ -33,7 +33,7 @@ public class CoreGregationGTAddon implements IGTAddon {
     }
     @Override
     public void addRecipes(Consumer<FinishedRecipe> provider) {
-        CoreGregationMachineRecipes.init(provider);
+        //CoreGregationMachineRecipes.init(provider);
     }
 
     @Override
