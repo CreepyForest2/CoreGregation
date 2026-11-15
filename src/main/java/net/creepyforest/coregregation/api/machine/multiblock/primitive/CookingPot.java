@@ -76,12 +76,6 @@ public class CookingPot extends PrimitiveWorkableMachine implements IUIMachine {
                 .widget(new SlotWidget(importItems.storage, 8, 44, 54, true, true)
                         .setBackgroundTexture(
                                 new GuiTextureGroup(GuiTextures.SLOT)))
-                .widget(new SlotWidget(importItems.storage, 9, 78, 6, true, true)
-                        .setBackgroundTexture(
-                                new GuiTextureGroup(GuiTextures.SLOT)))
-                .widget(new SlotWidget(importItems.storage, 10, 78, 61, true, true)
-                        .setBackgroundTexture(
-                                new GuiTextureGroup(GuiTextures.SLOT)))
                 .widget(new TankWidget(importFluids.getStorages()[0], 8, 72, 18, 18, true, true)
                         .setBackground(GuiTextures.FLUID_SLOT)
                         .setFillDirection(ProgressTexture.FillDirection.DOWN_TO_UP)

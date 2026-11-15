@@ -15,6 +15,7 @@ import net.creepyforest.coregregation.CoreGregation;
 import net.creepyforest.coregregation.api.recipe.CoreGregationRecipeTypes;
 import net.creepyforest.coregregation.common.blocks.CoreGregationBlocks;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.crafting.RecipeType;
 
 import static com.gregtechceu.gtceu.api.pattern.Predicates.*;
 import static net.creepyforest.coregregation.CoreGregation.REGISTRATE;
@@ -24,7 +25,7 @@ public class ElectricOven {
     public static final MachineDefinition ElectricOven = REGISTRATE
             .multiblock("electric_oven", WorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
-            .recipeType(CoreGregationRecipeTypes.OVEN_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.ELECTRIC_OVEN_RECIPES)
             .recipeType(CoreGregationRecipeTypes.SMOKER_RECIPES)
             .appearanceBlock(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING)
             .pattern(definition -> FactoryBlockPattern.start()
@@ -38,6 +39,7 @@ public class ElectricOven {
                     .where('c', heatingCoils())
                     .where('P', blocks(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING.get()).setMinGlobalLimited(30)
                             .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                            .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                             .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.INPUT_ENERGY)))
                     .where('F', frames(GTMaterials.BlackSteel))
@@ -47,7 +49,7 @@ public class ElectricOven {
                     CoreGregation.id("block/casings/porcelain_enameled_steel_casing"),
                     GTCEu.id("block/multiblock/blast_furnace")))
             .tooltips(Component.translatable("coregregation.electric_oven.tooltip"),
-                    Component.translatable("gtceu.machine.available_recipe_map_2.tooltip", "Oven Recipes", "Smoker Recipes"))
+                    Component.translatable("gtceu.machine.available_recipe_map_2.tooltip", "Oven", "Smoker"))
             .register();
 
 

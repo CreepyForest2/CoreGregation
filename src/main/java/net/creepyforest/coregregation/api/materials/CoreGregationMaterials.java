@@ -18,6 +18,7 @@ public class CoreGregationMaterials {
     public static Material Scoria;
     public static Material Scorchia;
     public static Material Veridium;
+    public static Material EnamelSlurry;
 
 
 
@@ -35,6 +36,10 @@ public class CoreGregationMaterials {
         MicaPaste = new Material.Builder(CoreGregation.id("mica_paste"))
                 .fluid()
                 .color(0xCC8BC7).secondaryColor(0xA9DA).iconSet(MaterialIconSet.DULL)
+                .buildAndRegister();
+        EnamelSlurry = new Material.Builder(CoreGregation.id("enamel_slurry"))
+                .fluid()
+                .color(0xA5CDFA).secondaryColor(0xB4D5FA).iconSet(MaterialIconSet.DULL)
                 .buildAndRegister();
 
 

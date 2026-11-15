@@ -8,5 +8,6 @@ import static com.gregtechceu.gtceu.common.data.GTItems.*;
 public class CoreGregationMachineRecipes {
 
     public static void init(Consumer<FinishedRecipe> provider) {
+
     }
 }

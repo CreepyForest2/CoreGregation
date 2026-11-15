@@ -53,7 +53,7 @@ public class CasingProductionLine {
                     GTCEu.id("block/multiblock/pyrolyse_oven")))
             .tooltips(Component.translatable("coregregation.casing_production_line.tooltip"),
                     Component.translatable("coregregation.one_energy_hatch_allowed"),
-                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip", "Extractor"))
+                    Component.translatable("gtceu.machine.available_recipe_map_1.tooltip", "Casing Production Line"))
             .register();
 
 

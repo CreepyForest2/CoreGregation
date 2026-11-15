@@ -6,6 +6,8 @@ import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
 import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import com.gregtechceu.gtceu.common.data.GTSoundEntries;
 import com.lowdragmc.lowdraglib.gui.texture.ProgressTexture;
+import net.creepyforest.coregregation.CoreGregation;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeType;
 
 
@@ -22,16 +24,18 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType FIREARM_PARTS_ASSEMBLING_RECIPES;
     public static GTRecipeType FIREARM_ASSEMBLING_RECIPES;
     public static GTRecipeType SMOKER_RECIPES;
+    public static GTRecipeType ELECTRIC_OVEN_RECIPES;
+
 
 
     public static void init() {
         OVEN_RECIPES = GTRecipeTypes
                 .register("oven", GTRecipeTypes.MULTIBLOCK)
-                .setMaxIOSize(11, 2, 1, 0);
+                .setMaxIOSize(9, 2, 1, 0);
 
         COOKING_POT_RECIPES = GTRecipeTypes
                 .register("cooking_pot", GTRecipeTypes.MULTIBLOCK)
-                .setMaxIOSize(11, 2, 1, 1);
+                .setMaxIOSize(9, 2, 1, 1);
 
         BLOOMERY_RECIPES = GTRecipeTypes
                 .register("bloomery", GTRecipeTypes.MULTIBLOCK)
@@ -55,7 +59,12 @@ public class CoreGregationRecipeTypes {
                 .setMaxIOSize(25, 1, 0, 0).setEUIO(IO.IN);
 
         SMOKER_RECIPES = GTRecipeTypes
-                .register("electric_smoker", "electric", RecipeType.SMOKING).setMaxIOSize(1, 1, 0, 0).setEUIO(IO.IN).prepareBuilder((recipeBuilder) -> recipeBuilder.EUt(4L)).setSlotOverlay(false, false, GuiTextures.FURNACE_OVERLAY_1).setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressTexture.FillDirection.LEFT_TO_RIGHT).setSteamProgressBar(GuiTextures.PROGRESS_BAR_ARROW_STEAM, ProgressTexture.FillDirection.LEFT_TO_RIGHT).setSound(GTSoundEntries.FURNACE);
+                .register("electric_smoker", GTRecipeTypes.MULTIBLOCK)
+                .setMaxIOSize(1, 1, 0, 0).setEUIO(IO.IN);
+
+        ELECTRIC_OVEN_RECIPES = GTRecipeTypes
+                .register("electric_oven", GTRecipeTypes.MULTIBLOCK)
+                .setMaxIOSize(9, 2, 1, 0);
 
     }
 }
