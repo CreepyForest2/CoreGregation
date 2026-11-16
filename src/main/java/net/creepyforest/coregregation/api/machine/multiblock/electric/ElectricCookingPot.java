@@ -26,7 +26,7 @@ public class ElectricCookingPot {
     public static final MachineDefinition ElectricCookingPot = REGISTRATE
             .multiblock("electric_cooking_pot", CoilWorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
-            .recipeType(CoreGregationRecipeTypes.COOKING_POT_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.ELECTRIC_COOKING_POT_RECIPES)
             .recipeModifiers(GTRecipeModifiers::crackerOverclock)
             .appearanceBlock(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING)
             .pattern(definition -> FactoryBlockPattern.start()
@@ -39,7 +39,7 @@ public class ElectricCookingPot {
                     .where(' ', any())
                     .where('c', heatingCoils())
                     .where('G', blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-                    .where('P', blocks(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING.get()).setMinGlobalLimited(30)
+                    .where('P', blocks(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING.get())
                             .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                             .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS))

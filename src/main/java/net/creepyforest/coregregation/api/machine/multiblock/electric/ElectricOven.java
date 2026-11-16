@@ -37,7 +37,7 @@ public class ElectricOven {
                     .where('C', Predicates.controller(blocks(definition.getBlock())))
                     .where(' ', any())
                     .where('c', heatingCoils())
-                    .where('P', blocks(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING.get()).setMinGlobalLimited(30)
+                    .where('P', blocks(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING.get())
                             .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                             .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
                             .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))

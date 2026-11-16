@@ -25,6 +25,8 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType FIREARM_ASSEMBLING_RECIPES;
     public static GTRecipeType SMOKER_RECIPES;
     public static GTRecipeType ELECTRIC_OVEN_RECIPES;
+    public static GTRecipeType ELECTRIC_COOKING_POT_RECIPES;
+
 
 
 
@@ -65,6 +67,10 @@ public class CoreGregationRecipeTypes {
         ELECTRIC_OVEN_RECIPES = GTRecipeTypes
                 .register("electric_oven", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(9, 2, 1, 0);
+
+        ELECTRIC_COOKING_POT_RECIPES = GTRecipeTypes
+                .register("electric_cooking_pot", GTRecipeTypes.MULTIBLOCK)
+                .setMaxIOSize(9, 2, 1, 1);
 
     }
 }
