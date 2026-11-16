@@ -25,7 +25,7 @@ public class ElectricOven {
             .multiblock("electric_oven", CoilWorkableElectricMultiblockMachine::new)
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(CoreGregationRecipeTypes.ELECTRIC_OVEN_RECIPES)
-            .recipeType(GTRecipeTypes.FURNACE_RECIPES)
+            .recipeType(CoreGregationRecipeTypes.ELECTRIC_SMOKER_RECIPES)
             .recipeModifiers(GTRecipeModifiers::crackerOverclock)
             .appearanceBlock(CoreGregationBlocks.PORCELAIN_ENAMELED_STEEL_CASING)
             .pattern(definition -> FactoryBlockPattern.start()

@@ -23,7 +23,7 @@ public class CoreGregationRecipeTypes {
     public static GTRecipeType CASING_PRODUCTION_LINE_RECIPES;
     public static GTRecipeType FIREARM_PARTS_ASSEMBLING_RECIPES;
     public static GTRecipeType FIREARM_ASSEMBLING_RECIPES;
-    public static GTRecipeType SMOKER_RECIPES;
+    public static GTRecipeType ELECTRIC_SMOKER_RECIPES;
     public static GTRecipeType ELECTRIC_OVEN_RECIPES;
     public static GTRecipeType ELECTRIC_COOKING_POT_RECIPES;
 
@@ -60,7 +60,7 @@ public class CoreGregationRecipeTypes {
                 .register("firearm_assembler", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(25, 1, 0, 0).setEUIO(IO.IN);
 
-        SMOKER_RECIPES = GTRecipeTypes
+        ELECTRIC_SMOKER_RECIPES = GTRecipeTypes
                 .register("electric_smoker", GTRecipeTypes.MULTIBLOCK)
                 .setMaxIOSize(1, 1, 0, 0).setEUIO(IO.IN);
 
