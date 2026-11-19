@@ -49,6 +49,8 @@ public class MissingMappings {
         if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_shovel"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.SHOVEL).get().asItem());
         if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_sword"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.SWORD).get().asItem());
         if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_hoe"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.HOE).get().asItem());
+
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_helmet"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.HELMET).get());
         if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_chestplate"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.CHESTPLATE).get());
         if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_leggings"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.LEGGINGS).get());
         if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_boots"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.BOOTS).get());
