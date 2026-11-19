@@ -42,6 +42,8 @@
     import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
     import org.slf4j.Logger;
 
+    import static java.util.logging.Level.INFO;
+
 
     @Mod(CoreGregation.MOD_ID)
     public class CoreGregation {
@@ -137,9 +139,11 @@
         }
 
 
-        private void modifyMaterials(PostMaterialEvent event) {
+        @SubscribeEvent
+        public void modifyMaterials(PostMaterialEvent event) {
             MaterialModification.modifyMaterials();
         }
+
 
 
         public void registerRecipeTypes(GTCEuAPI.RegisterEvent<ResourceLocation, GTRecipeType> event) {

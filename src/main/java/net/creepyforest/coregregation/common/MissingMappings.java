@@ -2,17 +2,23 @@ package net.creepyforest.coregregation.common;
 
 
 
+import com.gregtechceu.gtceu.api.item.tool.GTToolType;
+import com.gregtechceu.gtceu.common.data.GTMaterialItems;
+import com.gregtechceu.gtceu.common.item.armor.GTArmorItem;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.Bloomery;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.CookingPot;
 import net.creepyforest.coregregation.api.machine.multiblock.primitive.OvenMachine;
 import net.creepyforest.coregregation.common.items.CoreGregationItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.MissingMappingsEvent;
+
+import static com.gregtechceu.gtceu.common.data.GTMaterials.Copper;
 
 public class MissingMappings {
 
@@ -38,7 +44,23 @@ public class MissingMappings {
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_sword"))) mapping.remap(CoreGregationItems.FLINT_SWORD.get());
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_saw_head"))) mapping.remap(CoreGregationItems.FLINT_SAW_HEAD.get());
         if (mapping.getKey().equals(new ResourceLocation("kubejs:flint_saw"))) mapping.remap(CoreGregationItems.FLINT_SAW.get());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_pickaxe"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.PICKAXE).get().asItem());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_axe"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.AXE).get().asItem());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_shovel"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.SHOVEL).get().asItem());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_sword"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.SWORD).get().asItem());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_hoe"))) mapping.remap(GTMaterialItems.TOOL_ITEMS.get(Copper, GTToolType.HOE).get().asItem());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_chestplate"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.CHESTPLATE).get());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_leggings"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.LEGGINGS).get());
+        if (mapping.getKey().equals(new ResourceLocation("simplest_copper_gear:copper_boots"))) mapping.remap(GTMaterialItems.ARMOR_ITEMS.get(Copper, ArmorItem.Type.BOOTS).get());
+
+
+
+        if (mapping.getKey().equals(new ResourceLocation("gregtech:bloomery"))) mapping.remap(Bloomery.BLOOMERY.getItem());
+        if (mapping.getKey().equals(new ResourceLocation("gregtech:oven"))) mapping.remap(OvenMachine.OVEN.getItem());
+        if (mapping.getKey().equals(new ResourceLocation("farmersdelight:pot"))) mapping.remap(CookingPot.COOKING_POT.getItem());
     }
+
+
 
     private static void remapBlocks(MissingMappingsEvent.Mapping<Block> mapping) {
         if (mapping.getKey().equals(new ResourceLocation("gregtech:bloomery"))) mapping.remap(Bloomery.BLOOMERY.getBlock());
